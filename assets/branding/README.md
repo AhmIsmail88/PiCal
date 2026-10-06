@@ -1,14 +1,12 @@
-# FlowTrack launcher artwork
+# PiCal launcher artwork
 
-- User reference: `user-icon-reference.png` (preserved original attachment).
-- Project source: `flowtrack-icon-cutout.png` — transparent edit from the built-in ImageGen tool.
-- Previous launcher PNGs: `previous/`.
-- Android packaging: `tools/prepare_launcher_icon.py`; Pillow is used only for density conversion and positioning, after the ImageGen edit.
-- Adaptive foreground: 432×432 with centered 224×224 artwork for mask safety; background `#E6EAED`.
-- Legacy PNG densities: 48, 72, 96, 144, 192 pixels.
+- Source artwork: [pical-icon.png](pical-icon.png), the transparent PiCal pipe-shaped π mark.
+- Android resource packaging: [prepare_launcher_icon.py](../../tools/prepare_launcher_icon.py).
+- Adaptive foreground: 432×432 with centered 224×224 artwork; navy background `#14263D`.
+- Launcher densities: 48, 72, 96, 144, and 192 pixels.
+- In-app mark: 256×256, generated from the same source.
+- Android 13+ monochrome artwork is defined in the application's vector resources.
 
-Actual ImageGen prompt:
-
-> Edit target: supplied FlowTrack app icon photo. Use case: background-extraction. Extract only the existing dark metallic rounded square pipe monogram. Preserve its exact design, cyan and amber illuminated tubes, metallic surfaces, lettering, proportions and viewing angle. Remove the entire gray studio background, ground and cast shadow. Do not redesign or add anything. Output a square transparent PNG with the object tightly centered, filling about 90% of the square, with all object edges intact. This will be the source for Android launcher icons.
-
-The generated output was copied into the project; app resources do not depend on the Codex image cache.
+The source was generated with the built-in ImageGen tool. Its prompt and implementation
+details are recorded in [PICAL_BRANDING_REVIEW_AR.md](../../PICAL_BRANDING_REVIEW_AR.md).
+The app resources use this workspace artwork, independently of the image-generation cache.
