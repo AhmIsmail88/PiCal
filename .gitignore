@@ -1,0 +1,39 @@
+# Gradle
+.gradle/
+build/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Kotlin
+.kotlin/
+
+# Local config
+local.properties
+
+# Signing material (never commit private keys or their passwords)
+*.jks
+*.keystore
+
+# Build artifacts (APKs stay local, never tracked)
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+*.hprof
+*.log
+
+# Generated drops, device test captures and scratch (not source)
+/output/
+/ui-test/
+/tmp/
+__pycache__/

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PiCal</string>
+    <string name="signature">By. Ahmed Ismail</string>
+
+    <!-- Bottom nav -->
+    <string name="nav_home">Home</string>
+    <string name="nav_projects">Projects</string>
+    <string name="nav_add">Add</string>
+    <string name="nav_reports">Reports</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">DASHBOARD</string>
+    <string name="current_project">Current project</string>
+    <string name="total_pipe_inches">Completed Pipe Inches</string>
+    <string name="completed_stats_hint" formatted="false">\"Completed\" = reached the final Workflow stage. Completion % compares final-stage joints with recorded first-stage joints; planned scope is not recorded.</string>
+    <string name="percent_complete" formatted="false">% Complete</string>
+    <string name="total_joints">Completed Joints</string>
+    <string name="workflow_stages">Workflow Stages</string>
+    <string name="workflow_progress">Workflow progress — %1$s</string>
+
+    <!-- Add entry -->
+    <string name="add_entry_title">NEW ENTRY</string>
+    <string name="field_date">Date</string>
+    <string name="field_task">Task</string>
+    <string name="field_area">Area</string>
+    <string name="field_diameter">Pipe Diameter</string>
+    <string name="field_unit">Unit</string>
+    <string name="field_joint_qty">Joint Quantity</string>
+    <string name="field_performed_by">Performed By</string>
+    <string name="field_supervisor">Supervisor</string>
+    <string name="field_photo">Photo</string>
+    <string name="add_photo">+ Add Photo</string>
+    <string name="remove_photo">Remove photo</string>
+    <string name="choose_photo_source">Add a photo</string>
+    <string name="photo_source_camera">Camera</string>
+    <string name="photo_source_gallery">Gallery</string>
+    <string name="camera_permission_rationale">PiCal needs camera access to attach a photo directly from the site.</string>
+    <string name="camera_permission_denied">Camera permission denied. You can still attach a photo from Gallery, or enable it from Settings.</string>
+    <string name="no_areas_or_team_hint">No Areas or Team Members yet for this project — add them from Settings so these dropdowns have something to pick from.</string>
+    <string name="save_entry">Save Entry</string>
+    <string name="pipe_inches_result">Pipe Inches</string>
+    <string name="validation_error">Cannot proceed: only %1$d joints have been completed in the previous stage (%2$s) for this Area and Diameter.</string>
+
+    <!-- Workflow settings -->
+    <string name="workflow_settings_title">WORKFLOW</string>
+    <string name="workflow_settings_path">Project Settings → Task Workflow</string>
+    <string name="add_task">+ Add Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="task_name">Task name</string>
+    <string name="task_type">Task Type</string>
+    <string name="custom_type_name">Custom type name</string>
+
+    <!-- Task types -->
+    <string name="type_fabrication">Fabrication</string>
+    <string name="type_welding">Welding</string>
+    <string name="type_inspection">Inspection</string>
+    <string name="type_testing">Testing</string>
+    <string name="type_installation">Installation</string>
+    <string name="type_finishing">Finishing</string>
+    <string name="type_handover">Handover</string>
+    <string name="type_other">Other</string>
+
+    <!-- Projects -->
+    <string name="projects_title">PROJECTS</string>
+    <string name="new_project">New Project</string>
+    <string name="project_name">Project Name</string>
+    <string name="project_number">Project Number</string>
+    <string name="responsible_engineer">Responsible Engineer</string>
+    <string name="contractor">Contractor</string>
+    <string name="client">Client</string>
+    <string name="areas">Areas</string>
+    <string name="team_members">Team Members</string>
+    <string name="edit_project">Edit Project</string>
+    <string name="delete_project">Delete Project</string>
+    <string name="delete_project_confirm_title">Delete this project?</string>
+    <string name="delete_project_confirm_message">This permanently deletes \"%1$s\" and everything under it — Areas, Team, Workflow, and every progress entry. This can\'t be undone.</string>
+
+    <!-- Project Settings tabs -->
+    <string name="tab_workflow">Workflow</string>
+    <string name="tab_areas">Areas</string>
+    <string name="tab_team">Team</string>
+    <string name="add_area">+ Add Area</string>
+    <string name="area_name">Area name</string>
+    <string name="add_member">+ Add Member</string>
+    <string name="member_name">Member name</string>
+    <string name="member_role">Role</string>
+    <string name="role_engineer">Engineer</string>
+    <string name="role_supervisor">Supervisor</string>
+    <string name="role_welder">Welder</string>
+    <string name="role_inspector">Inspector</string>
+    <string name="role_other">Other</string>
+    <string name="custom_role_name">Custom job title</string>
+    <string name="export_employee_report">Export report</string>
+
+    <!-- Reports -->
+    <string name="reports_title">REPORTS</string>
+    <string name="export_pdf">Export A4 PDF Report</string>
+    <string name="export_weld_inches_report">Export Weld Inches Report</string>
+    <string name="date_from">From</string>
+    <string name="date_to">To</string>
+    <string name="date_range_clear">Clear</string>
+    <string name="all_time">All time</string>
+    <string name="joints_by_diameter">Completed Joints by Diameter</string>
+    <string name="field_hours_worked">Hours Worked (optional)</string>
+    <string name="employee_report_title">Employee Report</string>
+    <string name="select_period">Select period</string>
+    <string name="report_period_label">Period</string>
+    <string name="total_hours">Total Hours</string>
+    <string name="entries_title">Entries</string>
+    <string name="edit_entry">Edit Entry</string>
+    <string name="delete_entry_confirm_title">Delete this entry?</string>
+    <string name="delete_entry_confirm_message">This permanently removes this progress entry and its %1$d joints from the record. This can\'t be undone.</string>
+    <string name="no_entries_yet">No entries yet — add one from the Add tab.</string>
+    <string name="delete_label">Delete</string>
+    <string name="tab_attendance">Attendance</string>
+    <string name="status_present">Present</string>
+    <string name="status_late">Late</string>
+    <string name="status_absent">Absent</string>
+    <string name="check_in_label">In</string>
+    <string name="check_out_label">Out</string>
+    <string name="check_out_action">Check Out</string>
+    <string name="attendance_days_present">Days Present</string>
+    <string name="attendance_days_late">Days Late</string>
+    <string name="attendance_days_absent">Days Absent</string>
+    <string name="attendance_rate">Attendance Rate</string>
+    <string name="not_marked_yet">Not marked</string>
+
+    <!-- Pipe Thickness Calculator -->
+    <string name="pipe_thickness_title">PIPE THICKNESS</string>
+    <string name="pipe_thickness_calculator">Pipe Thickness Calculator</string>
+    <string name="pipe_thickness_card_subtitle">ASME B31.3 wall thickness &amp; schedule lookup</string>
+    <string name="field_material">Material</string>
+    <string name="field_design_code">Design Code</string>
+    <string name="code_b311_power">ASME B31.1-2022 — Power Piping</string>
+    <string name="code_b313_process">ASME B31.3-2018 — Process Piping</string>
+    <string name="field_b311_material_group">Material group (Table 104.1.2-1)</string>
+    <string name="b311_group_ferritic">Ferritic steels</string>
+    <string name="b311_group_austenitic">Austenitic steels</string>
+    <string name="b311_group_n06690">Nickel alloy UNS N06690</string>
+    <string name="b311_group_nickel">Nickel alloys UNS N06617 / N08800 / N08810 / N08825</string>
+    <string name="b311_group_cast_iron">Cast iron</string>
+    <string name="b311_group_other">Other metals (Mandatory Appendix A)</string>
+    <string name="b311_verify_note">B31.1-2022, 104.1.2(a), Eq. (7), verified against the supplied p.27: tm = P Do / [2(SEW + Py)] + A. Enter S before E/F; do not apply the quality factor twice to a combined SE/SF table value.</string>
+    <string name="b311_thickness_label">Pressure design thickness, t</string>
+    <string name="b311_min_required_label">Minimum required thickness, tm = t + A</string>
+    <string name="b311_y_used_label">y used (Table 104.1.2-1)</string>
+    <string name="b311_a_label">A — corrosion + erosion + mechanical</string>
+    <string name="b311_thin_wall_note">Do/tm &lt; 6: General Note (b) coefficient y = d / (d + Do) applied.</string>
+    <string name="b311_invalid">Use P ≥ 0, Do and S &gt; 0, E and W in (0,1], each allowance ≥ 0, and a valid temperature/y for the selected group.</string>
+    <string name="material_other">Other (manual entry)</string>
+    <string name="field_material_name">Material name</string>
+    <string name="field_material_class">Material class</string>
+    <string name="material_class_ferritic">Ferritic (carbon / alloy steel)</string>
+    <string name="material_class_austenitic">Austenitic (stainless steel)</string>
+    <string name="field_yield_strength">Yield Strength (MPa)</string>
+    <string name="field_tensile_strength">Tensile Strength (MPa)</string>
+    <string name="field_allowable_stress">Allowable Stress, S (MPa)</string>
+    <string name="field_nominal_size">Nominal Pipe Size (NPS)</string>
+    <string name="field_design_pressure">Internal Design Gage Pressure (bar)</string>
+    <string name="field_design_temperature">Design Temperature (\u00B0C)</string>
+    <string name="field_quality_factor">Quality Factor, E</string>
+    <string name="field_weld_type_preset">Weld Type (sets E)</string>
+    <string name="field_weld_factor">Weld Strength Reduction, W</string>
+    <string name="field_y_coefficient">Coefficient, Y</string>
+    <string name="field_corrosion_allowance">Corrosion Allowance (mm)</string>
+    <string name="field_mill_tolerance">Mill Under-Tolerance (%)</string>
+    <string name="effective_wall_thickness_label">Lower wall bound from mill tolerance (not measured)</string>
+    <string name="section_calculated_results">Calculated Results</string>
+    <string name="calculated_thickness_label">Pressure Design Thickness (t)</string>
+    <string name="minimum_required_thickness_label">Required wall before machining, tm</string>
+    <string name="section_schedule_check">OPTIONAL NOMINAL PIPE ORDERING CHECK</string>
+    <string name="field_schedule">Schedule</string>
+    <string name="schedule_not_available">Not available for this size \u2014 enter manually</string>
+    <string name="outside_diameter_label">Outside Diameter</string>
+    <string name="inside_diameter_label">Nominal inside diameter</string>
+    <string name="wall_thickness_label">Nominal pipe wall thickness</string>
+    <string name="schedule_pass">Internal-pressure thickness check met for these inputs</string>
+    <string name="schedule_fail">Internal-pressure thickness check not met</string>
+    <string name="export_pipe_report">Export Calculation Report</string>
+    <string name="pipe_report_title">Pipe Wall Thickness Report</string>
+    <string name="pipe_report_disclaimer">Straight-pipe internal-pressure wall check, B31.3-2018, with user-supplied coefficients and measurements. Not overall code certification.</string>
+    <string name="back_button">Back</string>
+    <string name="field_project_name_optional">Project Name (optional)</string>
+    <string name="field_engineer_name_optional">Engineer Name (optional)</string>
+    <string name="section_inputs">INPUTS</string>
+    <string name="section_outputs">OUTPUTS</string>
+    <string name="tab_pipe_thickness">Pipe Thickness</string>
+    <string name="tab_pipe_weight">Pipe Weight</string>
+    <string name="field_pipe_length">Pipe Length (m)</string>
+    <string name="include_water_fill">Include Water Fill Weight</string>
+    <string name="field_density">Density (kg/m\u00B3)</string>
+    <string name="unit_weight_label">Unit Weight</string>
+    <string name="total_pipe_weight_label">Total Pipe Weight</string>
+    <string name="water_fill_weight_label">Water Fill Weight</string>
+    <string name="total_weight_with_water_label">Total Weight (incl. Water)</string>
+    <string name="export_weight_report">Export Weight Report</string>
+    <string name="calculators_hub_title">Calculators</string>
+    <string name="calculators_title">CALCULATORS</string>
+    <string name="nps_custom">Custom / Manual Entry</string>
+    <string name="field_manual_od">Outside Diameter (OD)</string>
+    <string name="manual_wall_entry_label">Manual Entry</string>
+    <string name="field_od_unit">OD Unit</string>
+    <string name="field_wall_unit">Wall Thickness Unit</string>
+    <string name="report_ready_title">PiCal report ready</string>
+    <string name="report_notification_channel">Reports</string>
+    <string name="report_open">Open</string>
+    <string name="report_share">Share</string>
+    <string name="report_saved_notice">Report saved. Use the buttons below, or check your notifications.</string>
+
+    <string name="language_switch">EN | AR</string>
+    <string name="calculation_invalid">Enter valid inputs within the straight-pipe equation limits: P ≥ 0, D and S &gt; 0, E and W in (0,1], Y in [0,1], allowance ≥ 0, tolerance in [0,100), t &lt; D/6 and P/(SE) ≤ 0.385.</string>
+    <string name="weight_invalid">Enter positive dimensions, density and length. Wall thickness must be less than half the outside diameter.</string>
+    <string name="workflow_dependency_title">Workflow dependency</string>
+    <string name="workflow_dependency_hint">This change would leave a later stage ahead of %1$s (%2$d joints). Adjust downstream entries first.</string>
+    <string name="dashboard_empty_title">No project open</string>
+    <string name="dashboard_empty_hint">Create or open a project from Projects to view progress.</string>
+    <string name="calculation_report_details">Optional report details</string>
+    <string name="schedule_basis_hint">Dimensions: ASME B36.10-2022 Table 2-1 (SI). Use custom entry for other dimensions; STD/XS and stainless S schedules are separate designations.</string>
+    <string name="nav_calculators">Calculators</string>
+    <string name="manage_project">Manage project</string>
+    <string name="switch_project">Switch project</string>
+    <string name="fully_finished">Fully completed</string>
+    <string name="final_stage_inches">Diameter-inches · final stage: %1$s</string>
+    <string name="recorded_inches_percent_hint">Final-stage inches ÷ first-stage recorded inches. Not planned scope.</string>
+    <string name="stage_inches_title">Completed inches by stage</string>
+    <string name="stage_inches_hint">Cumulative output at each stage. Stage totals are not added together.</string>
+    <string name="final_stage_label">Final stage · fully completed</string>
+    <string name="pipe_inches_unit">dia-in</string>
+    <string name="stage_inches_value">%1$s dia-in</string>
+    <string name="joints_count">%1$d joints</string>
+    <string name="setup_workflow">Set up workflow stages</string>
+    <string name="workflow_order_blocked">This order conflicts with recorded progress. Each stage must have at least as many joints as the next, for every area and diameter. The previous order has been restored.</string>
+    <string name="thickness_scope_hint">ASME B31.3-2018 • Straight steel pipe, internal pressure only. This checks pressure thickness, not overall piping design or Chapter IX high-pressure service.</string>
+    <string name="stress_input_hint" formatted="false">S must match the selected code, material/product and design metal temperature. Use the stress table in the ? help; room-temperature yield strength does not determine S.</string>
+    <string name="factors_input_hint">Enter E from the applicable product and weld-quality provisions, and W from 302.3.5(e) / Table 302.3.5-1. No generic weld-process preset is assumed.</string>
+    <string name="field_erosion_allowance">Erosion allowance (mm)</string>
+    <string name="field_mechanical_allowance">Mechanical allowance (mm)</string>
+    <string name="mechanical_allowance_hint" formatted="false">Metal removed by threading, grooving or machining, in mm, from the fabrication drawing and tolerance. B31.3-2018 304.1.1(b) requires thread/groove depth; when groove/machining tolerance is unspecified, add 0.5 mm to the specified cut depth. For B31.1 review 102.4.2 and mechanical-strength allowances in 102.4.4. This allowance belongs in pre-machining wall; do not deduct already removed metal again from a finished measurement.</string>
+    <string name="mill_tolerance_hint" formatted="false">Manufacturer’s permitted minus wall tolerance, in percent, from the exact product/purchase specification and certificate (e.g. the applicable ASTM/ASME pipe specification). Do not assume 12.5% for every product. Nominal ordering wall = required minimum/(1−tol/100). This is a purchase check, not a deduction from a certified measured minimum wall.</string>
+    <string name="design_reference_label">S / E / W and tolerance reference (optional)</string>
+    <string name="y_auto_hint">Automatic Y: B31.3-2018 Table 304.1.1, SI temperature points. Full interpolation precision is used.</string>
+    <string name="y_manual_hint">Y is a manual override; verify its applicability for this material and temperature.</string>
+    <string name="y_use_table">Use table Y</string>
+    <string name="required_nominal_thickness">Minimum nominal pipe wall to order</string>
+    <string name="thickness_outside_scope">Outside equation (3a) scope: t ≥ D/6 or P/(S × E) &gt; 0.385. Special design consideration is required by 304.1.2(b).</string>
+    <string name="finished_required_label">Required remaining wall after fabrication</string>
+    <string name="finished_section">FINAL PIPE WALL - MEASURED AFTER FABRICATION</string>
+    <string name="measured_wall_label">Minimum measured finished wall (mm)</string>
+    <string name="measured_wall_help">Enter the minimum remaining metal measured on the finished straight pipe, in mm, including the thinnest groove/thread root after all machining. Use a validated inspection minimum accounting for measurement uncertainty; not an average, nominal schedule wall, coating or weld reinforcement. No mill tolerance or removed-metal allowance is deducted again. For a new pipe before service; this is not a remaining-life assessment.</string>
+    <string name="measurement_reference_label">Inspection / pipe reference (optional)</string>
+    <string name="measurement_not_provided">No valid measured value</string>
+    <string name="finished_margin_label">Measured wall minus required wall</string>
+    <string name="finished_pass">Measured wall meets the internal-pressure thickness requirement.</string>
+    <string name="finished_fail">Measured wall is BELOW the internal-pressure thickness requirement.</string>
+    <string name="measured_invalid">Complete the design inputs and enter a positive measured wall less than half the OD.</string>
+    <string name="finished_export_hint">A finished-wall report needs valid design inputs and a measured minimum wall.</string>
+    <string name="field_help_description">Explain: %1$s</string>
+    <string name="help_close">Understood</string>
+    <string name="help_material" formatted="false">Select the exact ASTM specification, grade and construction from the mill/material certificate (MTC). The dropdown identifies the material; it does not certify suitability. S depends on both code and metal temperature, E on construction, and W on weld/temperature rules. Use Other for a designation not listed and verify the code material table/notes.</string>
+    <string name="help_material_name" formatted="false">Copy the specification, grade, product form and any relevant UNS designation from the material certificate or approved piping specification. Example: ASTM A106 Gr.B seamless pipe. A trade name or “carbon steel” alone is not enough to select a stress-table row.</string>
+    <string name="help_material_class">This selection controls automatic Y only. Choose the applicable ferritic or austenitic steel class; it does not determine S.</string>
+    <string name="help_yield">Optional reference yield strength in MPa. It is not the allowable design stress S and is not used in this calculation.</string>
+    <string name="help_temperature" formatted="false">Design metal temperature in °C, from the line list, equipment datasheet or approved design basis for the governing pressure/temperature case. The default 20°C is room temperature for starting the form, not an assumed operating/design condition. S must be rechecked at the new temperature; do not keep the room-temperature stress for a hot line. Material/temperature changes invalidate dependent coefficients.</string>
+    <string name="help_nps" formatted="false">NPS is the nominal pipe designation from the line specification, isometric drawing or purchase order, not a measured diameter. The actual OD is loaded from B36.10-2022 (e.g. NPS 4 has OD 114.3 mm). Use Custom and the measured/drawing OD if the size is not listed.</string>
+    <string name="help_od" formatted="false">Outside diameter D/Do, not NPS or inside diameter. Obtain it from B36.10/B36.19 dimensions for the specified product, its certified drawing, or an accepted measurement where the code permits. Exclude coatings. In an mm field enter mm; in a selectable-unit field use the selected unit. Example: NPS 4 has OD 114.3 mm, not 4 mm.</string>
+    <string name="help_unit">Select the unit of the number you enter: mm or inch. One inch equals 25.4 mm. Changing the unit reinterprets the entered number.</string>
+    <string name="help_pressure" formatted="false">Internal design gauge pressure in bar(g), from the approved line list/P&amp;ID/design datasheet. Gauge is relative to atmospheric pressure; absolute pressure must be converted appropriately. Do not enter a hydrotest pressure or operating reading unless it is the approved design case. Example: 20 bar(g) = 2 MPa; the app converts bar to MPa before the equation.</string>
+    <string name="help_corrosion" formatted="false">Corrosion allowance in mm for metal expected to be lost during the design life. Obtain it from the project material/piping class, corrosion study or vessel specification. It is not measured wall loss on an old pipe. Example: a specified 1.5 mm allowance is entered as 1.5. Enter 0 only when the design basis justifies it.</string>
+    <string name="help_erosion" formatted="false">Additional erosion allowance in mm, from the approved design/corrosion-erosion assessment for the fluid and velocity/particles. Do not repeat an erosion amount already included in the project corrosion allowance. Enter 0 only when no separate erosion allowance is required by the design.</string>
+    <string name="help_e" formatted="false">Quality factor E, unitless, from B31.3-2018 Table A-1A/A-1B and 302.3.3/302.3.4 notes for the actual product and weld examination. Read the MTC to identify seamless or welded construction, then the applicable table row. 1 may apply to suitable seamless product, but is not universal. Use S from A-1/A-1M separately and enter E only once; E is not W or yield strength.</string>
+    <string name="help_w" formatted="false">W is the weld-joint strength reduction factor at the design metal temperature, from B31.3-2018 302.3.5(e) and Table 302.3.5 (including steel group, heat treatment and notes). Use the material/weld certificates and approved design basis. It is unitless and distinct from E. A starting value of 1 must be confirmed for the actual material/weld and temperature; do not reuse a cold-service value at high temperature without checking.</string>
+    <string name="help_y" formatted="false">Y is the dimensionless coefficient from B31.3-2018 Table 304.1.1, selected by material class and temperature, not allowable stress. For ferritic steel the printed transition is 0.4/0.5/0.7 at 482/510/538°C; austenitic steel transitions at 566/593/621°C. Automatic values use the table/interpolation where available. You may override the shown value after checking the row and notes. The simple pipe equation still requires t&lt;D/6 and P/(SE)≤0.385.</string>
+    <string name="help_reference">Record code edition, material table row/notes and product specification used for S, E, W and mill tolerance. Included in the report for traceability.</string>
+    <string name="help_schedule" formatted="false">The schedule is a nominal wall designation from the piping specification or pipe marking/purchase certificate. B36.10-2022 supplies the nominal wall for that NPS and schedule. This limited table does not include every schedule. For an unlisted product enter the nominal wall manually; verify finished minimum wall separately.</string>
+    <string name="help_nominal">Enter nominal pipe wall in the selected unit for the ordering check. Enter the actual minimum measured after fabrication in its separate field.</string>
+    <string name="help_measurement_reference">Record pipe/spool ID, inspection report, date and measurement method. The application stores your value and does not perform the physical measurement.</string>
+    <string name="help_project">Optional project name printed in the report; it does not change the calculation.</string>
+    <string name="help_engineer">Optional preparer name printed in the report; it is not an approval or inspection signature.</string>
+    <string name="help_density" formatted="false">Mass density in kg/m³ from the material supplier datasheet or approved material properties. The selected common steel value is an approximate default: 7850 for carbon steel, 8000 for common austenitic stainless steel. Edit for the actual material. Do not enter specific gravity (e.g. 7.85); enter 7850 kg/m³. It affects mass only, never allowable stress.</string>
+    <string name="help_length" formatted="false">Total centreline pipe length in metres, from the cutting list, isometric drawing or measurement. Enter 6 for six metres, not 6000 mm. Pipe mass and water mass scale with length; fittings, coatings and insulation are excluded.</string>
+    <string name="nominal_input_invalid">Correct the optional ordering inputs: wall must be positive and less than half the OD; minus tolerance must be from 0 to less than 100%.</string>
+    <string name="report_export_failed">Report could not be saved. Check available storage and try again.</string>
+    <string name="measurement_basis_hint">Enter the inspection minimum after all machining, including groove roots. The report uses this measured value. Tap ? for the measurement basis.</string>
+
+    <!-- Shared UI text -->
+    <string name="open_project_first_add">Open a project first to add an entry.</string>
+    <string name="open_project_first_reports">Open a project first to export its report.</string>
+    <string name="open_project_first_settings">Open a project first to edit its settings.</string>
+    <string name="export_failed">Export failed: %1$s</string>
+    <string name="unit_inch">Inch</string>
+    <string name="unit_mm">mm</string>
+    <string name="unit_inch_short">in</string>
+    <string name="entry_line">%1$s  ·  %2$s  ·  %3$s joints</string>
+    <string name="y_above_table_warning">B31.3-2018 Table 304.1.1 has a 677°C and above column. Steel Y remains 0.7; this does not establish material temperature suitability. Confirm S and W at the design temperature.</string>
+    <string name="no_projects_yet">No projects yet. Create the first one with the button below.</string>
+    <string name="no_areas_yet">No areas yet for this project. Add the first one below.</string>
+    <string name="no_team_yet">No team members yet for this project. Add the first one below.</string>
+    <string name="no_attendance_team_yet">Add team members first, then record their attendance here.</string>
+    <string name="drag_to_reorder">Drag to reorder</string>
+
+    <!-- Pipe bend calculator (B31.3 304.2.1) -->
+    <string name="tab_pipe_bend">Pipe Bends</string>
+    <string name="tab_pressure_vessel">Pressure Vessels</string>
+    <string name="tab_miter_bend">Miter Bends</string>
+    <string name="miter_scope_hint">B31.3-2018 304.2.3: multiple miters use (4a)/(4b); a single joint uses (4a) up to 22.5° and (4c) above it. Verify radius (5) and wall extension M. B31.1-2022 uses the 10/100 psi paths and qualification under 104.7. θ is half the deflection per joint.</string>
+    <string name="field_miter_total_angle">Total bend angle (°)</string>
+    <string name="field_miter_joints">Number of miter joints</string>
+    <string name="field_miter_spacing">Miter spacing s (mm)</string>
+    <string name="field_miter_thickness">Segment wall thickness T (mm)</string>
+    <string name="field_miter_allowances">Total allowances c (mm)</string>
+    <string name="field_miter_crotch_b">Crotch dimension B (mm)</string>
+    <string name="miter_theta_label">Miter cut angle θ</string>
+    <string name="miter_equation_label">Governing equation</string>
+    <string name="miter_pm_label">Maximum allowable pressure Pm</string>
+    <string name="miter_pm4a_label">Pm from Eq. 4a</string>
+    <string name="miter_pm4b_label">Pm from Eq. 4b</string>
+    <string name="miter_margin_label">Pm − P</string>
+    <string name="miter_required_t_label">Smallest wall meeting Pm ≥ P</string>
+    <string name="miter_spacing_class_label">Miter arrangement</string>
+    <string name="miter_closely_spaced">Multiple miter joints</string>
+    <string name="miter_widely_spaced">Single miter joint</string>
+    <string name="miter_pass">P ≤ Pm — acceptable for pressure design</string>
+    <string name="miter_fail">P &gt; Pm — not acceptable</string>
+    <string name="miter_path_label">B31.1 path</string>
+    <string name="miter_limit_label">Pressure limit of that path</string>
+    <string name="miter_qualification_required">Outside the simplified paths of §104.2.3: qualification under §104.7 is required.</string>
+    <string name="miter_conditions_title">Condition checks</string>
+    <string name="miter_condition_met">met</string>
+    <string name="miter_condition_not_met">not met</string>
+    <string name="miter_segments_note">Segment thickness under B31.1-2022 104.2.3(c)(3) can be calculated below; satisfying it does not replace qualification under 104.7.</string>
+    <string name="switch_segments_1041">Each segment thickness meets para. 104.1</string>
+    <string name="switch_fluid">(a)(3) fluid nonflammable, nontoxic, incompressible</string>
+    <string name="switch_cycles">(a)(4) fewer than 7,000 full pressure cycles</string>
+    <string name="switch_full_pen">(a)(5) full penetration welds</string>
+    <string name="miter_invalid">B31.3 needs valid D, T, c, S, E, W, P, angle, joint count and effective radius R1. B31.1 needs valid pressure, angle, joint count, T, B and declared conditions.</string>
+    <string name="bend_scope_hint">ASME B31.3-2018 304.2.1: bending thins the wall and intensifies the stress at the intrados, so the required thickness is greater there than for straight pipe. Miter bends (304.2.3) and the geometric thinning itself are not covered.</string>
+    <string name="field_bend_radius">Bend Radius to Centreline, R1 (mm)</string>
+    <string name="field_bend_od">Outside Diameter, D (mm)</string>
+    <string name="measured_intrados_wall_label">Minimum measured intrados wall (mm)</string>
+    <string name="bend_intrados_factor">Intrados stress factor I</string>
+    <string name="bend_extrados_factor">Extrados stress factor I</string>
+    <string name="bend_intrados_thickness">Pressure thickness at intrados (governs)</string>
+    <string name="bend_extrados_thickness">Pressure thickness at extrados</string>
+    <string name="bend_straight_thickness">Matching straight pipe, I = 1</string>
+    <string name="bend_intrados_required">Bend wall before fabrication</string>
+    <string name="bend_straight_required">Straight pipe wall to order</string>
+    <string name="bend_intrados_required_short">Required remaining wall at intrados</string>
+    <string name="bend_measured_hint">Enter the inspection minimum measured on the finished bend at its thinnest intrados point. The report uses this measured value.</string>
+    <string name="bend_invalid">Enter valid inputs inside the equation scope: bend radius above half the outside diameter, P ≥ 0, D and S &gt; 0, E and W in (0,1], Y in [0,1], allowances ≥ 0, and t &lt; D/6 with P/(SE) ≤ 0.385.</string>
+    <string name="help_bend_radius" formatted="false">R1 is the centreline bend radius in mm, from the elbow manufacturer’s dimensioned drawing or pipe-bend fabrication drawing; not the pipe cross-section radius. B31.3-2018 304.2.1 uses R1/D in I. Standard “long radius 1.5D” usually uses nominal pipe size for its dimensional designation; do not automatically multiply actual OD by 1.5. Enter the certified centreline radius (e.g. NPS 4 LR commonly approximately 152 mm), and ensure R1&gt;D/2.</string>
+    <string name="field_reference_optional">Design reference (optional)</string>
+    <string name="export_bend_report">Export Bend Report</string>
+    <string name="bend_report_hint">The report needs complete bend inputs inside the equation scope.</string>
+
+    <!-- Pressure vessel calculator (ASME VIII Div. 1) -->
+    <string name="field_vessel_part">Component</string>
+    <string name="vessel_part_shell">Cylindrical shell — UG-27</string>
+    <string name="vessel_part_ellipsoidal">2:1 ellipsoidal head — UG-32(d)</string>
+    <string name="vessel_part_torispherical">Torispherical head — UG-32(e)</string>
+    <string name="vessel_part_hemispherical">Hemispherical head — UG-32(f)</string>
+    <string name="vessel_part_conical">Conical part — UG-32(g)</string>
+    <string name="field_vessel_inside_radius">Inside Radius, Corroded (mm)</string>
+    <string name="field_vessel_crown_radius">Inside crown radius L (mm)</string>
+    <string name="field_vessel_knuckle_radius">Inside knuckle radius r (mm)</string>
+    <string name="field_vessel_half_apex">Half-apex angle α (°)</string>
+    <string name="field_vessel_ellipsoidal_ratio">Ellipsoidal ratio D/2h</string>
+    <string name="field_joint_efficiency">Joint Efficiency, E (Table UW-12)</string>
+    <string name="field_nominal_vessel_thickness">Nominal plate thickness (mm)</string>
+    <string name="vessel_scope_hint">ASME BPVC Section VIII Division 1, internal pressure on the concave side. Division 1 only: external pressure (UG-28), openings and reinforcement (UG-36/37/40), flanges (Appendix 2), supports, fatigue and the Division 2 alternative rules are outside this calculator.</string>
+    <string name="vessel_circumferential_thickness">Circumferential stress, UG-27(c)(1)</string>
+    <string name="vessel_longitudinal_thickness">Longitudinal stress, UG-27(c)(2)</string>
+    <string name="vessel_pressure_thickness">Governing pressure thickness, t</string>
+    <string name="vessel_order_thickness">Minimum thickness to order (including formed minimum and corrosion)</string>
+    <string name="vessel_mawp_label">MAWP for the entered plate thickness</string>
+    <string name="section_vessel_mawp_check">MAXIMUM ALLOWABLE WORKING PRESSURE CHECK</string>
+    <string name="vessel_ug16_note">UG-16(b): after forming, shells and heads are at least 1.5 mm thick excluding the corrosion allowance.</string>
+    <string name="vessel_blank_default">Blank = default</string>
+    <string name="vessel_invalid">Complete the inputs: P ≥ 0, R &gt; 0, S &gt; 0, E in (0,1], allowance ≥ 0, and where used L and r positive with r ≤ L, or 0 &lt; α ≤ 30°.</string>
+    <string name="vessel_outside_scope">This case is outside the rules implemented here: t exceeds half the inside radius (Appendix 1-2 thick-wall rules apply), or P exceeds the limit of the selected head rule, or α exceeds 30°. Review it with the full code edition.</string>
+    <string name="vessel_mawp_unavailable">MAWP is unavailable: use valid design inputs and a plate thickness greater than the corrosion allowance, within the selected component’s supported limits.</string>
+    <string name="help_vessel_part">Select the component whose internal-pressure thickness you are checking. Each form has its own equation and its own applicability limit.</string>
+    <string name="help_vessel_radius" formatted="false">Inside radius in the corroded condition, in mm, from the vessel/head dimensioned drawing: for internal corrosion use the new inside radius plus the internal corrosion allowance. Do not enter OD/2. This is R for a shell, L for a hemisphere, and D/2 for elliptical/conical forms. The wall allowances are added separately.</string>
+    <string name="help_vessel_crown" formatted="false">Inside crown radius L of a torispherical head in mm, from the formed-head supplier drawing, in the corroded condition. It is the large curved crown radius, not the vessel cross-section radius. Blank uses inside diameter; accept that default only if it matches the actual head drawing. Used by UG-32(e)/Appendix 1-4(d).</string>
+    <string name="help_vessel_knuckle" formatted="false">Inside knuckle radius r in mm from the formed-head drawing, in the corroded condition: the tight radius at the crown-to-flange transition. Blank uses r=0.06L for the standard 6% head, reproducing 0.885 in UG-32(e). Other supported geometry uses M=[3+sqrt(L/r)]/4 from Appendix 1-4(d); confirm the actual dimensions.</string>
+    <string name="help_joint_efficiency" formatted="false">Vessel joint efficiency E, unitless, from ASME VIII Division 1 Table UW-12 and applicable UW-11 examination requirements. Use the vessel weld map, joint category/type and radiography/other examination records. Do not use a piping quality-factor table here. A default 1 requires the applicable row/examination to justify it; obtain the approved efficiency from the vessel designer.</string>
+    <string name="help_nominal_vessel_thickness" formatted="false">Nominal component plate/wall thickness in mm, from the vessel drawing or plate certificate, for the MAWP check. The app uses thickness minus corrosion allowance and applies the implemented component limits. It does not predict forming thinning or qualify all vessel loads. Do not enter a pressure-design output as if it were measured or purchased wall.</string>
+    <string name="help_vessel_half_apex" formatted="false">Half-apex angle alpha in degrees from the cone fabrication drawing: the angle between the cone wall and vessel axis, half the full apex angle. Enter degrees, not radians. UG-32(g) covers up to 30 degrees; greater angles need a reinforced-cone design outside this calculator.</string>
+    <string name="help_vessel_ellipsoidal_ratio" formatted="false">D/(2h): inside diameter divided by twice the inside crown depth, measured from the tangent line, excluding the straight flange. Obtain D and h from the formed-head drawing in the corroded condition. Enter 2 for a standard 2:1 head (K=1); the supported range is 1 to 2. The app applies K=[2+(D/2h)^2]/6. Shallower heads need a separate design.</string>
+    <string name="export_vessel_report">Export Vessel Report</string>
+    <string name="vessel_report_hint">The report needs complete design inputs for the selected component.</string>
+    <string name="b313_coefficients_title">ASME B31.3-2018 — E / W / Y</string>
+    <string name="b311_coefficients_title">ASME B31.1-2022 — E / W / y</string>
+    <string name="b311_outside_scope">No thickness result is available: the required wall leaves no positive inside diameter, or the implicit y calculation did not converge. Review the geometry and allowances.</string>
+    <string name="miter_outside_scope">No pressure/thickness verdict: multiple-miter θ must not exceed 22.5°, and R1 must meet B31.3-2018 Eq. (5).</string>
+    <string name="miter_equation_multiple">Equations 4a and 4b — multiple miters</string>
+    <string name="miter_equation_single_low">Equation 4a — single miter, θ ≤ 22.5°</string>
+    <string name="miter_equation_single_high">Equation 4c — single miter, θ &gt; 22.5°</string>
+    <string name="miter_path_ten">104.2.3(a) — 10 psi path</string>
+    <string name="miter_path_hundred">104.2.3(b) — 100 psi path</string>
+    <string name="miter_path_qualification">104.2.3(c) — qualification under 104.7</string>
+    <string name="miter_b311_pass">Pressure and declared conditions meet the selected simplified path.</string>
+    <string name="miter_condition_steep">(a)(1) θ &gt; 22.5° or a segment with B &lt; 6tn</string>
+    <string name="miter_condition_shallow">(b)(1–2) θ ≤ 22.5° and every segment has B ≥ 6tn</string>
+    <string name="b311_y_auto_hint">Automatic y: B31.1-2022 Table 104.1.2-1. The calculated result applies note (b) when required.</string>
+    <string name="field_miter_radius">Effective bend radius R1 / R (mm)</string>
+    <string name="miter_minimum_radius">Minimum R1 — Eq. (5)</string>
+    <string name="miter_extension">Minimum wall extension M — 304.2.3(c)</string>
+    <string name="miter_segment_section">B31.1 segment thickness — 104.2.3(c)(3)</string>
+    <string name="miter_spacing_basis">Declare close/wide spacing and r/R from actual geometry using ASME B31J. The app does not infer this classification.</string>
+    <string name="b311_miter_close">Closely spaced</string>
+    <string name="b311_miter_wide">Widely spaced</string>
+    <string name="miter_segment_tm">Straight-pipe minimum tm — 104.1 (mm)</string>
+    <string name="miter_segment_r">Pipe mean radius r — B31J (mm)</string>
+    <string name="miter_segment_ts">Required segment thickness ts (mm)</string>
+    <string name="miter_segment_invalid">Use positive tm and r, 0 &lt; θ &lt; 90°, and R &gt; r for close spacing.</string>
+    <string name="miter_small_offset_note">B31.3-2018: offsets of 3° or less do not require miter design. Check the applicable straight-pipe and joint rules; no miter pressure verdict is issued here.</string>
+    <string name="equation_heading" formatted="false">Design equation and code reference</string>
+    <string name="pressure_equation_units" formatted="false">Pressure equations use MPa: input bar × 0.1 = MPa. D, R and wall dimensions are in mm; S is MPa. E/W/Y are unitless. Miter equations produce Pm in MPa; the screen converts it to bar.</string>
+    <string name="weight_equation_units" formatted="false">D and t in mm, length L in m, density ρ in kg/m³. Output is kg/m and kg. Weight formulas are geometry calculations, not a B31 pressure-design check.</string>
+    <string name="material_manual_stress_note" formatted="false">Room temperature starts at 20°C. Select the exact specification and grade, then enter S from the appropriate code table at your design metal temperature. This list does not certify material suitability.</string>
+    <string name="stress_manual_source_note" formatted="false">No verified automatic S is available for this code/material/temperature. Enter it from the code table using the ? guidance; do not use yield or tensile strength.</string>
+    <string name="stress_verified_source">Verified starting value: %1$s MPa, B31.1-2022 Table A-1 pp.126–127, A106 seamless, note (2), %2$d°F column (%3$s ksi). Uses the next listed “not exceeding” column; no interpolation/extrapolation. You may override it after checking the applicable notes.</string>
+    <string name="use_verified_stress" formatted="false">Use verified table value</string>
+    <string name="guide_stress_b313" formatted="false">S is allowable design stress, in MPa; it is not yield strength or tensile strength. Find the exact specification, grade and product form in B31.3-2018 Table A-1 (US units) or A-1M (SI), then the design metal temperature column. Read the row notes and temperature limits. Use MPa here: ksi × 6.894757293168 = MPa. No B31.3 stress table has been verified for automatic filling in this app; enter the project-approved value manually. Material or temperature changes clear the old S.</string>
+    <string name="guide_stress_b311" formatted="false">S is entered in MPa before applying E/F. Use B31.1-2022 Mandatory Appendix A, Table A-1, the exact material/product row and design temperature column. The table can publish a combined SE/SF value: do not multiply an already reduced value by E twice. Automatic values are limited to verified A106 seamless rows (E=1), pp.126–127, 20°C through the supplied 800°F column. Other forms/temperatures remain manual. The app chooses the next printed “not exceeding” column and shows it; read note (2) and material limits before use. Example: 17.1 ksi = 117.90035 MPa.</string>
+    <string name="guide_stress_vessel" formatted="false">S is allowable stress at the design metal temperature, in MPa, from the applicable edition of ASME BPVC Section II, Part D, Tables 1A (ferrous) or 1B (nonferrous), with the product form, specification, grade, thickness and notes required by VIII Division 1. Use the permitted row for this vessel service. Do not use B31.1/B31.3 stress values or room-temperature yield/tensile strength as a substitute. The app has no verified vessel stress lookup; enter the approved S manually.</string>
+    <string name="guide_code" formatted="false">Choose the code in the project design basis or piping specification: B31.3-2018 for the implemented process-piping paths, B31.1-2022 for the implemented power-piping paths. They use different equations, material tables and limits. Do not choose whichever gives the smallest thickness. The bend tab currently implements B31.3; pressure vessels use BPVC VIII Division 1, not either piping code.</string>
+    <string name="guide_b311_group" formatted="false">This group selects y only from B31.1-2022 Table 104.1.2-1. Determine the alloy family/UNS designation from the material certificate and table row. It does not supply S or establish material temperature suitability. Blank table cells are not valid values. Ferritic/austenitic steel at ≤482°C also uses note (b) when Do/tm &lt; 6.</string>
+    <string name="guide_miter_t" formatted="false">T is the wall of the actual miter segment, in mm, per B31.3-2018 304.2.3(d): measured wall or the guaranteed minimum allowed by the purchase specification. Obtain it from a certified thickness measurement, the manufacturer’s drawing/certificate, or the pipe schedule after checking the applicable minus tolerance. It is not the required thickness calculated as an output, not the pipe diameter and not automatically a nominal plate thickness. The pressure formulas use T−c; T must exceed c. Example: measured/minimum T=6.02 mm and c=1.5 mm leaves 4.52 mm for pressure.</string>
+    <string name="guide_miter_c" formatted="false">c is a total metal allowance, in mm: corrosion + erosion + mechanical removal such as thread/groove depth. B31.3-2018 304.1.1(b) defines it, and 304.2.3(d) uses the same c for miters. Obtain corrosion/erosion from the approved piping specification/design life; obtain machining depth/tolerance from the fabrication drawing. Example: 1.5 + 0.5 + 1.0 = 3.0 mm. Do not add manufacturing minus tolerance to c or subtract it twice from a measured wall. Use 0 only when justified by the design. This c is not the empirical A in miter Eq. (5).</string>
+    <string name="guide_miter_angle" formatted="false">Enter the total change of direction of the assembly, in degrees, from the isometric/fabrication drawing. The app divides it by the number of miter weld joints, then by 2 to get the code’s cut angle θ. Example: 90° across 2 joints means 45° per joint and θ=22.5°. Do not enter θ itself in this total-angle field. B31.3-2018 304.2.3/Fig.304.2.3 defines the angles.</string>
+    <string name="guide_miter_joints" formatted="false">Count the miter weld joints where pipe direction changes, from the fabrication drawing; do not count the pipe pieces. Two pieces joined at one miter have 1 joint; three pieces have 2 joints. Equal division of the total angle is assumed. Unequal joint angles need separate assessment. This count determines single versus multiple miter equations in B31.3-2018 304.2.3.</string>
+    <string name="guide_miter_b" formatted="false">B is the crotch/segment dimension defined for the actual miter geometry, in mm; obtain it from the approved fabrication drawing using ASME B31J terminology referenced by B31.1-2022 104.2.3. It is not the pipe OD or bend radius. The decision paths check B &lt; 6tn, with tn the nominal segment wall. Do not estimate B from a photo or total bend angle.</string>
+    <string name="guide_radius_b313" formatted="false">R1 is the effective miter radius in mm: the shortest distance from pipe centreline to the intersection of adjacent miter-joint planes, per B31.3-2018 304.2.3(d) and Fig.304.2.3. Obtain it from the dimensioned fabrication geometry, not the pipe radius or a standard elbow label. Eq. (5) requires R1 ≥ A/tanθ + D/2. The app calculates this minimum using T−c; empirical A is 25, 2(T−c), or 2(T−c)/3+30 in the printed SI ranges. Do not substitute corrosion allowance for A.</string>
+    <string name="guide_radius_b311" formatted="false">R is the bend radius required by the close-miter segment equation in B31.1-2022 104.2.3(c)(3)(-a). Obtain R and pipe radius r from the approved drawing with the ASME B31J definitions referenced by that paragraph. The calculation requires R &gt; r. Do not substitute the pipe OD for R or assume that the B31.3 effective-radius definition is identical.</string>
+    <string name="guide_miter_spacing" formatted="false">Choose closely or widely spaced from the approved assembly geometry using ASME B31J, as required by B31.1-2022 104.2.3(c)(3). The app uses your declared classification; it does not infer it from number of pieces or angle alone. Close spacing uses the radius-ratio formula; wide spacing solves the printed implicit equation. This thickness check does not replace qualification under 104.7.</string>
+    <string name="guide_miter_tm" formatted="false">tm is the minimum straight-pipe wall required by B31.1 para.104.1 for this same material, design pressure/temperature and allowances, in mm. Calculate it first in the straight-pipe tab with B31.1 selected, or use an approved design calculation. Copy tm including A, not pressure thickness t alone, and not the purchased nominal wall. This becomes the baseline for the segment thickness ts in 104.2.3(c)(3).</string>
+    <string name="guide_miter_r" formatted="false">r is the pipe radius defined for this miter calculation by ASME B31J, referenced in B31.1-2022 104.2.3. Obtain it from the approved dimensioned geometry/pipe wall definition. Enter mm, not the diameter, and distinguish it from assembly bend radius R. The formulas contain r/R or sqrt(r/ts); using diameter instead of radius changes the result.</string>
+    <string name="guide_e_b311" formatted="false">E (or F for cast material) is the quality factor for the actual product form, from B31.1-2022 Appendix A and 102.4.3. Identify seamless/ERW/furnace-welded/cast construction from the certificate. The supplied A106 seamless row has E=1; that does not justify 1 for every pipe. Table stress values may already be SE/SF. Enter unreduced S with E once; do not apply the factor twice.</string>
+    <string name="guide_w_b311" formatted="false">W is the weld-strength reduction factor, unitless, per B31.1-2022 102.4.7. Determine applicability from material, weld type, design metal temperature and the prescribed table/notes. Use the certificate, approved design basis and the exact code edition. It is distinct from product quality E. Enter a value in (0,1]; use 1 only when justified, not because it gives a thinner wall.</string>
+    <string name="guide_y_b311" formatted="false">y is the dimensionless coefficient from B31.1-2022 Table 104.1.2-1 for the selected material group and temperature. The app interpolates published y cells and applies note (b) for eligible steel at ≤482°C and Do/tm&lt;6. It is not S and does not validate material temperature limits. Manual entry overrides the table; verify the source and notes before overriding.</string>
+    <string name="guide_material_vessel" formatted="false">Use the ASME material specification and product form on the vessel material certificate, such as SA-516 plate rather than a pipe grade. The dropdown is identification only. Confirm material eligibility in VIII Division 1 and the applicable stress row/notes in Section II-D Tables 1A/1B at the design temperature. Enter the exact certificate designation under Other when needed.</string>
+    <string name="guide_generic" formatted="false">Record the value or designation from the approved design/fabrication document for this item. Optional report names and references identify the calculation; they do not change its equations. If a required engineering value is unavailable, obtain it from the responsible designer rather than guessing.</string>
+    <string name="export_miter_report" formatted="false">Export Miter Report</string>
+    <string name="guide_b311_conditions" formatted="false">Declare only after checking B31.1-2022 104.2.3(a)(2)-(5): each segment meets 104.1 thickness; the fluid is nonflammable, nontoxic and incompressible (gaseous vents excepted); fewer than 7,000 full pressure cycles during service life; and full penetration welds. Find evidence in the design calculations, fluid safety data, operating cycle specification and qualified weld drawings. Unknown means unchecked; this is a declaration, not automatic verification.</string>
+    <string name="guide_miter_t_b311" formatted="false">For B31.1-2022 104.2.3(a)(1)/(b)(2), this field is the nominal segment wall tn in mm from the purchase specification, pipe wall schedule or fabrication drawing. It is compared with crotch dimension B as B&lt;6tn or B&gt;=6tn to choose the pressure path. This does not verify actual remaining wall or prove that every segment meets 104.1; confirm those separately. The optional segment wall calculation below uses straight-pipe minimum tm, not tn.</string>
+    <string name="guide_water_fill" formatted="false">Enable when you want the mass of water completely filling the pipe bore in addition to bare-pipe mass. The app uses ID=D-2t and water density 1000 kg/m³. This is an estimate for water near room temperature; it is not the mass of steam, oil, another fluid or a partially filled pipe. Get the fill condition and length from the service/test specification.</string>
+    <string name="field_miter_nominal_tn" formatted="false">Nominal segment wall tn (mm)</string>
+    <string name="about_title" formatted="false">About PiCal</string>
+    <string name="about_tagline" formatted="false">Piping &amp; Mechanical Calculators</string>
+    <string name="about_version">Version %1$s · Build %2$s</string>
+    <string name="about_overview_heading" formatted="false">Engineering calculations and site progress</string>
+    <string name="about_overview" formatted="false">Calculate straight-pipe wall, pipe mass, bends, miter bends and pressure-vessel components. Organize projects, record site progress and generate PDF reports. PiCal brings calculation inputs, equations and results together in one place.</string>
+    <string name="about_sources_heading" formatted="false">Calculation references</string>
+    <string name="about_sources" formatted="false">ASME B31.3-2018: process piping, straight pipe, bends and miters.\nASME B31.1-2022: power piping, straight pipe and miter pressure paths/segment wall.\nASME B36.10-2022: the available nominal pipe dimensions.\nASME BPVC VIII Division 1: the implemented vessel-component rules; stress input from Section II-D and joint efficiency from UW-12. The BPVC edition is not independently established by the supplied excerpts.</string>
+    <string name="about_calculation_heading" formatted="false">Using the results</string>
+    <string name="about_calculation" formatted="false">Equations and code references appear in each calculator and its report. Use S for the actual material/product and design metal temperature. Automatic S is limited to verified B31.1 A106 seamless grades A/B/C; other cases require a manual table value. Results cover the implemented equations and their scope, and do not constitute complete code qualification.</string>
+    <string name="about_data_heading" formatted="false">Your data</string>
+    <string name="about_data" formatted="false">Projects and generated reports are stored on this device. PDF sharing starts from your selected sharing app. Keep copies of important reports before uninstalling the application.</string>
+    <string name="about_contact_linkedin">Connect on LinkedIn</string>
+    <string name="about_contact_unavailable">Install a browser or LinkedIn to open the contact link.</string>
+</resources>
+
+
+
+
+
+

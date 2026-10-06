@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navy">#14263D</color>
+    <color name="navy_2">#1C3652</color>
+    <color name="steel">#2D6E9E</color>
+    <color name="amber">#F0A202</color>
+    <color name="orange">#D9531E</color>
+    <color name="green">#3E8914</color>
+    <color name="canvas">#EFF1F3</color>
+    <color name="card">#FFFFFF</color>
+    <color name="ink">#1F2A37</color>
+    <color name="ink_2">#5B6B7A</color>
+    <color name="line">#E1E5E9</color>
+</resources>

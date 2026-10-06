@@ -1,0 +1,11 @@
+// Documentation-only debug variant. Production build files remain unchanged.
+gradle.beforeProject { p ->
+    if (p.name == 'app') {
+        p.plugins.withId('com.android.application') {
+            def android = p.extensions.getByName('android')
+            android.buildTypes.getByName('debug').applicationIdSuffix = '.readme'
+            android.sourceSets.getByName('debug').java.srcDir(new File(p.rootDir, 'tools/readme-preview/src'))
+            android.sourceSets.getByName('debug').manifest.srcFile(new File(p.rootDir, 'tools/readme-preview/AndroidManifest.xml'))
+        }
+    }
+}

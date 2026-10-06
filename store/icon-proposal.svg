@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>FlowTrack — pipe F and completion check</title>
+  <rect width="512" height="512" rx="112" fill="#14263D"/>
+  <path d="M164 360V200Q164 156 208 156H338M164 250H266" fill="none" stroke="#FFFFFF" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M264 132V180M140 302H188" fill="none" stroke="#368997" stroke-width="16"/>
+  <path d="M272 338L310 376L382 278" fill="none" stroke="#F0A202" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

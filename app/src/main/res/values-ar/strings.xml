@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PiCal</string>
+    <string name="signature">By. Ahmed Ismail</string>
+
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_projects">المشاريع</string>
+    <string name="nav_add">إضافة</string>
+    <string name="nav_reports">التقارير</string>
+    <string name="nav_settings">الإعدادات</string>
+
+    <string name="dashboard_title">لوحة التحكم</string>
+    <string name="current_project">المشروع الحالي</string>
+    <string name="total_pipe_inches">Pipe Inches المكتملة</string>
+    <string name="completed_stats_hint" formatted="false">المكتمل هو ما وصل إلى المرحلة الأخيرة. نسبة الإنجاز تقارن وصلات المرحلة الأخيرة بوصلات المرحلة الأولى المسجلة، وليست بالنطاق المخطط للمشروع.</string>
+    <string name="percent_complete" formatted="false">نسبة الإنجاز</string>
+    <string name="total_joints">عدد الوصلات المكتملة (Joints)</string>
+    <string name="workflow_stages">مراحل العمل</string>
+    <string name="workflow_progress">تقدم الـ Workflow — %1$s</string>
+
+    <string name="add_entry_title">إدخال جديد</string>
+    <string name="field_date">التاريخ</string>
+    <string name="field_task">المرحلة (Task)</string>
+    <string name="field_area">المنطقة (Area)</string>
+    <string name="field_diameter">قطر الأنبوب</string>
+    <string name="field_unit">الوحدة</string>
+    <string name="field_joint_qty">عدد الوصلات</string>
+    <string name="field_performed_by">تم بواسطة</string>
+    <string name="field_supervisor">المشرف</string>
+    <string name="field_photo">صورة</string>
+    <string name="add_photo">+ إضافة صورة</string>
+    <string name="remove_photo">إزالة الصورة</string>
+    <string name="choose_photo_source">إضافة صورة</string>
+    <string name="photo_source_camera">الكاميرا</string>
+    <string name="photo_source_gallery">المعرض</string>
+    <string name="camera_permission_rationale">يحتاج PiCal إذن الكاميرا لإرفاق صورة مباشرة من الموقع.</string>
+    <string name="camera_permission_denied">تم رفض إذن الكاميرا. يمكنك إرفاق صورة من المعرض، أو تفعيل الإذن من الإعدادات.</string>
+    <string name="no_areas_or_team_hint">لا توجد مناطق أو أعضاء فريق لهذا المشروع بعد — أضفهم من الإعدادات حتى تظهر خيارات في هذه القوائم.</string>
+    <string name="save_entry">حفظ الإدخال</string>
+    <string name="pipe_inches_result">Pipe Inches</string>
+    <string name="validation_error">لا يمكن المتابعة: العدد المتاح من المرحلة السابقة (%2$s) هو %1$d وصلات فقط لهذا الـ Area والقطر.</string>
+
+    <string name="workflow_settings_title">Workflow</string>
+    <string name="workflow_settings_path">إعدادات المشروع ← Task Workflow</string>
+    <string name="add_task">+ إضافة Task</string>
+    <string name="edit_task">تعديل Task</string>
+    <string name="delete_task">حذف Task</string>
+    <string name="task_name">اسم الـ Task</string>
+    <string name="task_type">نوع الـ Task</string>
+    <string name="custom_type_name">اكتب النوع</string>
+
+    <string name="type_fabrication">تصنيع</string>
+    <string name="type_welding">لحام</string>
+    <string name="type_inspection">فحص</string>
+    <string name="type_testing">اختبار</string>
+    <string name="type_installation">تركيب</string>
+    <string name="type_finishing">تشطيب</string>
+    <string name="type_handover">تسليم</string>
+    <string name="type_other">أخرى</string>
+
+    <string name="projects_title">المشاريع</string>
+    <string name="new_project">مشروع جديد</string>
+    <string name="project_name">اسم المشروع</string>
+    <string name="project_number">رقم المشروع</string>
+    <string name="responsible_engineer">المهندس المسؤول</string>
+    <string name="contractor">المقاول</string>
+    <string name="client">العميل</string>
+    <string name="areas">المناطق (Areas)</string>
+    <string name="team_members">أعضاء الفريق</string>
+    <string name="edit_project">تعديل المشروع</string>
+    <string name="delete_project">حذف المشروع</string>
+    <string name="delete_project_confirm_title">حذف هذا المشروع؟</string>
+    <string name="delete_project_confirm_message">سيتم حذف "%1$s" نهائيًا مع كل ما يتبعه — المناطق، الفريق، سير العمل، وكل إدخالات التقدم. لا يمكن التراجع عن هذا.</string>
+
+    <!-- Project Settings tabs -->
+    <string name="tab_workflow">سير العمل</string>
+    <string name="tab_areas">المناطق</string>
+    <string name="tab_team">الفريق</string>
+    <string name="add_area">+ إضافة منطقة</string>
+    <string name="area_name">اسم المنطقة</string>
+    <string name="add_member">+ إضافة عضو</string>
+    <string name="member_name">اسم العضو</string>
+    <string name="member_role">الدور</string>
+    <string name="role_engineer">مهندس</string>
+    <string name="role_supervisor">مشرف</string>
+    <string name="role_welder">لحام</string>
+    <string name="role_inspector">مفتش</string>
+    <string name="role_other">أخرى</string>
+    <string name="custom_role_name">المسمى الوظيفي</string>
+    <string name="export_employee_report">تصدير تقرير</string>
+
+    <string name="reports_title">التقارير</string>
+    <string name="export_pdf">تصدير تقرير PDF (A4)</string>
+    <string name="export_weld_inches_report">تصدير تقرير اللحام</string>
+    <string name="date_from">من</string>
+    <string name="date_to">إلى</string>
+    <string name="date_range_clear">مسح</string>
+    <string name="all_time">كل الفترة</string>
+    <string name="joints_by_diameter">الوصلات المكتملة حسب القطر</string>
+    <string name="field_hours_worked">ساعات العمل (اختياري)</string>
+    <string name="employee_report_title">تقرير الموظف</string>
+    <string name="select_period">اختر المدة</string>
+    <string name="report_period_label">المدة</string>
+    <string name="total_hours">إجمالي الساعات</string>
+    <string name="entries_title">الإدخالات</string>
+    <string name="edit_entry">تعديل الإدخال</string>
+    <string name="delete_entry_confirm_title">حذف هذا الإدخال؟</string>
+    <string name="delete_entry_confirm_message">سيتم حذف هذا الإدخال و%1$d وصلاته نهائيًا من السجل. لا يمكن التراجع عن هذا.</string>
+    <string name="no_entries_yet">لا توجد إدخالات بعد — أضف واحدًا من تبويب الإضافة.</string>
+    <string name="delete_label">حذف</string>
+    <string name="tab_attendance">الحضور</string>
+    <string name="status_present">حاضر</string>
+    <string name="status_late">متأخر</string>
+    <string name="status_absent">غائب</string>
+    <string name="check_in_label">دخول</string>
+    <string name="check_out_label">انصراف</string>
+    <string name="check_out_action">تسجيل الانصراف</string>
+    <string name="attendance_days_present">أيام الحضور</string>
+    <string name="attendance_days_late">أيام التأخير</string>
+    <string name="attendance_days_absent">أيام الغياب</string>
+    <string name="attendance_rate">نسبة الحضور</string>
+    <string name="not_marked_yet">لم يُسجَّل بعد</string>
+
+    <!-- Pipe Thickness Calculator -->
+    <string name="pipe_thickness_title">سمك الماسورة</string>
+    <string name="pipe_thickness_calculator">حاسبة سمك الماسورة</string>
+    <string name="pipe_thickness_card_subtitle">حساب السمك والجدول حسب ASME B31.3</string>
+    <string name="field_material">المادة</string>
+    <string name="field_design_code">كود التصميم</string>
+    <string name="code_b311_power">ASME B31.1-2022 — أنابيب القدرة</string>
+    <string name="code_b313_process">ASME B31.3-2018 — الأنابيب الصناعية</string>
+    <string name="field_b311_material_group">مجموعة المادة (جدول 104.1.2-1)</string>
+    <string name="b311_group_ferritic">فولاذ فيريتي</string>
+    <string name="b311_group_austenitic">فولاذ أوستنيتي</string>
+    <string name="b311_group_n06690">سبيكة نيكل UNS N06690</string>
+    <string name="b311_group_nickel">سبائك نيكل UNS N06617 / N08800 / N08810 / N08825</string>
+    <string name="b311_group_cast_iron">حديد زهر</string>
+    <string name="b311_group_other">معادن أخرى (الملحق الإلزامي A)</string>
+    <string name="b311_verify_note">B31.1-2022 الفقرة 104.1.2(a)، المعادلة (7)، مؤكدة من الصفحة 27 المرفقة: tm = P Do / [2(SEW + Py)] + A. أدخل S قبل E/F؛ لا تضرب الإجهاد المدمج SE/SF في معامل الجودة مرة ثانية.</string>
+    <string name="b311_thickness_label">سمك التصميم للضغط t</string>
+    <string name="b311_min_required_label">أقل سمك مطلوب tm = t + A</string>
+    <string name="b311_y_used_label">قيمة y المستخدمة (جدول 104.1.2-1)</string>
+    <string name="b311_a_label">A — التآكل + التعرية + السماحية الميكانيكية</string>
+    <string name="b311_thin_wall_note">Do/tm &lt; 6: طُبِّق معامل الملاحظة العامة (b) حيث y = d / (d + Do).</string>
+    <string name="b311_invalid">أدخل P ≥ 0 وDo وS &gt; 0 وE وW بين صفر و1، وكل سماحية ≥ 0، وحرارة ومعامل y صالحين للمجموعة المختارة.</string>
+    <string name="material_other">أخرى (إدخال يدوي)</string>
+    <string name="field_material_name">اسم المادة</string>
+    <string name="field_material_class">نوع المادة</string>
+    <string name="material_class_ferritic">فيرايتية (صلب كربوني/سبائكي)</string>
+    <string name="material_class_austenitic">أوستنيتية (ستانلس ستيل)</string>
+    <string name="field_yield_strength">إجهاد الخضوع (ميجاباسكال)</string>
+    <string name="field_tensile_strength">إجهاد الشد (ميجاباسكال)</string>
+    <string name="field_allowable_stress">الإجهاد المسموح به S (ميجاباسكال)</string>
+    <string name="field_nominal_size">القطر الاسمي (NPS)</string>
+    <string name="field_design_pressure">ضغط التصميم الداخلي المقاس بالنسبة للجو (بار)</string>
+    <string name="field_design_temperature">درجة حرارة التصميم (\u00B0م)</string>
+    <string name="field_quality_factor">معامل الجودة E</string>
+    <string name="field_weld_type_preset">نوع اللحام (يحدد E)</string>
+    <string name="field_weld_factor">معامل تقليل قوة اللحام W</string>
+    <string name="field_y_coefficient">المعامل Y</string>
+    <string name="field_corrosion_allowance">سماحية التآكل (مم)</string>
+    <string name="field_mill_tolerance">تفاوت التصنيع السالب (%)</string>
+    <string name="effective_wall_thickness_label">الحد الأدنى حسب تفاوت المصنع (ليس قياسًا)</string>
+    <string name="section_calculated_results">النتائج المحسوبة</string>
+    <string name="calculated_thickness_label">سمك التصميم للضغط (t)</string>
+    <string name="minimum_required_thickness_label">السمك المطلوب قبل التشغيل وإزالة المعدن، tm</string>
+    <string name="section_schedule_check">فحص اختياري لسمك الماسورة الاسمي عند الشراء</string>
+    <string name="field_schedule">الجدول (Schedule)</string>
+    <string name="schedule_not_available">غير متاح لهذا المقاس \u2014 أدخل القيم يدويًا</string>
+    <string name="outside_diameter_label">القطر الخارجي</string>
+    <string name="inside_diameter_label">القطر الداخلي الاسمي</string>
+    <string name="wall_thickness_label">سمك جدار الماسورة الاسمي</string>
+    <string name="schedule_pass">تحقق شرط سمك الضغط الداخلي لهذه المدخلات</string>
+    <string name="schedule_fail">لم يتحقق شرط سمك الضغط الداخلي</string>
+    <string name="export_pipe_report">تصدير تقرير الحساب</string>
+    <string name="pipe_report_title">تقرير سمك جدار الماسورة</string>
+    <string name="pipe_report_disclaimer">فحص سمك الماسورة المستقيمة للضغط الداخلي وفق B31.3-2018 بمعاملات وقياسات يدخلها المستخدم. ليس شهادة مطابقة التصميم الكامل.</string>
+    <string name="back_button">رجوع</string>
+    <string name="field_project_name_optional">اسم المشروع (اختياري)</string>
+    <string name="field_engineer_name_optional">اسم المهندس (اختياري)</string>
+    <string name="section_inputs">المدخلات</string>
+    <string name="section_outputs">المخرجات</string>
+    <string name="tab_pipe_thickness">سمك الماسورة</string>
+    <string name="tab_pipe_weight">وزن الماسورة</string>
+    <string name="field_pipe_length">طول الماسورة (م)</string>
+    <string name="include_water_fill">تضمين وزن الماء الملآن بالماسورة</string>
+    <string name="field_density">الكثافة (كجم/م\u00B3)</string>
+    <string name="unit_weight_label">الوزن لكل متر</string>
+    <string name="total_pipe_weight_label">إجمالي وزن الماسورة</string>
+    <string name="water_fill_weight_label">وزن الماء الملآن</string>
+    <string name="total_weight_with_water_label">الإجمالي (شامل الماء)</string>
+    <string name="export_weight_report">تصدير تقرير الوزن</string>
+    <string name="calculators_hub_title">الحاسبات</string>
+    <string name="calculators_title">الحاسبات</string>
+    <string name="nps_custom">مخصص / إدخال يدوي</string>
+    <string name="field_manual_od">القطر الخارجي (OD)</string>
+    <string name="manual_wall_entry_label">إدخال يدوي</string>
+    <string name="field_od_unit">وحدة القطر الخارجي</string>
+    <string name="field_wall_unit">وحدة سمك الجدار</string>
+    <string name="report_ready_title">تقرير PiCal جاهز</string>
+    <string name="report_notification_channel">التقارير</string>
+    <string name="report_open">فتح</string>
+    <string name="report_share">مشاركة</string>
+    <string name="report_saved_notice">تم حفظ التقرير. استخدم الأزرار أدناه، أو تحقق من الإشعارات.</string>
+
+    <string name="language_switch">AR | EN</string>
+    <string name="calculation_invalid">أدخل قيمًا صحيحة ضمن حدود معادلة الأنبوب المستقيم: الضغط ≥ 0، القطر والإجهاد &gt; 0، E وW بين 0 و1، Y بين 0 و1، سماح التآكل ≥ 0، تفاوت التصنيع أقل من 100٪، t &lt; D/6 وP/(SE) ≤ 0.385.</string>
+    <string name="weight_invalid">أدخل أبعادًا وكثافة وطولًا موجبة. يجب أن يكون سمك الجدار أقل من نصف القطر الخارجي.</string>
+    <string name="workflow_dependency_title">ارتباط مراحل العمل</string>
+    <string name="workflow_dependency_hint">سيجعل هذا التغيير مرحلة لاحقة تتجاوز %1$s (%2$d وصلة). عدّل سجلات المراحل اللاحقة أولًا.</string>
+    <string name="dashboard_empty_title">لم يتم فتح مشروع</string>
+    <string name="dashboard_empty_hint">أنشئ مشروعًا أو افتحه من صفحة المشاريع لعرض التقدم.</string>
+    <string name="calculation_report_details">بيانات التقرير الاختيارية</string>
+    <string name="schedule_basis_hint">الأبعاد من جدول 2-1 وفق ASME B36.10-2022 بالنظام المتري. استخدم الإدخال المخصص للأبعاد الأخرى؛ STD/XS وجداول الستانلس S تسميات مستقلة.</string>
+    <string name="nav_calculators">الحاسبات</string>
+    <string name="manage_project">إدارة المشروع</string>
+    <string name="switch_project">تغيير المشروع</string>
+    <string name="fully_finished">المكتمل نهائيًا</string>
+    <string name="final_stage_inches">بوصة قطرية · المرحلة النهائية: %1$s</string>
+    <string name="recorded_inches_percent_hint">بوصات المرحلة النهائية ÷ البوصات المسجلة في أول مرحلة، وليس النطاق المخطط.</string>
+    <string name="stage_inches_title">البوصات المنجزة في كل مرحلة</string>
+    <string name="stage_inches_hint">إنجاز تراكمي لكل مرحلة. لا تُجمع بوصات المراحل معًا.</string>
+    <string name="final_stage_label">المرحلة النهائية · اكتمال العمل</string>
+    <string name="pipe_inches_unit">بوصة قطرية</string>
+    <string name="stage_inches_value">%1$s بوصة</string>
+    <string name="joints_count">%1$d وصلة</string>
+    <string name="setup_workflow">إعداد مراحل العمل</string>
+    <string name="workflow_order_blocked">هذا الترتيب يتعارض مع الإنجاز المسجل. يجب ألا تقل وصلات أي مرحلة عن المرحلة التالية لكل منطقة وقطر. تمت استعادة الترتيب السابق.</string>
+    <string name="thickness_scope_hint">ASME B31.3-2018 • ماسورة فولاذية مستقيمة تحت ضغط داخلي فقط. الفحص يخص سمك الضغط، ولا يشمل تصميم الشبكة الكامل أو خدمة الضغط العالي وفق الفصل IX.</string>
+    <string name="stress_input_hint" formatted="false">يجب أن تطابق S الكود والمادة وشكل المنتج وحرارة المعدن التصميمية. مرجع جدول الإجهاد في علامة ؟؛ إجهاد الخضوع عند حرارة الغرفة لا يحدد S.</string>
+    <string name="factors_input_hint">أدخل E حسب مواصفة المنتج وأحكام جودة اللحام، وW وفق 302.3.5(e) والجدول 302.3.5-1. لا تُفترض قيمة عامة لمجرد اسم عملية اللحام.</string>
+    <string name="field_erosion_allowance">سماحية التعرية (مم)</string>
+    <string name="field_mechanical_allowance">السماحية الميكانيكية (مم)</string>
+    <string name="mechanical_allowance_hint" formatted="false">المعدن المزال بالقلاوظ أو المجاري أو التشغيل بالملليمتر، من رسم التصنيع والتفاوت. تطلب B31.3-2018 الفقرة 304.1.1(b) عمق القلاوظ/المجرى؛ وعند عدم تحديد تفاوت التشغيل أو المجرى أضف 0.5 مم إلى عمق القطع المحدد. في B31.1 راجع 102.4.2 وسماحيات القوة الميكانيكية في 102.4.4. تدخل السماحية في الجدار قبل التشغيل؛ لا تخصم المعدن المزال مرة ثانية من قياس نهائي.</string>
+    <string name="mill_tolerance_hint" formatted="false">تفاوت النقص المسموح للجدار كنسبة مئوية، من مواصفة المنتج والشراء والشهادة المحددة، مثل مواصفة ASTM/ASME المنطبقة. لا تفترض 12.5% لكل المنتجات. سمك الطلب الاسمي = الحد الأدنى المطلوب/(1−tol/100). هذا فحص شراء، وليس خصمًا من أقل جدار مقاس ومعتمد.</string>
+    <string name="design_reference_label">مرجع S وE وW وتفاوت التصنيع (اختياري)</string>
+    <string name="y_auto_hint">Y تلقائي من جدول 304.1.1 بإصدار B31.3-2018، باستخدام درجات الحرارة المئوية والاستيفاء بالدقة الكاملة.</string>
+    <string name="y_manual_hint">قيمة Y معدلة يدويًا؛ تحقّق من ملاءمتها للمادة ودرجة الحرارة.</string>
+    <string name="y_use_table">استخدام Y من الجدول</string>
+    <string name="required_nominal_thickness">الحد الأدنى للسمك الاسمي المطلوب للشراء</string>
+    <string name="thickness_outside_scope">خارج نطاق المعادلة (3a): السمك t ≥ D/6 أو P/(S × E) &gt; 0.385. يلزم تقييم تصميم خاص وفق 304.1.2(b).</string>
+    <string name="finished_required_label">الحد الأدنى المطلوب للجدار المتبقي بعد التصنيع</string>
+    <string name="finished_section">جدار الماسورة النهائي - القياس بعد التصنيع</string>
+    <string name="measured_wall_label">أقل سمك فعلي مقاس بعد التصنيع (مم)</string>
+    <string name="measured_wall_help">أدخل أقل سمك معدن متبقٍ مقاس بالملليمتر على الماسورة المستقيمة بعد اكتمال التصنيع، بما فيه أرق موضع عند جذور القلاوظ أو المجاري بعد التشغيل. استخدم أقل قيمة معتمدة بالفحص مع مراعاة عدم يقين القياس، وليس المتوسط أو سمك Schedule أو الطلاء أو بروز اللحام. لا يُخصم تفاوت المصنع أو المعدن المزال مرة ثانية. هذا الفحص لماسورة جديدة قبل الخدمة، وليس لتقييم العمر المتبقي.</string>
+    <string name="measurement_reference_label">مرجع الفحص / رقم الماسورة (اختياري)</string>
+    <string name="measurement_not_provided">لا توجد قيمة قياس صالحة</string>
+    <string name="finished_margin_label">السمك المقاس ناقص السمك المطلوب</string>
+    <string name="finished_pass">السمك المقاس يحقق متطلب السمك للضغط الداخلي.</string>
+    <string name="finished_fail">السمك المقاس أقل من متطلب السمك للضغط الداخلي.</string>
+    <string name="measured_invalid">أكمل بيانات التصميم وأدخل سمكًا مقاسًا موجبًا أقل من نصف القطر الخارجي.</string>
+    <string name="finished_export_hint">تقرير السمك النهائي يتطلب بيانات تصميم صالحة وأقل سمك مقاس فعليًا.</string>
+    <string name="field_help_description">شرح: %1$s</string>
+    <string name="help_close">فهمت</string>
+    <string name="help_material" formatted="false">اختر مواصفة ASTM والدرجة وطريقة التصنيع بدقة من شهادة فحص/مادة المصنع MTC. القائمة للتعريف ولا تثبت الصلاحية للخدمة. يعتمد S على الكود وحرارة المعدن، وE على التصنيع، وW على قواعد اللحام والحرارة. اختر «أخرى» لتسمية غير مدرجة، وراجع جدول المادة والملاحظات في الكود.</string>
+    <string name="help_material_name" formatted="false">انقل المواصفة والدرجة وشكل المنتج ورقم UNS المنطبق من شهادة المادة أو مواصفة الأنابيب المعتمدة. مثال: ASTM A106 Gr.B ماسورة بدون لحام. الاسم التجاري أو «صلب كربوني» وحدهما لا يكفيان لاختيار صف الإجهاد.</string>
+    <string name="help_material_class">هذا الاختيار يحدد Y التلقائي فقط. اختر فئة الصلب الفريتي أو الأوستنيتي المناسبة؛ لا يحدد الإجهاد S.</string>
+    <string name="help_yield">إجهاد الخضوع بالميجاباسكال كمعلومة مرجعية اختيارية. ليس الإجهاد المسموح S ولا يدخل في هذه المعادلة.</string>
+    <string name="help_temperature" formatted="false">حرارة معدن التصميم بالدرجة المئوية، من Line List أو ورقة بيانات المعدة أو أساس التصميم للحالة الحاكمة للضغط والحرارة. الافتراضي 20°م بداية عند حرارة الغرفة، وليس افتراضًا لحرارة الخدمة. راجع S عند تغيير الحرارة، ولا تستخدم إجهاد حرارة الغرفة لخط ساخن. تغيير المادة أو الحرارة يبطل المعاملات التابعة القديمة.</string>
+    <string name="help_nps" formatted="false">NPS هو المقاس الاسمي من مواصفة الخط أو رسم الأيزومتريك أو أمر الشراء، وليس القطر المقاس. يجلب التطبيق القطر الخارجي من B36.10-2022؛ مثلًا NPS 4 قطره الخارجي 114.3 مم. للمقاس غير المدرج اختر مخصص وأدخل القطر من الرسم أو القياس.</string>
+    <string name="help_od" formatted="false">القطر الخارجي D/Do، وليس NPS أو القطر الداخلي. خذه من أبعاد B36.10/B36.19 للمنتج، أو رسم المصنع المعتمد، أو القياس المقبول حيث يسمح الكود. استبعد الطلاء. حقل «مم» يحتاج ملليمترات؛ وفي حقل الوحدة المختارة استخدم تلك الوحدة. مثال: NPS 4 قطره الخارجي 114.3 مم وليس 4 مم.</string>
+    <string name="help_unit">اختر وحدة الرقم الذي ستدخله: مم أو بوصة. البوصة تساوي 25.4 مم. تغيير الوحدة يعيد تفسير الرقم المدخل.</string>
+    <string name="help_pressure" formatted="false">ضغط التصميم الداخلي بالنسبة للجو bar(g)، من Line List أو P&amp;ID أو ورقة التصميم المعتمدة. الضغط المقاس بالنسبة للجو يختلف عن المطلق؛ حوّل المطلق بشكل مناسب قبل الإدخال. لا تدخل ضغط الاختبار الهيدروستاتيكي أو قراءة التشغيل إلا إذا كانت حالة التصميم المعتمدة. مثال: 20 bar(g) = 2 MPa، ويحوّل التطبيق الوحدات قبل الحساب.</string>
+    <string name="help_corrosion" formatted="false">بدل التآكل بالملليمتر للمعدن المتوقع فقده خلال عمر التصميم، من كلاس الأنابيب أو دراسة التآكل أو مواصفة الوعاء المعتمدة. ليس فقد الجدار المقاس في ماسورة قديمة. مثال: بدل 1.5 مم يدخل 1.5. أدخل صفرًا فقط إذا برره أساس التصميم.</string>
+    <string name="help_erosion" formatted="false">بدل نحر إضافي بالملليمتر من تقييم التصميم/التآكل والنحر للمائع والسرعة والجسيمات. لا تكرر مبلغًا للنحر داخل بدل التآكل بالمواصفة. أدخل صفرًا إذا لم يطلب التصميم سماحية منفصلة للنحر.</string>
+    <string name="help_e" formatted="false">معامل الجودة E بلا وحدة من B31.3-2018 جدول A-1A/A-1B وملاحظات 302.3.3/302.3.4 لشكل المنتج وفحص اللحام الفعلي. حدد بدون لحام أو ملحوم من MTC، ثم اقرأ الصف المناسب. قد تنطبق 1 لمنتج مناسب بدون لحام، لكنها ليست عامة. استخدم S من A-1/A-1M منفصلًا وطبّق E مرة واحدة؛ ليست W ولا إجهاد الخضوع.</string>
+    <string name="help_w" formatted="false">W معامل تخفيض قوة وصلة اللحام عند حرارة معدن التصميم، من B31.3-2018 الفقرة 302.3.5(e) وجدول 302.3.5، شاملًا مجموعة الصلب والمعالجة الحرارية والملاحظات. استخدم شهادات المادة واللحام وأساس التصميم. بلا وحدة ويختلف عن E. يجب تأكيد قيمة البدء 1 للمادة واللحام والحرارة الفعلية؛ لا تُبقِ قيمة خدمة باردة عند حرارة عالية دون مراجعة.</string>
+    <string name="help_y" formatted="false">Y معامل بلا وحدة من B31.3-2018 جدول 304.1.1 حسب عائلة المادة والحرارة، وليس الإجهاد المسموح. انتقال الفيريتي المطبوع 0.4/0.5/0.7 عند 482/510/538°م؛ والأوستنيتي عند 566/593/621°م. القيم التلقائية من الجدول والاستيفاء حيث تتوفر، ويمكنك تعديلها بعد مراجعة الصف والملاحظات. تظل حدود المعادلة المبسطة t&lt;D/6 وP/(SE)≤0.385 مطلوبة.</string>
+    <string name="help_reference">اكتب إصدار الكود وصف جدول المادة والملاحظات ومواصفة المنتج المستخدمة في S وE وW وتفاوت التصنيع، لتوثيقها في التقرير.</string>
+    <string name="help_schedule" formatted="false">رقم Schedule يحدد السمك الاسمي من مواصفة الخط أو وسم الماسورة وشهادة الشراء. يقدم B36.10-2022 سمكًا لكل مقاس وجدول؛ القائمة الحالية محدودة. للمقاس غير المدرج أدخل السمك الاسمي يدويًا، وافحص أقل سمك بعد التصنيع بشكل مستقل.</string>
+    <string name="help_nominal">أدخل سمك الماسورة الاسمي بوحدة القياس المختارة لفحص الشراء. أدخل أقل سمك فعلي بعد التصنيع في خانته المنفصلة.</string>
+    <string name="help_measurement_reference">اكتب رقم الماسورة أو الإسبول ورقم تقرير الفحص وتاريخه وطريقة القياس. التطبيق يسجل قيمتك ولا يجري القياس الميداني.</string>
+    <string name="help_project">اسم المشروع لطباعته في التقرير، اختياري ولا يؤثر على الحساب.</string>
+    <string name="help_engineer">اسم مُعد التقرير، اختياري ولا يمثل توقيع اعتماد أو شهادة فحص.</string>
+    <string name="help_density" formatted="false">كثافة الكتلة بوحدة كجم/م³ من بيانات مصنع المادة أو خواص المادة المعتمدة. القيمة الافتراضية تقريبية: 7850 للفولاذ الكربوني و8000 للستانلس الأوستنيتي الشائع. عدلها للمادة الفعلية. لا تدخل الثقل النوعي 7.85؛ أدخل 7850 كجم/م³. تؤثر على الكتلة فقط ولا تحدد الإجهاد المسموح.</string>
+    <string name="help_length" formatted="false">طول الماسورة الكلي على خط المركز بالمتر، من قائمة القطع أو الأيزومتريك أو القياس. أدخل 6 لستة أمتار، لا 6000 مم. تتناسب كتلة الماسورة والماء مع الطول؛ الحساب يستثني الوصلات والطلاء والعزل.</string>
+    <string name="nominal_input_invalid">صحح بيانات الشراء الاختيارية: السمك موجب وأقل من نصف القطر الخارجي، والتفاوت من صفر إلى أقل من 100%.</string>
+    <string name="report_export_failed">تعذر حفظ التقرير. تحقق من مساحة التخزين وحاول مجددًا.</string>
+    <string name="measurement_basis_hint">أدخل أقل سمك معتمد بالفحص بعد كل عمليات التشغيل، بما فيها جذور المجاري. التقرير يستخدم هذا القياس. اضغط ؟ لتفاصيل أساس القياس.</string>
+
+    <!-- Shared UI text -->
+    <string name="open_project_first_add">افتح مشروعًا أولًا لإضافة إدخال.</string>
+    <string name="open_project_first_reports">افتح مشروعًا أولًا لتصدير تقريره.</string>
+    <string name="open_project_first_settings">افتح مشروعًا أولًا لتعديل إعداداته.</string>
+    <string name="export_failed">تعذر التصدير: %1$s</string>
+    <string name="unit_inch">بوصة</string>
+    <string name="unit_mm">مم</string>
+    <string name="unit_inch_short">بوصة</string>
+    <string name="entry_line">%1$s · %2$s · %3$s وصلة</string>
+    <string name="y_above_table_warning">جدول 304.1.1 بإصدار B31.3-2018 يحتوي عمود 677°م وما فوق. تبقى Y للفولاذ 0.7؛ وهذا لا يثبت صلاحية المادة للحرارة. تحقق من S وW عند حرارة التصميم.</string>
+    <string name="no_projects_yet">لا توجد مشاريع بعد. أنشئ المشروع الأول من الزر أدناه.</string>
+    <string name="no_areas_yet">لا توجد مناطق لهذا المشروع بعد. أضف المنطقة الأولى من الزر أدناه.</string>
+    <string name="no_team_yet">لا يوجد أعضاء فريق لهذا المشروع بعد. أضف العضو الأول من الزر أدناه.</string>
+    <string name="no_attendance_team_yet">أضف أعضاء الفريق أولًا، ثم سجّل حضورهم هنا.</string>
+    <string name="drag_to_reorder">اسحب لإعادة الترتيب</string>
+
+    <!-- Pipe bend calculator (B31.3 304.2.1) -->
+    <string name="tab_pipe_bend">الأكواع</string>
+    <string name="tab_pressure_vessel">الأوعية الضغطية</string>
+    <string name="tab_miter_bend">الانحناءات المايلة</string>
+    <string name="miter_scope_hint">B31.3-2018 الفقرة 304.2.3: المتعدد يستخدم (4a)/(4b)، والمفرد يستخدم (4a) حتى 22.5° و(4c) فوقها. تحقق من نصف القطر (5) وامتداد السمك M. يستخدم B31.1-2022 مساري 10/100 psi والتأهيل وفق 104.7. θ نصف الانحراف عند الوصلة.</string>
+    <string name="field_miter_total_angle">زاوية الانحناء الكلية (°)</string>
+    <string name="field_miter_joints">عدد وصلات الانحناء المايل</string>
+    <string name="field_miter_spacing">التباعد بين القطع s (مم)</string>
+    <string name="field_miter_thickness">سمك قطعة الانحناء T (مم)</string>
+    <string name="field_miter_allowances">إجمالي السماحيات c (مم)</string>
+    <string name="field_miter_crotch_b">بُعد القطع B (مم)</string>
+    <string name="miter_theta_label">زاوية القطع θ</string>
+    <string name="miter_equation_label">المعادلة الحاكمة</string>
+    <string name="miter_pm_label">أقصى ضغط مسموح Pm</string>
+    <string name="miter_pm4a_label">Pm من المعادلة 4a</string>
+    <string name="miter_pm4b_label">Pm من المعادلة 4b</string>
+    <string name="miter_margin_label">Pm − P</string>
+    <string name="miter_required_t_label">أقل سمك يحقق Pm ≥ P</string>
+    <string name="miter_spacing_class_label">ترتيب الوصلات</string>
+    <string name="miter_closely_spaced">وصلات مايلة متعددة</string>
+    <string name="miter_widely_spaced">وصلة مايلة مفردة</string>
+    <string name="miter_pass">P ≤ Pm — مقبول لتصميم الضغط</string>
+    <string name="miter_fail">P &gt; Pm — غير مقبول</string>
+    <string name="miter_path_label">المسار وفق B31.1</string>
+    <string name="miter_limit_label">حد الضغط لهذا المسار</string>
+    <string name="miter_qualification_required">خارج المسارات المبسطة في 104.2.3: يلزم التأهيل وفق 104.7.</string>
+    <string name="miter_conditions_title">فحص الشروط</string>
+    <string name="miter_condition_met">متحقق</string>
+    <string name="miter_condition_not_met">غير متحقق</string>
+    <string name="miter_segments_note">يمكن حساب سماكة القطعة وفق B31.1-2022 الفقرة 104.2.3(c)(3) أدناه؛ تحقيقها لا يعوض التأهيل وفق 104.7.</string>
+    <string name="switch_segments_1041">كل قطعة تحقق سمك الفقرة 104.1</string>
+    <string name="switch_fluid">(a)(3) المائع غير قابل للاشتعال وغير سام وغير قابل للضغط</string>
+    <string name="switch_cycles">(a)(4) أقل من 7000 دورة ضغط كاملة</string>
+    <string name="switch_full_pen">(a)(5) لحامات اختراق كامل</string>
+    <string name="miter_invalid">يحتاج B31.3 قيمًا صحيحة لـ D وT وc وS وE وW والضغط والزاوية وعدد الوصلات ونصف القطر R1. يحتاج B31.1 ضغطًا وزاوية وعدد وصلات وT وB صحيحة وشروطًا معلنة.</string>
+    <string name="bend_scope_hint">ASME B31.3-2018 البند 304.2.1: الانحناء يُرقّق الجدار ويرفع الإجهاد عند الحد الداخلي، فيكون السمك المطلوب هناك أكبر من الماسورة المستقيمة. لا تشمل الحاسبة الانحناءات المايلة (304.2.3) ولا حساب الترققيق الهندسي نفسه.</string>
+    <string name="field_bend_radius">نصف قطر الانحناء لخط المركز R1 (مم)</string>
+    <string name="field_bend_od">القطر الخارجي D (مم)</string>
+    <string name="measured_intrados_wall_label">أقل سمك مقاس عند الحد الداخلي (مم)</string>
+    <string name="bend_intrados_factor">معامل الإجهاد عند الحد الداخلي I</string>
+    <string name="bend_extrados_factor">معامل الإجهاد عند الحد الخارجي I</string>
+    <string name="bend_intrados_thickness">سمك الضغط عند الحد الداخلي (الحاكم)</string>
+    <string name="bend_extrados_thickness">سمك الضغط عند الحد الخارجي</string>
+    <string name="bend_straight_thickness">الماسورة المستقيمة المقابلة، I = 1</string>
+    <string name="bend_intrados_required">سمك الكوع قبل التصنيع</string>
+    <string name="bend_straight_required">سمك الماسورة المستقيمة للشراء</string>
+    <string name="bend_intrados_required_short">الجدار المتبقي المطلوب عند الحد الداخلي</string>
+    <string name="bend_measured_hint">أدخل أقل سمك معتمد بالفحص عند أرق نقطة في الحد الداخلي للكوع بعد التصنيع، مع مراعاة عدم يقين القياس؛ وليس متوسطًا ولا سمك الجدول الاسمي.</string>
+    <string name="bend_invalid">أدخل قيمًا صحيحة داخل نطاق المعادلة: نصف قطر الانحناء أكبر من نصف القطر الخارجي، والضغط ≥ 0، والقطر والإجهاد &gt; 0، وE وW بين 0 و1، وY بين 0 و1، والسماحيات ≥ 0، مع t &lt; D/6 وP/(SE) ≤ 0.385.</string>
+    <string name="help_bend_radius" formatted="false">R1 نصف قطر الانحناء لخط المركز بالملليمتر، من رسم أبعاد الكوع لدى المصنع أو رسم ثني الماسورة؛ وليس نصف قطر مقطع الماسورة. تستخدم B31.3-2018 الفقرة 304.2.1 النسبة R1/D في I. تسمية الكوع القياسي «طويل 1.5D» عادةً مرتبطة بالمقاس الاسمي؛ لا تضرب القطر الخارجي الفعلي في 1.5 تلقائيًا. أدخل نصف القطر المعتمد (مثل نحو 152 مم عادةً لكوع NPS 4 طويل)، ويجب R1&gt;D/2.</string>
+    <string name="field_reference_optional">مرجع التصميم (اختياري)</string>
+    <string name="export_bend_report">تصدير تقرير الكوع</string>
+    <string name="bend_report_hint">يحتاج التقرير مدخلات كوع كاملة داخل نطاق المعادلة.</string>
+
+    <!-- Pressure vessel calculator (ASME VIII Div. 1) -->
+    <string name="field_vessel_part">المكوّن</string>
+    <string name="vessel_part_shell">جسم أسطواني — UG-27</string>
+    <string name="vessel_part_ellipsoidal">رأس إهليلجي 2:1 — UG-32(d)</string>
+    <string name="vessel_part_torispherical">رأس كروي مشكّل (Torispherical) — UG-32(e)</string>
+    <string name="vessel_part_hemispherical">رأس نصف كروي — UG-32(f)</string>
+    <string name="vessel_part_conical">جزء مخروطي — UG-32(g)</string>
+    <string name="field_vessel_inside_radius">نصف القطر الداخلي في الحالة المتآكلة (مم)</string>
+    <string name="field_vessel_crown_radius">نصف قطر التاج الداخلي L (مم)</string>
+    <string name="field_vessel_knuckle_radius">نصف قطر الـ knuckle الداخلي r (مم)</string>
+    <string name="field_vessel_half_apex">نصف زاوية القمة α (°)</string>
+    <string name="field_vessel_ellipsoidal_ratio">نسبة الرأس الإهليلجي D/2h</string>
+    <string name="field_joint_efficiency">كفاءة اللحام E (جدول UW-12)</string>
+    <string name="field_nominal_vessel_thickness">سمك اللوح الاسمي (مم)</string>
+    <string name="vessel_scope_hint">ASME BPVC القسم VIII التقسيم 1، ضغط داخلي على السطح المقعر. التقسيم 1 فقط: الضغط الخارجي (UG-28)، والفتحات والتقوية (UG-36/37/40)، والفلنجات (الملحق 2)، والدعامات، والتعب، وقواعد التقسيم 2 البديلة — كلها خارج هذه الحاسبة.</string>
+    <string name="vessel_circumferential_thickness">إجهاد محيطي، UG-27(c)(1)</string>
+    <string name="vessel_longitudinal_thickness">إجهاد طولي، UG-27(c)(2)</string>
+    <string name="vessel_pressure_thickness">سمك الضغط الحاكم t</string>
+    <string name="vessel_order_thickness">أقل سمك مطلوب للطلب (يشمل حد التشكيل والتآكل)</string>
+    <string name="vessel_mawp_label">أقصى ضغط تشغيل مسموح لسمك اللوح المدخل</string>
+    <string name="section_vessel_mawp_check">فحص أقصى ضغط تشغيل مسموح من سمك اللوح</string>
+    <string name="vessel_ug16_note">UG-16(b): لا يقل سمك الأجسام والرؤوس بعد التشكيل عن 1.5 مم، بدون بدل التآكل.</string>
+    <string name="vessel_blank_default">فارغ = القيمة الافتراضية</string>
+    <string name="vessel_invalid">أكمل المدخلات: الضغط ≥ 0، ونصف القطر &gt; 0، والإجهاد &gt; 0، وE بين 0 و1، والسماحية ≥ 0، وعند استخدام L وr يجب أن يكونا موجبين مع r ≤ L، و0 &lt; α ≤ 30°.</string>
+    <string name="vessel_outside_scope">هذه الحالة خارج القواعد المنفذة هنا: السمك t يتجاوز نصف القطر الداخلي (فتلزم قواعد الجدار السميك في الملحق 1-2)، أو الضغط يتجاوز حد قاعدة الرأس المختار، أو الزاوية α تتجاوز 30°. راجعها من نسخة الكود الكاملة.</string>
+    <string name="vessel_mawp_unavailable">قيمة MAWP غير متاحة: أدخل بيانات تصميم صحيحة وسمك لوح أكبر من بدل التآكل، داخل حدود المكوّن المختار.</string>
+    <string name="help_vessel_part">اختر المكوّن الذي تفحص سمكه لضغط داخلي؛ لكل شكل معادلته وحد انطباقه الخاص.</string>
+    <string name="help_vessel_radius" formatted="false">نصف القطر الداخلي بحالة التآكل بالمليمتر من رسم الوعاء أو الرأس؛ للتآكل الداخلي يساوي نصف القطر الجديد زائد بدل التآكل الداخلي. لا تدخل نصف القطر الخارجي. يمثل R للأسطوانة وL لنصف الكرة وD/2 للرأس الإهليلجي أو المخروطي. تضاف بدلات السمك بشكل منفصل.</string>
+    <string name="help_vessel_crown" formatted="false">نصف قطر التاج الداخلي L للرأس التوريسفيري بالمليمتر من رسم مصنع الرأس المشكل بحالة التآكل. هو نصف قطر انحناء التاج الكبير وليس نصف قطر مقطع الوعاء. تركه فارغًا يستخدم القطر الداخلي؛ لا تعتمد الافتراضي إلا إذا وافق الرسم الفعلي. يستخدم في UG-32(e) والملحق 1-4(d).</string>
+    <string name="help_vessel_knuckle" formatted="false">نصف قطر الركبة الداخلي r بالمليمتر من رسم الرأس المشكل بحالة التآكل؛ هو الانحناء الصغير عند انتقال التاج إلى الحافة. تركه فارغًا يستخدم r=0.06L للرأس القياسي 6% ويحقق معامل 0.885 في UG-32(e). الهندسة الأخرى المدعومة تستخدم M=[3+sqrt(L/r)]/4 من الملحق 1-4(d)؛ راجع الأبعاد الفعلية.</string>
+    <string name="help_joint_efficiency" formatted="false">كفاءة وصلة الوعاء E بلا وحدة من ASME VIII Division 1 جدول UW-12 ومتطلبات الفحص المنطبقة في UW-11. استخدم خريطة لحامات الوعاء وفئة/نوع الوصلة وسجلات التصوير والفحص. لا تستخدم جدول معامل جودة الأنابيب هنا. الافتراضي 1 يحتاج صفًا وفحصًا يبررانه؛ خذ الكفاءة المعتمدة من مصمم الوعاء.</string>
+    <string name="help_nominal_vessel_thickness" formatted="false">سمك اللوح أو جدار المكوّن الاسمي بالملليمتر من رسم الوعاء أو شهادة اللوح، لفحص MAWP. يستخدم التطبيق السمك ناقص بدل التآكل مع حدود المكوّن المنفذة. لا يتنبأ بترقيق التشكيل ولا يؤهل كل أحمال الوعاء. لا تدخل ناتج سمك الضغط كأنه جدار مقاس أو مشترى.</string>
+    <string name="help_vessel_half_apex" formatted="false">نصف زاوية رأس المخروط بالدرجات من رسم التصنيع؛ الزاوية بين جدار المخروط ومحور الوعاء، وتساوي نصف الزاوية الكلية عند القمة. أدخل درجات لا راديان. يغطي UG-32(g) زاوية حتى 30 درجة؛ الأكبر يحتاج تصميم مخروط مقوى خارج نطاق الحاسبة.</string>
+    <string name="help_vessel_ellipsoidal_ratio" formatted="false">D/(2h): القطر الداخلي مقسوم على ضعف عمق التاج الداخلي من خط التماس دون الحافة المستقيمة. احصل على D وh من رسم الرأس بحالة التآكل. أدخل 2 للرأس القياسي 2:1 ومعامله K=1؛ المجال المدعوم 1 إلى 2. يستخدم التطبيق K=[2+(D/2h)^2]/6. الرأس الأكثر تسطحًا يحتاج تصميمًا منفصلًا.</string>
+    <string name="export_vessel_report">تصدير تقرير الوعاء</string>
+    <string name="vessel_report_hint">يحتاج التقرير مدخلات تصميم كاملة للمكوّن المختار.</string>
+    <string name="b313_coefficients_title">ASME B31.3-2018 — E / W / Y</string>
+    <string name="b311_coefficients_title">ASME B31.1-2022 — E / W / y</string>
+    <string name="b311_outside_scope">لا تتوفر نتيجة للسمك: الجدار المطلوب لا يترك قطرًا داخليًا موجبًا، أو لم يتقارب الحل الضمني للمعامل y. راجع الأبعاد والسماحيات.</string>
+    <string name="miter_outside_scope">لا يتوفر حكم للضغط أو السمك: زاوية θ للمايل المتعدد لا تتجاوز 22.5°، ويجب أن يحقق R1 المعادلة (5) في B31.3-2018.</string>
+    <string name="miter_equation_multiple">المعادلتان 4a و4b — وصلات متعددة</string>
+    <string name="miter_equation_single_low">المعادلة 4a — مفرد، θ ≤ 22.5°</string>
+    <string name="miter_equation_single_high">المعادلة 4c — مفرد، θ &gt; 22.5°</string>
+    <string name="miter_path_ten">104.2.3(a) — مسار 10 psi</string>
+    <string name="miter_path_hundred">104.2.3(b) — مسار 100 psi</string>
+    <string name="miter_path_qualification">104.2.3(c) — تأهيل وفق 104.7</string>
+    <string name="miter_b311_pass">الضغط والشروط المعلنة تحقق المسار المبسّط المختار.</string>
+    <string name="miter_condition_steep">(a)(1) θ &gt; 22.5° أو قطعة بها B &lt; 6tn</string>
+    <string name="miter_condition_shallow">(b)(1–2) θ ≤ 22.5° وكل قطعة بها B ≥ 6tn</string>
+    <string name="b311_y_auto_hint">y تلقائي من جدول 104.1.2-1 بإصدار B31.1-2022. النتيجة المحسوبة تطبق الملاحظة (b) عند انطباقها.</string>
+    <string name="field_miter_radius">نصف قطر الانحناء الفعّال R1 / R (مم)</string>
+    <string name="miter_minimum_radius">أقل R1 — المعادلة (5)</string>
+    <string name="miter_extension">أقل امتداد للسمك M — 304.2.3(c)</string>
+    <string name="miter_segment_section">سماكة قطعة B31.1 — 104.2.3(c)(3)</string>
+    <string name="miter_spacing_basis">حدد التباعد المتقارب أو المتباعد وr/R من الهندسة الفعلية وفق ASME B31J. التطبيق لا يستنتج هذا التصنيف.</string>
+    <string name="b311_miter_close">متقاربة</string>
+    <string name="b311_miter_wide">متباعدة</string>
+    <string name="miter_segment_tm">أقل سمك للماسورة المستقيمة tm — 104.1 (مم)</string>
+    <string name="miter_segment_r">متوسط نصف قطر الماسورة r — B31J (مم)</string>
+    <string name="miter_segment_ts">سمك القطعة المطلوب ts (مم)</string>
+    <string name="miter_segment_invalid">أدخل tm وr موجبين، و0 &lt; θ &lt; 90°، وR &gt; r للقطع المتقاربة.</string>
+    <string name="miter_small_offset_note">B31.3-2018: الانحراف عند الوصلة حتى 3° لا يحتاج تصميم مايل. راجع قواعد الماسورة المستقيمة والوصلة المنطبقة؛ لا يصدر هنا حكم لضغط المايل.</string>
+    <string name="equation_heading" formatted="false">المعادلة ومرجع الكود</string>
+    <string name="pressure_equation_units" formatted="false">معادلات الضغط تستخدم MPa: قيمة الضغط بالبار × 0.1 = MPa. الأقطار وأنصاف الأقطار والسماكات بالملليمتر، وS بوحدة MPa؛ المعاملات E/W/Y بلا وحدة. معادلات المايل تنتج Pm بوحدة MPa وتحوله الشاشة إلى بار.</string>
+    <string name="weight_equation_units" formatted="false">D وt بالملليمتر، والطول L بالمتر، والكثافة ρ بوحدة كجم/م³. النتيجة كجم/م وكجم. هذه معادلات هندسة وكتلة وليست فحص ضغط وفق B31.</string>
+    <string name="material_manual_stress_note" formatted="false">تبدأ الحرارة عند 20°م (حرارة الغرفة). اختر المواصفة والدرجة بدقة، ثم أدخل S من جدول الكود المناسب عند حرارة معدن التصميم. القائمة لا تثبت صلاحية المادة للخدمة.</string>
+    <string name="stress_manual_source_note" formatted="false">لا تتوفر قيمة S تلقائية موثقة لهذا الكود والمادة والحرارة. أدخلها من جدول الكود وفق شرح علامة ؟؛ لا تستخدم إجهاد الخضوع أو مقاومة الشد بدلًا منها.</string>
+    <string name="stress_verified_source">قيمة بدء موثقة: %1$s MPa، من B31.1-2022 جدول A-1 ص126–127، صف A106 بدون لحام، الملاحظة (2)، عمود %2$d°F (%3$s ksi). يُستخدم العمود المطبوع التالي الذي لا تتجاوز حرارته، دون استيفاء أو استقراء. يمكنك تعديل القيمة بعد مراجعة الملاحظات المنطبقة.</string>
+    <string name="use_verified_stress" formatted="false">استخدام قيمة الجدول الموثقة</string>
+    <string name="guide_stress_b313" formatted="false">S هو إجهاد التصميم المسموح بوحدة MPa، وليس إجهاد الخضوع أو مقاومة الشد. ابحث عن المواصفة والدرجة وشكل المنتج في B31.3-2018 جدول A-1 للوحدات الأمريكية أو A-1M للوحدات المترية، ثم عمود حرارة معدن التصميم. راجع ملاحظات الصف وحدود الحرارة. للتحويل: ksi × 6.894757293168 = MPa. لم يُتحقق هنا من جدول إجهاد B31.3 للتعبئة التلقائية؛ أدخل القيمة المعتمدة يدويًا. تغيير المادة أو الحرارة يمسح S القديمة.</string>
+    <string name="guide_stress_b311" formatted="false">أدخل S بوحدة MPa قبل تطبيق E/F. المرجع: B31.1-2022 الملحق الإلزامي A، جدول A-1، صف المادة وشكل المنتج وعمود حرارة التصميم. قد تكون قيمة الجدول مركبة SE/SF؛ لا تضرب قيمة مخفضة أصلًا في E مرة ثانية. التعبئة التلقائية محدودة بصفوف A106 بدون لحام الموثقة (E=1)، ص126–127، من 20°م حتى عمود 800°F المرفق. ما عدا ذلك يدوي. التطبيق يختار العمود التالي المطبوع بصيغة «لا تتجاوز» ويذكره؛ راجع الملاحظة (2) وحدود المادة. مثال: 17.1 ksi = 117.90035 MPa.</string>
+    <string name="guide_stress_vessel" formatted="false">S هو الإجهاد المسموح عند حرارة معدن التصميم بوحدة MPa، من إصدار ASME BPVC Section II Part D المنطبق: جدول 1A للمواد الحديدية أو 1B لغير الحديدية، مع مطابقة المواصفة والدرجة وشكل المنتج والسمك والملاحظات المطلوبة للأوعية VIII Division 1. لا تستبدله بقيم B31.1/B31.3 أو بإجهاد الخضوع والشد عند حرارة الغرفة. لا يتوفر جدول إجهاد أوعية موثق تلقائيًا هنا؛ أدخل القيمة المعتمدة يدويًا.</string>
+    <string name="guide_code" formatted="false">اختر الكود من أساس تصميم المشروع أو مواصفة الأنابيب: B31.3-2018 للمسارات الصناعية المنفذة، أو B31.1-2022 لمسارات أنابيب القدرة المنفذة. تختلف المعادلات وجداول المواد والحدود؛ لا تختَر الكود الذي يعطي أقل سمك. تبويب الأكواع الحالي يطبق B31.3، والأوعية تستخدم BPVC VIII Division 1 وليس أيًا من كودي الأنابيب.</string>
+    <string name="guide_b311_group" formatted="false">تختار هذه المجموعة معامل y فقط من B31.1-2022 جدول 104.1.2-1. حدد عائلة السبيكة أو رقم UNS من شهادة المادة وصف الجدول. لا تعطي S ولا تثبت صلاحية المادة للحرارة. الخلايا الفارغة ليست قيمًا مسموحة. للفولاذ الفيريتي والأوستنيتي حتى 482°م تُطبّق الملاحظة (b) أيضًا عندما Do/tm &lt; 6.</string>
+    <string name="guide_miter_t" formatted="false">T هو جدار قطعة الانحناء المايل الفعلية بالملليمتر، وفق B31.3-2018 الفقرة 304.2.3(d): سمك مقاس أو أقل سمك مضمون بمواصفة الشراء. خذه من قياس سمك معتمد، أو رسم وشهادة المصنع، أو جدول الماسورة بعد مراجعة تفاوت النقص المنطبق. ليس السمك المطلوب الذي تظهره الحاسبة كخرج، وليس القطر، وليس تلقائيًا سمك لوح اسمي. تستخدم معادلة الضغط T−c، لذلك يجب أن يزيد T على c. مثال: T=6.02 مم وc=1.5 مم يتركان 4.52 مم لمقاومة الضغط.</string>
+    <string name="guide_miter_c" formatted="false">c هو إجمالي سماحيات المعدن بالملليمتر: التآكل + النحر + المعدن المزال بالقلاوظ أو المجاري أو التشغيل. تعريفه في B31.3-2018 الفقرة 304.1.1(b)، وتستخدمه 304.2.3(d) للمايل. خذ التآكل والنحر من مواصفة المشروع وعمر التصميم، وعمق التشغيل وتفاوته من رسم التصنيع. مثال: 1.5 + 0.5 + 1.0 = 3.0 مم. لا تضف تفاوت المصنع إلى c ولا تخصمه مرتين من سمك مقاس. أدخل صفرًا فقط إذا برره التصميم. هذا c ليس A التجريبي في معادلة المايل (5).</string>
+    <string name="guide_miter_angle" formatted="false">أدخل مجموع تغير اتجاه التجميعة بالدرجات من الأيزومتريك أو رسم التصنيع. يقسمه التطبيق على عدد وصلات اللحام المايلة ثم على 2 ليحسب زاوية القطع θ. مثال: 90° على وصلتين = 45° لكل وصلة وθ=22.5°. لا تدخل θ نفسها في حقل الزاوية الكلية. المرجع: B31.3-2018 الفقرة 304.2.3 والشكل 304.2.3.</string>
+    <string name="guide_miter_joints" formatted="false">عُد وصلات اللحام المايلة التي يتغير عندها اتجاه الماسورة، وليس عدد قطع الماسورة. قطعتان متصلتان عند قطع مايل = وصلة واحدة؛ ثلاث قطع = وصلتان. خذ العدد من رسم التصنيع. يفترض التطبيق توزيع الزاوية بالتساوي؛ الزوايا غير المتساوية تحتاج تقييمًا منفصلًا. العدد يحدد مسار المفرد والمتعدد في B31.3-2018 الفقرة 304.2.3.</string>
+    <string name="guide_miter_b" formatted="false">B هو بُعد منطقة التقاء/قطعة المايل حسب تعريف الهندسة الفعلية، بالملليمتر. خذه من رسم التصنيع المعتمد بتعريفات ASME B31J التي تحيل إليها B31.1-2022 الفقرة 104.2.3. ليس القطر الخارجي ولا نصف قطر الانحناء. تقارن المسارات B مع 6tn، حيث tn السمك الاسمي للقطعة. لا تستنتجه من صورة أو من زاوية الانحناء وحدها.</string>
+    <string name="guide_radius_b313" formatted="false">R1 هو نصف قطر المايل الفعّال بالملليمتر: أقصر مسافة من خط مركز الماسورة إلى تقاطع مستويَي وصلتين مايلتين متجاورتين، حسب B31.3-2018 الفقرة 304.2.3(d) والشكل 304.2.3. خذه من الرسم الهندسي ذي الأبعاد، وليس نصف قطر مقطع الماسورة أو اسم كوع قياسي. تشترط المعادلة (5): R1 ≥ A/tanθ + D/2. يحسب التطبيق الحد من T−c؛ قيم A التجريبية هي 25 أو 2(T−c) أو 2(T−c)/3+30 في النطاقات المترية المطبوعة. لا تضع بدل التآكل مكان A.</string>
+    <string name="guide_radius_b311" formatted="false">R هو نصف قطر الانحناء المطلوب في معادلة القطع المتقاربة B31.1-2022 الفقرة 104.2.3(c)(3)(-a). خذ R ونصف قطر الماسورة r من الرسم المعتمد بتعريفات ASME B31J المحال إليها. يحتاج الحساب R &gt; r. لا تضع قطر الماسورة مكان R، ولا تفترض تطابق تعريفه تلقائيًا مع نصف القطر الفعّال في B31.3.</string>
+    <string name="guide_miter_spacing" formatted="false">حدد متقاربة أو متباعدة من هندسة التجميعة المعتمدة وفق ASME B31J، كما تطلب B31.1-2022 الفقرة 104.2.3(c)(3). يعتمد التطبيق على التصنيف الذي تعلنه، ولا يستنتجه من العدد أو الزاوية وحدهما. المتقاربة تستخدم نسبة أنصاف الأقطار، والمتباعدة تحل المعادلة الضمنية المطبوعة. فحص السمك لا يعوض التأهيل وفق 104.7.</string>
+    <string name="guide_miter_tm" formatted="false">tm هو أقل جدار مطلوب للماسورة المستقيمة وفق B31.1 الفقرة 104.1 لنفس المادة والضغط والحرارة والسماحيات، بالملليمتر. احسبه أولًا في تبويب سمك الماسورة مع اختيار B31.1، أو خذه من حساب تصميم معتمد. انقل tm شاملًا A، وليس سمك الضغط t وحده ولا الجدار الاسمي المشترى. هو الأساس الذي تُحسب منه سماكة قطعة المايل ts في 104.2.3(c)(3).</string>
+    <string name="guide_miter_r" formatted="false">r هو نصف قطر الماسورة المحدد لهذا الحساب وفق ASME B31J المحال إليه في B31.1-2022 الفقرة 104.2.3. خذه من الهندسة المعتمدة وتعريف الجدار المنطبق. أدخل ملليمترات لا قطرًا، وميّزه عن نصف قطر انحناء التجميعة R. تحتوي المعادلات r/R أو sqrt(r/ts)؛ وضع القطر بدل نصف القطر يغيّر النتيجة.</string>
+    <string name="guide_e_b311" formatted="false">E، أو F للمادة المصبوبة، معامل الجودة لشكل المنتج الفعلي من B31.1-2022 الملحق A والفقرة 102.4.3. حدد بدون لحام/ERW/لحام فرن/مسبوك من الشهادة. صف A106 بدون لحام المرفق له E=1، ولا يبرر ذلك 1 لكل الأنابيب. قد تكون قيم الإجهاد في الجدول SE/SF أصلًا؛ أدخل S غير المخفض مع E مرة واحدة فقط.</string>
+    <string name="guide_w_b311" formatted="false">W معامل تخفيض قوة اللحام بلا وحدة حسب B31.1-2022 الفقرة 102.4.7. حدد انطباقه من المادة ونوع اللحام وحرارة معدن التصميم والجدول والملاحظات المقررة. استخدم الشهادة وأساس التصميم وإصدار الكود المحدد. يختلف عن معامل الجودة E. المجال أكبر من صفر وحتى 1؛ استخدم 1 إذا كان مبررًا، وليس لأنه يعطي جدارًا أرق.</string>
+    <string name="guide_y_b311" formatted="false">y معامل بلا وحدة من B31.1-2022 جدول 104.1.2-1 للمجموعة والحرارة المختارتين. يستوفي التطبيق خلايا y المنشورة ويطبق الملاحظة (b) للفولاذ المنطبق حتى 482°م وعند Do/tm&lt;6. ليس S ولا يثبت صلاحية المادة للحرارة. الإدخال اليدوي يتجاوز الجدول؛ راجع المصدر والملاحظات قبل التعديل.</string>
+    <string name="guide_material_vessel" formatted="false">استخدم مواصفة المادة وشكل المنتج من شهادة الوعاء؛ مثل لوح SA-516 بدل درجة ماسورة. القائمة للتعريف فقط. تحقق من سماح استخدام المادة في VIII Division 1 ومن صف الإجهاد وملاحظاته في Section II-D جدول 1A/1B عند حرارة التصميم. استخدم «أخرى» لكتابة التسمية الدقيقة من الشهادة عند الحاجة.</string>
+    <string name="guide_generic" formatted="false">خذ القيمة أو التسمية من مستند التصميم أو التصنيع المعتمد لهذا البند. أسماء التقارير والمراجع الاختيارية للتعريف ولا تغيّر المعادلة. إذا لم تتوفر قيمة هندسية مطلوبة، احصل عليها من مسؤول التصميم بدل تخمينها.</string>
+    <string name="export_miter_report" formatted="false">تصدير تقرير الوصلة المقطعية</string>
+    <string name="guide_b311_conditions" formatted="false">لا تؤكد الشرط إلا بعد مراجعة B31.1-2022 الفقرة 104.2.3(a)(2)-(5): سمك كل مقطع يحقق 104.1؛ المائع غير قابل للاشتعال وغير سام وغير قابل للانضغاط مع استثناء التنفيس الغازي؛ أقل من 7000 دورة ضغط كاملة طوال عمر الخدمة؛ ولحامات اختراق كامل. راجع حسابات التصميم وبيانات سلامة المائع ومواصفات دورات التشغيل ورسومات اللحام المؤهلة. عند عدم معرفة الشرط اتركه غير مؤكد؛ هذا إقرار من المستخدم وليس تحققًا آليًا.</string>
+    <string name="guide_miter_t_b311" formatted="false">في B31.1-2022 الفقرة 104.2.3(a)(1)/(b)(2)، يمثل هذا الحقل السمك الاسمي للمقطع tn بالمليمتر من مواصفة الشراء أو جدول السمك أو رسم التصنيع. يقارن ببعد باطن الوصلة B وفق B&lt;6tn أو B≥6tn لاختيار مسار الضغط. لا يثبت أقل جدار متبقٍ ولا أن كل مقطع يحقق 104.1؛ راجع ذلك مستقلًا. حساب سمك المقطع الاختياري أدناه يستخدم الحد الأدنى للماسورة المستقيمة tm وليس tn.</string>
+    <string name="guide_water_fill" formatted="false">فعّله لإضافة كتلة الماء الذي يملأ تجويف الماسورة بالكامل إلى كتلة الماسورة المجردة. يستخدم التطبيق ID=D−2t وكثافة ماء 1000 كجم/م³. هو تقدير للماء قرب حرارة الغرفة، وليس كتلة بخار أو زيت أو مائع آخر أو ملء جزئي. تحقق من حالة الملء والطول من مواصفة التشغيل أو الاختبار.</string>
+    <string name="field_miter_nominal_tn" formatted="false">السمك الاسمي للمقطع tn (مم)</string>
+    <string name="about_title" formatted="false">حول PiCal</string>
+    <string name="about_tagline" formatted="false">حاسبات الأنابيب والهندسة الميكانيكية</string>
+    <string name="about_version">الإصدار %1$s · البناء %2$s</string>
+    <string name="about_overview_heading" formatted="false">الحسابات الهندسية ومتابعة الموقع</string>
+    <string name="about_overview" formatted="false">حساب سمك الماسورة المستقيمة وكتلة الأنابيب والأكواع والانحناءات المايلة ومكونات أوعية الضغط. تنظيم المشاريع وتسجيل تقدم أعمال الموقع وإنشاء تقارير PDF. يجمع PiCal المدخلات والمعادلات والنتائج في مكان واحد.</string>
+    <string name="about_sources_heading" formatted="false">مراجع الحسابات</string>
+    <string name="about_sources" formatted="false">ASME B31.3-2018: الأنابيب الصناعية والماسورة المستقيمة والأكواع والانحناءات المايلة.\nASME B31.1-2022: أنابيب القدرة والماسورة المستقيمة ومسارات ضغط المايل وسمك مقاطعه.\nASME B36.10-2022: أبعاد الأنابيب الاسمية المتاحة.\nASME BPVC VIII Division 1: قواعد مكونات الوعاء المنفذة؛ الإجهاد من Section II-D وكفاءة اللحام من UW-12. لم تُثبت طبعة BPVC بصورة مستقلة من المقتطفات المرفقة.</string>
+    <string name="about_calculation_heading" formatted="false">استخدام النتائج</string>
+    <string name="about_calculation" formatted="false">تظهر المعادلات ومراجع الكود في كل حاسبة وتقريرها. استخدم S للمادة وشكل المنتج وحرارة معدن التصميم الفعلية. القيم التلقائية محدودة بصفوف A106 بدون لحام درجات A/B/C الموثقة في B31.1؛ باقي الحالات تحتاج قيمة يدوية من الجدول. تغطي النتائج المعادلات المنفذة ونطاقها، ولا تمثل تأهيلًا كاملًا طبقًا للكود.</string>
+    <string name="about_data_heading" formatted="false">بياناتك</string>
+    <string name="about_data" formatted="false">تحفظ المشاريع والتقارير المولدة على هذا الجهاز. تتم مشاركة PDF عبر التطبيق الذي تختاره للمشاركة. احتفظ بنسخ من التقارير المهمة قبل إزالة التطبيق.</string>
+    <string name="about_contact_linkedin">تواصل عبر LinkedIn</string>
+    <string name="about_contact_unavailable">يلزم متصفح أو تطبيق LinkedIn لفتح رابط التواصل.</string>
+</resources>
+
+
+
+
+
+

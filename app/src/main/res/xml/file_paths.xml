@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Camera captures land in the app's private external files dir,
+         under a "photos" subfolder, before being attached to an entry. -->
+    <external-files-path name="entry_photos" path="photos/" />
+    <!-- Exported A4 PDF reports, so they can be opened/shared via
+         Intent.ACTION_VIEW / ACTION_SEND and the "report ready" notification. -->
+    <external-files-path name="reports" path="reports/" />
+</paths>
