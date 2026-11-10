@@ -1,0 +1,5 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <application android:label="PiCal Acceptance" tools:replace="android:label" />
+    <instrumentation android:name="com.ahmedismail.flowtrack.AcceptanceInstrumentation"
+        android:targetPackage="${applicationId}" android:label="PiCal isolated acceptance" />
+</manifest>

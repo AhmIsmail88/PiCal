@@ -1,0 +1,36 @@
+Cooling Water Network
+Workflow
+Areas
+Team
+Attendance
+Date
+06/10/2026
+Demo Engineer  ·  Engineer
+Present
+Late
+Absent
+In
+08:00
+Out
+16:00
+Demo Inspector  ·  Inspector
+Present
+Late
+Absent
+In
+08:00
+Out
+16:00
+Demo Supervisor  ·  Supervisor
+Present
+Late
+Absent
+PiCal
+Manage project
+EN | AR
+Home
+Projects
+Add
+Calculators
+Reports
+By. Ahmed Ismail

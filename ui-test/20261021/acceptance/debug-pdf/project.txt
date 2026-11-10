@@ -1,0 +1,48 @@
+PiCal — Site Progress Report
+PRO JECT
+Acceptance Cooling W ater — veriﬁed
+N UMBER
+UAT-2026-001
+RESPO N SIBLE EN GIN EER
+Test Engineer
+CO N TRACTO R
+Test Contractor
+CLIEN T
+Fictional Client
+PERIO D
+Acceptance 21 October 2026
+DATE
+21/10/2026
+CO MPLETED PIPE IN CHES
+16.0"
+CO MPLETED JO IN TS
+4
+WO RKFLO W STAGES
+4
+"Completed" = reached the ﬁnal W orkﬂow stage. Per-stage progress for every task is in the table below.
+COMPLETED JOIN TS BY DIAMETER
+4"
+Total: 4 joints
+21/10/2026 — 4 joints
+Area: Pump Hall
+Fit-up
+12 joints  ·  48.0"
+W elding
+8 joints  ·  32.0"
+Inspection
+6 joints  ·  24.0"
+Handover
+4 joints  ·  16.0"
+PHOTOS — PUMP HALL
+Fit-up — 21/10/2026
+Area: Utility Area
+Fit-up
+0 joints  ·  0.0"
+W elding
+0 joints  ·  0.0"
+Inspection
+0 joints  ·  0.0"
+Handover
+0 joints  ·  0.0"
+By. Ahmed Ismail
+1

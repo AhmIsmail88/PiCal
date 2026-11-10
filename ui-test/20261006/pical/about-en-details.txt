@@ -1,0 +1,17 @@
+Calculate straight-pipe wall, pipe mass, bends, miter bends and pressure-vessel components. Organize projects, record site progress and generate PDF reports. PiCal brings calculation inputs, equations and results together in one place.
+Calculation references
+ASME B31.3-2018: process piping, straight pipe, bends and miters.
+ASME B31.1-2022: power piping, straight pipe and miter pressure paths/segment wall.
+ASME B36.10-2022: the available nominal pipe dimensions.
+ASME BPVC VIII Division 1: the implemented vessel-component rules; stress input from Section II-D and joint efficiency from UW-12. The BPVC edition is not independently established by the supplied excerpts.
+Using the results
+Equations and code references appear in each calculator and its report. Use S for the actual material/product and design metal temperature. Automatic S is limited to verified B31.1 A106 seamless grades A/B/C; other cases require a manual table value. Results cover the implemented equations and their scope, and do not constitute complete code qualification.
+PiCal
+About PiCal
+EN | AR
+Home
+Projects
+Add
+Calculators
+Reports
+By. Ahmed Ismail

@@ -1,0 +1,11 @@
+{
+  "applicationId": "com.ahmedismail.flowtrack",
+  "versionName": "1.2",
+  "versionCode": 3,
+  "minimumSdk": 24,
+  "targetSdk": 34,
+  "debuggable": false,
+  "certificateSha256": "662b7dc1d938cc48965ed108bdad04af8f8a8075d6869bb101bff3bef2c7d690",
+  "apkSha256": "e2f88b51bee333667b642b9d5069cf5d92e0ebfd06aca2d60d58821c988b8472",
+  "validationDate": "2026-10-21"
+}

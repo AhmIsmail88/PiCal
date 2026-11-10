@@ -1,0 +1,32 @@
+Current project
+Acceptance Cooling Water — verified
+Manage project
+Switch project
+Fully completed
+16
+Diameter-inches · final stage: Handover
+4 joints
+33%
+Final-stage inches ÷ first-stage recorded inches. Not planned scope.
+Completed inches by stage
+Cumulative output at each stage. Stage totals are not added together.
+1
+Fit-up
+12 joints
+48
+dia-in
+2
+Welding
+8 joints
+32
+dia-in
+24
+PiCal
+DASHBOARD
+EN | AR
+Home
+Projects
+Add
+Calculators
+Reports
+By. Ahmed Ismail

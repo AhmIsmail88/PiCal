@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=PiCal Release
+Signer #1 certificate SHA-256 digest: 662b7dc1d938cc48965ed108bdad04af8f8a8075d6869bb101bff3bef2c7d690
+Signer #1 certificate SHA-1 digest: 0a7c72945bb4b8f1f534ce4625056207ec516312
+Signer #1 certificate MD5 digest: 5602e7726cea664907da224a812e49b7
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 3072
+Signer #1 public key SHA-256 digest: 4b9d3a9db33e8e56480936b16d44101ee85b0a6a8134aedfd6593d64dfb46928
+Signer #1 public key SHA-1 digest: 4ef13d7ef261d87c4b7b52839e9e947e68da170a
+Signer #1 public key MD5 digest: 3df98d4a5996d5b3b51c8ff193172ad6

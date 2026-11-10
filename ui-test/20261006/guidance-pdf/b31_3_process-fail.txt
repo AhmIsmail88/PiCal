@@ -1,0 +1,65 @@
+FLOWTRACK ENGINEERING / PIPE WALL
+FINISHED PIPE WALL
+Measurement and internal-pressure thickness review
+ASME B31.3-2018 | Straight pipe | Internal pressure
+DESIGN EQUATION
+ASME B31.3-2018, 304.1.1 / 304.1.2, (2), (3a)
+t = P D / [2 (S E W + P Y)]
+tm = t + c; c = corrosion + erosion + mechanical
+P and S in MPa; dimensions in mm. Input pressure in bar x 0.1 = MPa.
+MINIMUM MEASURED WALL AFTER FABRICATION
+3 mm
+BELOW the internal-pressure wall requirement
+User-entered inspection minimum | Not calculated from Schedule
+Required remaining wall 3.4787 mm
+Measured minus required -0.4787 mm
+Required remaining wall = pressure thickness + corrosion + erosion. The measured value is the minimum remaining
+metal after ALL fabrication and machining, including groove/thread roots. It is supplied by the user; the app does not
+measure the pipe.
+No mill under-tolerance or already removed metal is deducted from this measurement again.
+01 PIPE AND INSPECTION
+Material / grade Example steel - verify actual material grade
+Pipe size / outside diameter 4 inch / 114.3 mm
+Inspection / pipe reference UT-EXAMPLE-001 | New pipe | Minimum at groove root
+Project Example only - ﻲﺤﻴﺿﻮﺗلﺎﺜﻣ
+Prepared by QA preview - not a real inspection
+Report date 2026-10-06 10:28
+02 MEASUREMENT BASIS
+Use an inspection minimum that accounts for measurement uncertainty. Exclude coatings, lining and weld
+reinforcement. This comparison applies to a new straight pipe before service. An average reading or nominal schedule
+wall is not a minimum finished-wall measurement.
+MEETS / BELOW refers only to the internal-pressure wall requirement for these inputs. It is not an inspection certificate
+or approval of the complete piping design.
+FlowTrack | User-supplied design and inspection data 1
+FLOWTRACK ENGINEERING / PIPE WALL
+DESIGN BASIS
+Calculation trail and nominal pipe selection
+03 PRESSURE DESIGN INPUTS
+Internal design gauge pressure P 20 bar(g) = 2 MPa
+Design metal temperature 20 °C
+Allowable stress S 100 MPa
+Quality factor E / weld factor W 0.85 / 0.9
+Coefficient Y / y 0.4
+Corrosion / erosion allowance 1.5 / 0.5 mm
+Mechanical removal allowance 1 mm (before machining)
+Code / material input reference Illustrative coefficients only; not project design values.
+04 CALCULATION TRACE
+P is converted from bar to MPa; D and thicknesses are in mm. S is in MPa.
+Pressure thickness t P × D / [2 × (S × E × W + P × Y)] = 1.4787 mm
+Required remaining finished wall t + corrosion + erosion = 3.4787 mm
+Required wall before machining tm t + corrosion + erosion + mechanical = 4.4787 mm
+Equation scope checks t < D/6; P/(S × E) = 0.0235 ≤ 0.385
+05 NOMINAL PIPE ORDERING CHECK (SEPARATE)
+Specified minus tolerance 12.5 %
+Minimum nominal pipe wall to order tm / (1 - tolerance/100) = 5.1185 mm
+Selected nominal pipe Sch 40 / 6.02 mm
+Lower wall bound from tolerance 5.2675 mm - calculated bound, NOT measured
+Nominal selection result Meets the ordering thickness check
+These are pipe wall dimensions. No flat-sheet thickness or forming-process calculation is performed. A nominal-wall check
+cannot replace the measured finished-wall result at the start of this report.
+06 LIMITS AND REFERENCES
+Basis: B31.3-2018, 304.1.1 and 304.1.2, equations (2) and (3a); Y: Table 304.1.1. Nominal dimensions: B36.10-2022 Table 2-1. S, E,
+W, allowances, tolerance and inspection values require verification against project specifications. This report does not assess
+external pressure, bends, branches, other loads, fatigue, remaining life or high-pressure special services. Comparisons use
+unrounded numbers; displayed numbers are formatted for readability.
+FlowTrack | User-supplied design and inspection data 2

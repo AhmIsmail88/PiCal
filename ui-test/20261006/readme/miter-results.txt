@@ -1,0 +1,32 @@
+Pipe Bends
+Pressure Vessels
+Miter Bends
+Multiple miter joints
+Governing equation
+Equations 4a and 4b — multiple miters
+Maximum allowable pressure Pm
+59.95 bar
+Pm from Eq. 4a
+59.95 bar
+Pm from Eq. 4b
+89.84 bar
+Pm − P
+39.95 bar
+Smallest wall meeting Pm ≥ P
+3.4453 mm
+Minimum R1 — Eq. (5)
+117.5053 mm
+Minimum wall extension M — 304.2.3(c)
+45.1333 mm
+P ≤ Pm — acceptable for pressure design
+Optional report details
+Project Name (optional)
+PiCal
+CALCULATORS
+EN | AR
+Home
+Projects
+Add
+Calculators
+Reports
+By. Ahmed Ismail

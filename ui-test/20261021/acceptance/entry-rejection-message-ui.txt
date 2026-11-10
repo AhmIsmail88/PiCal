@@ -1,0 +1,24 @@
+4
+Unit
+Inch
+Joint Quantity
+99
+Hours Worked (optional)
+Pipe Inches
+396"
+Cannot proceed: only 12 joints have been completed in the previous stage (Fit-up) for this Area and Diameter.
+Performed By
+—
+Supervisor
+—
+Photo
++ Add Photo
+PiCal
+NEW ENTRY
+EN | AR
+Home
+Projects
+Add
+Calculators
+Reports
+By. Ahmed Ismail

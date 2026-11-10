@@ -455,6 +455,21 @@
     <string name="about_data" formatted="false">تحفظ المشاريع والتقارير المولدة على هذا الجهاز. تتم مشاركة PDF عبر التطبيق الذي تختاره للمشاركة. احتفظ بنسخ من التقارير المهمة قبل إزالة التطبيق.</string>
     <string name="about_contact_linkedin">تواصل عبر LinkedIn</string>
     <string name="about_contact_unavailable">يلزم متصفح أو تطبيق LinkedIn لفتح رابط التواصل.</string>
+    <string name="calculator_choose" formatted="false">اختر الحاسبة</string>
+    <string name="calculator_choose_hint" formatted="false">اختر العنصر المطلوب. تظل المدخلات محفوظة عند الرجوع لهذه القائمة.</string>
+    <string name="calculator_all" formatted="false">كل الحاسبات</string>
+    <string name="calculator_pipe_description" formatted="false">B31.3 / B31.1 • السمك المطلوب والجدار النهائي المقاس</string>
+    <string name="calculator_weight_description" formatted="false">وزن الماسورة والطول ووزن الماء</string>
+    <string name="calculator_bend_description" formatted="false">B31.3 • سمك جانبي الانحناء الداخلي والخارجي</string>
+    <string name="calculator_vessel_description" formatted="false">VIII-1 • الأجسام والأغطية وأقصى ضغط مسموح</string>
+    <string name="calculator_miter_description" formatted="false">B31.3 / B31.1 • الهندسة وحدود انطباق الحساب</string>
+    <string name="defaults_title" formatted="false">القيم الافتراضية للمادة</string>
+    <string name="defaults_available" formatted="false">تتوفر قيم موثقة لـ S وE لهذا الاختيار. يُحدد Y حسب الكود والحرارة.</string>
+    <string name="defaults_manual" formatted="false">يحتاج S وE لإدخال يدوي لهذا الاختيار. يغطي S التلقائي حاليًا A106 بدون لحام درجات A/B/C في B31.1 من 20°C حتى عمود 800°F (نحو 426.67°C).</string>
+    <string name="defaults_project_inputs" formatted="false">أدخل W وسماحية التصنيع وسماحيات التصميم من متطلبات المشروع ومواصفة المنتج المنطبقة.</string>
+    <string name="defaults_restore" formatted="false">استعادة S وE الموثقين وY التلقائي</string>
+    <string name="stress_matches_table" formatted="false">قيمة S الحالية تطابق قيمة الجدول الموثقة.</string>
+    <string name="stress_manual_override" formatted="false">قيمة S الحالية مدخلة يدويًا؛ قيمة الجدول أدناه مرجع للمقارنة.</string>
 </resources>
 
 

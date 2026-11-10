@@ -1,0 +1,336 @@
+<!doctype html><html lang="ar"><head><meta charset="utf-8"><base href="file:///E:/Coding/Android/FlowTrack/"><style>body{font-family:Segoe UI,Tahoma,Arial,sans-serif;color:#223344;background:#fff;max-width:980px;margin:40px auto;padding:0 28px;line-height:1.65}img{max-width:100%;height:auto}h1,h2,h3{color:#14263d;line-height:1.3}h1{font-size:38px}h2{font-size:26px;border-bottom:1px solid #dce4e9;padding-bottom:10px;margin-top:42px}p{font-size:16px}table{border-collapse:collapse;width:100%;margin:20px 0}td,th{border:1px solid #dce4e9;padding:12px;font-size:14px;vertical-align:top}th{background:#f2f7fa;text-align:start}td img{display:block;margin:auto}pre{padding:18px;background:#f5f7f9;border-radius:8px;overflow:auto;direction:ltr;text-align:left;font-size:13px}code{font-family:Consolas,monospace}a{color:#126b80}details{margin:20px 0}summary{color:#126b80;cursor:pointer}body[dir=rtl]{text-align:right}body[dir=rtl] table{direction:rtl}</style></head><body dir="rtl"><p><img src="docs/images/cover.png" alt="PiCal — الحسابات الهندسية ومتابعة التنفيذ والتقارير"></p>
+<h1>PiCal</h1>
+<p><strong>حاسبات الأنابيب والهندسة الميكانيكية، ومتابعة أعمال الموقع، وتقارير PDF في تطبيق Android واحد.</strong></p>
+<p>يساعد PiCal مهندس الموقع على حساب سماكات الضغط وكتلة الأنابيب ومراجعة الأكواع ومكونات أوعية الضغط، مع تنظيم المشاريع وتسجيل تقدم التنفيذ. تظهر المعادلة ومرجع الكود داخل الحاسبة، وتوضح علامات الاستفهام وحدات المدخلات ومكان الحصول على قيمها.</p>
+<p><strong>الإصدار 1.1 · Android 7.0 فأحدث · Kotlin وJetpack Compose · العربية والإنجليزية</strong></p>
+<p><a href="README.md">English</a> · <a href="#%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D8%B7%D8%A8%D9%8A%D9%82">معمارية التطبيق</a> · <a href="#%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1-%D9%88%D8%A7%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84">البناء والتشغيل</a> · <a href="#%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AC%D8%B9-%D9%88%D8%A7%D9%84%D9%86%D8%B7%D8%A7%D9%82">المراجع والنطاق</a></p>
+<h2>الميزات</h2>
+<table>
+<thead>
+<tr>
+<th>القسم</th>
+<th>الوظائف</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>الحاسبات</td>
+<td>سماكة الماسورة المستقيمة، كتلة الأنابيب، سماكة الأكواع، الانحناءات المايلة، ومكونات أوعية الضغط المدعومة.</td>
+</tr>
+<tr>
+<td>شرح المدخلات</td>
+<td>المعادلة وطبعة الكود والوحدات، وشروح مفصلة لمصادر S وE وW وY والسماحيات والأبعاد.</td>
+</tr>
+<tr>
+<td>المشاريع والمناطق</td>
+<td>رقم المشروع والمهندس المسؤول والعميل والمقاول، وتقسيم مناطق العمل والتبديل بين المشاريع.</td>
+</tr>
+<tr>
+<td>سير العمل</td>
+<td>تعريف المراحل وترتيبها بالسحب، مثل التجهيز واللحام والفحص والاختبار والتسليم.</td>
+</tr>
+<tr>
+<td>إدخال التقدم</td>
+<td>التاريخ والمهمة والمنطقة والقطر ووحدته وعدد الوصلات والمنفذ والمشرف، وساعات وصورة اختيارية.</td>
+</tr>
+<tr>
+<td>الفريق والحضور</td>
+<td>أدوار الفريق، وحاضر/متأخر/غائب، وتوقيت الدخول والخروج.</td>
+</tr>
+<tr>
+<td>لوحة التحكم</td>
+<td>كميات المرحلة النهائية، وعدد الوصلات، وإنتاج كل مرحلة، ونسبة الإكمال وتوزيع الأقطار والسجلات.</td>
+</tr>
+<tr>
+<td>التقارير</td>
+<td>تقدم المشروع، وإنتاجية اللحام، ونشاط الموظف، وتقارير مستقلة لكل حاسبة، مع فتح PDF ومشاركته.</td>
+</tr>
+<tr>
+<td>اللغات والتعريف</td>
+<td>واجهة عربية من اليمين إلى اليسار وواجهة إنجليزية، وشاشة حول التطبيق وزر التواصل عبر LinkedIn.</td>
+</tr>
+</tbody></table>
+<p>تحفظ بيانات المشروع محليًا في Room. تعمل الحسابات وإنشاء التقارير على الجهاز؛ فتح LinkedIn أو المشاركة عبر تطبيق آخر يتبع اتصال التطبيق المختار.</p>
+<h2>صور التطبيق</h2>
+<p>الصور التالية من واجهات PiCal الفعلية على Android 16. أسماء المشاريع والأشخاص والأرقام أمثلة وهمية من نسخة معاينة مستقلة عن بيانات المستخدم.</p>
+<table>
+  <tr><th>لوحة تقدم المشروع</th><th>سير العمل</th><th>المعادلات والحاسبات</th></tr>
+  <tr>
+    <td><img src="docs/images/dashboard.png" width="250" alt="لوحة تقدم مشروع تجريبي وشريط مراحل التنفيذ"></td>
+    <td><img src="docs/images/workflow.png" width="250" alt="مراحل تجهيز ولحام وفحص وتسليم قابلة للترتيب"></td>
+    <td><img src="docs/images/calculators.png" width="250" alt="حاسبة الماسورة ومعادلة ASME B31.3-2018"></td>
+  </tr>
+  <tr><th>نتائج الانحناء المايل</th><th>تصدير PDF</th><th>حول التطبيق بالعربية</th></tr>
+  <tr>
+    <td><img src="docs/images/miter-results.png" width="250" alt="نتائج المثال الحسابي للمايل ومعادلته الحاكمة"></td>
+    <td><img src="docs/images/reports.png" width="250" alt="اختيار فترة التقرير وتصدير ملفات PDF"></td>
+    <td><img src="docs/images/about-ar.png" width="250" alt="شاشة حول PiCal العربية وزر التواصل"></td>
+  </tr>
+</table>
+
+<details>
+<summary>صور إدخال التقدم والحضور</summary>
+
+<table>
+  <tr><th>إدخال التقدم</th><th>الحضور</th></tr>
+  <tr>
+    <td><img src="docs/images/add-entry.png" width="280" alt="ست وصلات بقطر أربع بوصات تعطي 24 قطر-بوصة"></td>
+    <td><img src="docs/images/attendance.png" width="280" alt="حضور فريق تجريبي ومواعيد الدخول والخروج"></td>
+  </tr>
+</table>
+
+</details>
+
+<h2>الحاسبات الهندسية</h2>
+<table>
+<thead>
+<tr>
+<th>الحاسبة</th>
+<th>الأساس المنفذ</th>
+<th>النتائج</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>الماسورة المستقيمة</td>
+<td>B31.3-2018 أو B31.1-2022 حسب الاختيار</td>
+<td>سماكة الضغط والسماحيات، وفحص الجدار المقاس، وفحص شراء السمك الاسمي بشكل مستقل.</td>
+</tr>
+<tr>
+<td>كتلة الأنابيب</td>
+<td>هندسة المقطع الحلقي والكثافة المدخلة</td>
+<td>كجم/م، والكتلة الكلية، وكتلة الماء الاختيارية والمجموع.</td>
+</tr>
+<tr>
+<td>الأكواع</td>
+<td>B31.3-2018 الفقرة 304.2.1</td>
+<td>معاملات باطن وظهر الكوع والسماكات المطلوبة وفحص جدار الباطن المقاس.</td>
+</tr>
+<tr>
+<td>الانحناءات المايلة</td>
+<td>B31.3-2018 الفقرة 304.2.3، وB31.1-2022 الفقرة 104.2.3</td>
+<td>ضغط B31.3 المسموح ومعادلته الحاكمة ونصف القطر وامتداد الجدار؛ ومسار ضغط B31.1 وسمك المقطع الاختياري.</td>
+</tr>
+<tr>
+<td>أوعية الضغط</td>
+<td>قواعد مكونات BPVC VIII Division 1 المنفذة</td>
+<td>سماكة الأسطوانة والرؤوس الإهليلجية والتوريسفيرية ونصف الكروية والمخروطية، وفحص MAWP الاختياري.</td>
+</tr>
+</tbody></table>
+<h3>المادة والحرارة والمدخلات</h3>
+<ul>
+<li>الحرارة الافتراضية <strong>20°C</strong> قابلة للتعديل، ويجب إدخال حرارة معدن التصميم الفعلية.</li>
+<li>قائمة المادة تحدد هوية المادة وشكل المنتج، ولا تثبت ملاءمتها للخدمة.</li>
+<li><strong>لا يُستنتج الإجهاد المسموح S من الخضوع أو الشد عند حرارة الغرفة.</strong> الملء التلقائي محدود بصفوف A106 بدون لحام درجات A/B/C الموثقة بصريًا في B31.1-2022 Table A-1، من 20°C حتى عمود 800°F المرفق.</li>
+<li>يختار المرجع الآلي أول عمود حرارة مطبوع يغطي الحرارة المدخلة ويذكره، دون استيفاء أو تمديد خارج البيانات الموثقة. بقية المواد والأكواد والحرارات تحتاج S يدويًا.</li>
+<li>تغيير المادة أو الحرارة يبطل معاملات الحالة السابقة. يجب مراجعة معاملات الجودة واللحام والتفاوت والملاحظات للمنتج الفعلي.</li>
+<li>جدول B36.10-2022 المدمج للأبعاد والسماكات محدود؛ تتاح أبعاد مخصصة بالملليمتر أو البوصة.</li>
+<li>يدعم تحليل المدخلات الأرقام العربية واللاتينية، مع تحويل الوحدات ورفض القيم غير المحدودة والهندسة خارج النطاق.</li>
+</ul>
+<h3>المعادلات والتقارير</h3>
+<pre><code class="language-text">B31.3-2018, 304.1.1 / 304.1.2, (2), (3a)
+t  = P D / [2 (S E W + P Y)]
+tm = t + c
+
+B31.1-2022, 104.1.2(a), (7)
+tm = P Do / [2 (S E W + P y)] + A
+
+كتلة الماسورة لكل متر
+m/L = π t (D − t) ρ / 1,000,000
+</code></pre>
+<p>تستخدم معادلات الضغط MPa للضغط والإجهاد، وmm للأبعاد والسماحيات. يحول ضغط الإدخال من bar إلى MPa بضربه في 0.1. معادلة الكتلة تستخدم D وt بالملليمتر والكثافة بكجم/م³ وتنتج كجم/م. تقدير الماء يفترض ملء التجويف بالكامل بكثافة 1000 كجم/م³.</p>
+<p>يتشارك عرض الحاسبة وتقريرها نص المعادلة من <a href="app/src/main/java/com/ahmedismail/flowtrack/util/EngineeringEquations.kt">EngineeringEquations.kt</a>. تعيد مولدات تقارير الحاسبات الحساب من المدخلات، وتعرض المعادلات والمراجع والنتائج وحدود الاستخدام. فحص الجدار بعد التصنيع مستقل عن فحص السمك الاسمي المطلوب للشراء.</p>
+<h2>طريقة متابعة المشروع</h2>
+<ol>
+<li>أنشئ المشروع وعرّف المهندس والعميل والمقاول.</li>
+<li>أضف المناطق والفريق ومراحل التنفيذ بالترتيب المطلوب.</li>
+<li>سجّل إنتاج كل مرحلة حسب المنطقة والقطر وعدد الوصلات والأشخاص.</li>
+<li>راجع كميات المراحل والمرحلة النهائية في لوحة التحكم.</li>
+<li>اختر فترة التقرير وصدّر ملف PDF المناسب.</li>
+</ol>
+<p>يتحقق <code>WorkflowValidator</code> من كميات الوصلات التراكمية حسب المشروع والمنطقة والقطر الفعلي. لا تتجاوز مرحلة لاحقة الكمية المتاحة في المرحلة السابقة. يشمل التحقق تعديل السجلات وحذفها وإعادة ترتيب مراحل سير العمل.</p>
+<pre><code class="language-text">القطر-بوصة = القطر بالبوصة × عدد الوصلات
+نسبة الإكمال = قطر-بوصة المرحلة النهائية / قطر-بوصة أول مرحلة مسجلة
+</code></pre>
+<p>تعتمد مؤشرات <strong>الإكمال</strong> على آخر مرحلة معرفة في المشروع. لا تجمع كميات المراحل لأن الوصلات نفسها تسجل في عدة مراحل. نسبة الإكمال تخص الإنتاج المسجل من أول مرحلة إلى الأخيرة، وليست مقارنة بنطاق مخطط مستقل مدخل مسبقًا.</p>
+<p>يقتصر تقرير إنتاجية اللحام على المهام من نوع اللحام. يعرض تقرير الموظف نشاط الشخص المحدد وساعاته الاختيارية وحضوره في الفترة المختارة.</p>
+<h2>معمارية التطبيق</h2>
+<p>تطبيق Android أصلي من وحدة واحدة. تستخدم متابعة المشاريع نمط MVVM، ومستودعًا على مستوى Application يحقن يدويًا، وKotlin Flow وRoom. تستدعي شاشات الحاسبات محركات Kotlin مباشرة؛ تنسق شاشات التقارير إنشاء PDF، وبعضها يقرأ تدفقات المستودع مباشرة.</p>
+<p><img src="docs/images/architecture.png" alt="PiCal architecture"></p>
+<details>
+<summary>مصدر الرسم بصيغة Mermaid</summary>
+
+<pre><code class="language-mermaid">flowchart TD
+    Activity[MainActivity / LocaleHelper] --&gt; Nav[Compose navigation / Scaffold]
+    Nav --&gt; UI[Compose screens]
+    UI --&gt; VM[Project ViewModels]
+    Factory[Manual ViewModel factory] --&gt; VM
+    VM --&gt; Repo[FlowTrackRepository]
+    UI -. Report data reads .-&gt; Repo
+    Repo --&gt; Rules[WorkflowValidator / ProgressMath]
+    Repo --&gt; DAO[Room DAOs]
+    DAO --&gt; DB[(Room / SQLite)]
+    UI --&gt; Calc[Pure Kotlin calculators]
+    Reference[Verified reference data] --&gt; Calc
+    UI --&gt; PDF[PDF generators]
+    PDF --&gt; Calc
+    PDF --&gt; Files[Local report files]
+    Files --&gt; Share[FileProvider / Android intents]
+</code></pre>
+</details>
+
+<table>
+<thead>
+<tr>
+<th>الطبقة</th>
+<th>المسؤولية</th>
+<th>المصدر</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>التطبيق والتنقل</td>
+<td>الاعتمادات والمشروع الحالي والمسارات واللغة والرأس والتذييل</td>
+<td><code>FlowTrackApplication.kt</code> و<code>MainActivity.kt</code> و<code>ui/nav/</code></td>
+</tr>
+<tr>
+<td>العرض</td>
+<td>شاشات Compose وحالة الحقول والشروح وإجراءات ViewModels</td>
+<td><code>ui/screens/</code> و<code>viewmodel/</code></td>
+</tr>
+<tr>
+<td>المستودع</td>
+<td>عمليات المشاريع والفريق وسير العمل والحضور وحفظ التقدم بمعاملات</td>
+<td><code>data/repository/FlowTrackRepository.kt</code></td>
+</tr>
+<tr>
+<td>القواعد والحسابات</td>
+<td>تحقق المراحل وتجميع التقدم والوحدات والمدخلات ومحركات الحساب</td>
+<td><code>util/</code></td>
+</tr>
+<tr>
+<td>التخزين</td>
+<td>الكيانات والمفاتيح والفهارس والاستعلامات والتحويلات وترحيل المخطط</td>
+<td><code>data/entity/</code> و<code>data/dao/</code> و<code>data/AppDatabase.kt</code></td>
+</tr>
+<tr>
+<td>البيانات المرجعية</td>
+<td>أبعاد الأنابيب وهوية المواد ومعاملات الكود ومجموعة S الموثقة</td>
+<td><code>data/reference/</code></td>
+</tr>
+<tr>
+<td>التقارير</td>
+<td>رسم PdfDocument والمراجع والملفات والإشعارات والمشاركة</td>
+<td><code>pdf/</code></td>
+</tr>
+</tbody></table>
+<p>مخطط Room الحالي <strong>الإصدار 6</strong>، مع ترحيلات صريحة من الإصدارات 1 إلى 6. المشروع يرتبط بالمناطق والمهام والفريق وسجلات التقدم والحضور. سجل التقدم يرتبط بمهمة ومنطقة، وبمنفذ ومشرف اختياريين. للحضور فهرس فريد لكل عضو وتاريخ. يوجد رسم علاقات الكيانات التفصيلي في <a href="README.md#data-model">النسخة الإنجليزية</a>.</p>
+<p>ظل معرّف التطبيق <code>com.ahmedismail.flowtrack</code> واسم قاعدة البيانات <code>flowtrack.db</code> كما هما لتوافق تحديث PiCal مع البيانات السابقة.</p>
+<h3>تنظيم المصدر</h3>
+<pre><code class="language-text">app/src/main/java/com/ahmedismail/flowtrack/
+├── data/       الكيانات وDAOs والمستودع والمراجع
+├── pdf/        مولدات تقارير المشروع والحاسبات
+├── ui/         الشاشات والمكونات والتنقل والثيم
+├── util/       محركات الحساب وقواعد التحقق
+└── viewmodel/  حالة المشروع وإجراءاته
+app/src/main/res/          موارد العربية والإنجليزية والخطوط والأيقونات
+app/src/test/              اختبارات JVM
+app/schemas/               مخططات Room
+docs/images/               الغلاف والصور الفعلية
+tools/readme-preview/      معاينة صور معزولة ببيانات وهمية
+tools/report-preview/      أداة فحص PDF الاختيارية
+</code></pre>
+<h2>البناء والتشغيل</h2>
+<p>يلزم Android Studio يدعم Android Gradle Plugin المستخدم، وJDK <strong>17</strong>، ومنصة SDK <strong>34</strong>، وهاتف أو محاكي على API <strong>24 فأحدث</strong>. جرى التحقق أيضًا باستخدام JBR 21. تحتاج أول مزامنة إلى تنزيل الاعتمادات؛ يتطلب البناء دون اتصال ذاكرة Gradle مكتملة.</p>
+<table>
+<thead>
+<tr>
+<th>المكوّن</th>
+<th>الإعداد الحالي</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AGP / Gradle</td>
+<td>8.5.2 / 8.7</td>
+</tr>
+<tr>
+<td>Kotlin / KSP</td>
+<td>1.9.24 / 1.9.24-1.0.20</td>
+</tr>
+<tr>
+<td>Compose BOM / Compiler</td>
+<td>2024.06.00 / 1.5.14</td>
+</tr>
+<tr>
+<td>Room / Navigation Compose</td>
+<td>2.6.1 / 2.7.7</td>
+</tr>
+<tr>
+<td>minimum / target / compile SDK</td>
+<td>24 / 34 / 34</td>
+</tr>
+<tr>
+<td>إصدار التطبيق</td>
+<td>1.1، رقم البناء 2</td>
+</tr>
+</tbody></table>
+<p>افتح جذر المشروع في Android Studio، ثم مزامنة Gradle وتشغيل <code>app</code>. اسم المجلد والمشروع الداخلي التاريخي FlowTrack، والاسم الظاهر PiCal.</p>
+<p><strong>Windows / PowerShell</strong></p>
+<pre><code class="language-powershell">.\gradlew.bat :app:assembleDebug
+.\gradlew.bat :app:testDebugUnitTest :app:lintDebug
+</code></pre>
+<p><strong>macOS / Linux</strong></p>
+<pre><code class="language-bash">bash ./gradlew :app:assembleDebug
+bash ./gradlew :app:testDebugUnitTest :app:lintDebug
+</code></pre>
+<p>ملف البناء: <code>app/build/outputs/apk/debug/app-debug.apk</code>. توجد نسخة التطوير المسماة <a href="output/apk/PiCal-1.1-debug.apk">PiCal-1.1-debug.apk</a>. هي نسخة Debug وليست توزيع إنتاج موقعًا للنشر.</p>
+<pre><code class="language-bash">adb install -r app/build/outputs/apk/debug/app-debug.apk
+</code></pre>
+<p>تكتب التقارير في مجلد <code>reports</code> داخل مساحة external-files الخاصة بالتطبيق، وتشارك عبر <code>FileProvider</code>. تحفظ المشاريع في Room بمساحة التطبيق الخاصة. احتفظ بنسخ من التقارير المهمة قبل إزالة التطبيق.</p>
+<h2>التحقق</h2>
+<p>لقطة التحقق الموثقة بتاريخ <strong>6 أكتوبر 2026</strong>:</p>
+<ul>
+<li>93 اختبار وحدة JVM دون فشل في النسخة المتحقق منها.</li>
+<li>بناء Debug ناجح وLint دون أخطاء؛ تبقى تحذيرات غير مانعة.</li>
+<li>اختبار اللغتين والشروح وشاشة التعريف وزر LinkedIn على الهاتف.</li>
+<li>13 عينة PDF للحاسبات مولدة على Android، مع فحص المعادلات والاسم والأرقام وتقسيم الصفحات.</li>
+</ul>
+<p>تغطي الاختبارات الحسابات والهندسة المدعومة والمدخلات والوحدات واعتماديات المراحل وتجميع التقدم وجداول المعاملات وحدود الإجهاد الموثق. نجاحها يخص الحالات المنفذة ولا يعد اعتمادًا كاملًا لتصميم الأنابيب أو الأوعية.</p>
+<details>
+<summary>مثال تقرير حسابي</summary>
+
+<p><img src="docs/images/report-preview.png" alt="تقرير PiCal للمايل بالمعادلات والمدخلات والنتائج والمراجع"></p>
+<p><a href="docs/examples/miter-calculation.pdf">فتح المثال PDF</a>. المدخلات والمعاملات توضيحية وليست اعتماد مادة لمشروع فعلي.</p>
+</details>
+
+<p><a href="tools/readme-preview/README.md">إعادة تصوير الواجهات</a> · <a href="tools/report-preview/README.md">أداة فحص PDF</a>. الأداتان خارج البناء العادي للتطبيق.</p>
+<h2>المراجع والنطاق</h2>
+<table>
+<thead>
+<tr>
+<th>المرجع</th>
+<th>الاستخدام</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ASME B31.3-2018</td>
+<td>قواعد الماسورة المستقيمة والأكواع والمايل المنفذة وإرشادات المعاملات.</td>
+</tr>
+<tr>
+<td>ASME B31.1-2022</td>
+<td>معادلة الماسورة ومسارات ضغط المايل وسمك المقاطع ومجموعة A106 الموثقة.</td>
+</tr>
+<tr>
+<td>ASME B36.10-2022</td>
+<td>مجموعة الأقطار الخارجية وسماكات Schedule الاسمية المتاحة.</td>
+</tr>
+<tr>
+<td>BPVC VIII Division 1 / Section II-D</td>
+<td>قواعد الوعاء المنفذة وإرشاد S اليدوي؛ لا تثبت المقتطفات المتاحة طبعة BPVC مستقلة.</td>
+</tr>
+</tbody></table>
+<p>راجع الكود والطبعة وصف المادة وشكل المنتج وعمود الحرارة والملاحظات للتطبيق الحقيقي. لا تنقل قيم S من B31.1 إلى B31.3 أو الوعاء. يبين التطبيق حالات المايل التي تتطلب التأهيل وفق <strong>104.7</strong>؛ حساب سمك المقطع لا يحل محل هذا التأهيل.</p>
+<p>النطاق الحالي هو قواعد الضغط الداخلي والهندسة المنفذة. التصميم الكامل للضغط الخارجي وتقوية الفروع والفتحات والتعب والعمر المتبقي والتأهيل الكامل خارج هذا النطاق. تصدير Excel وقاعدة إجهاد مرخصة عامة للمواد غير منفذين.</p>
+<p>مراجع تفصيلية: <a href="PIPING_SOURCES_AR.md">المعادلات والمصادر</a> · <a href="CALCULATOR_GUIDANCE_REVIEW_AR.md">شروح الحاسبات</a> · <a href="PICAL_BRANDING_REVIEW_AR.md">هوية PiCal</a>.</p>
+<p>توجد إشعارات الخطوط في <a href="app/src/main/assets/font_licenses/">app/src/main/assets/font_licenses</a>. تعريف المراجع لا يغني عن النصوص الكاملة للأكواد ومستندات التصميم المعتمدة.</p>
+<h2>المطور والتواصل</h2>
+<p><strong>Ahmed Ismail Soliman</strong> · <a href="https://www.linkedin.com/in/ahmed-ismail-soliman">LinkedIn</a></p>
+<p>نفس الرابط متاح من <strong>حول PiCal ← تواصل عبر LinkedIn</strong> داخل التطبيق.</p>
+</body></html>

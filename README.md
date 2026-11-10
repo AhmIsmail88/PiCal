@@ -6,7 +6,7 @@
 
 PiCal helps engineers calculate pressure wall requirements, review pipe and vessel geometry, follow project workflows, and prepare readable reports. Equations and code references appear alongside calculator inputs, with field help explaining units and where to obtain each value.
 
-**Version 1.1 · Android 7.0+ · Kotlin + Jetpack Compose · English / العربية**
+**Version 1.2 · Android 7.0+ · Kotlin + Jetpack Compose · English / العربية**
 
 [العربية](README.ar.md) · [Features](#features) · [Screenshots](#screenshots) · [Architecture](#architecture) · [Build](#build-and-run) · [References](#calculation-references-and-scope) · [Contact](#author-and-contact)
 
@@ -29,7 +29,7 @@ Project records live in a local Room database. Calculations and PDF generation r
 
 ## Screenshots
 
-These are real PiCal screens captured on Android 16. Project names, people, quantities, and calculator inputs are fictional documentation examples from an isolated preview installation.
+These are real PiCal 1.1 screens captured on Android 16; Release 1.2 preserves these interfaces. Project names, people, quantities, and calculator inputs are fictional documentation examples from an isolated preview installation.
 
 <table>
   <tr><th>Project dashboard</th><th>Custom workflow</th><th>Calculator equations</th></tr>
@@ -205,7 +205,7 @@ Use Android Studio compatible with this project's Android Gradle Plugin, JDK **1
 | Compose BOM / compiler | 2024.06.00 / 1.5.14 |
 | Room / Navigation Compose | 2.6.1 / 2.7.7 |
 | Minimum / target / compile SDK | 24 / 34 / 34 |
-| App version | 1.1, version code 2 |
+| App version | 1.2, version code 3 |
 
 Open the repository root in Android Studio, sync Gradle, and run `app`. The historical folder/build-project name is FlowTrack; the visible application is PiCal.
 
@@ -223,7 +223,7 @@ bash ./gradlew :app:assembleDebug
 bash ./gradlew :app:testDebugUnitTest :app:lintDebug
 ```
 
-Output: `app/build/outputs/apk/debug/app-debug.apk`. A named copy of the validated development build is available locally at [PiCal-1.1-debug.apk](output/apk/PiCal-1.1-debug.apk). This is a debug APK, not a signed production distribution.
+Output: `app/build/outputs/apk/debug/app-debug.apk`. The signed distribution APK is [PiCal-1.2-release.apk](output/releases/PiCal-1.2-release.apk). See [Release signing, updates and key backup](docs/RELEASE.md).
 
 ```bash
 adb install -r app/build/outputs/apk/debug/app-debug.apk
@@ -233,12 +233,13 @@ PDFs are written to the app's external-files `reports` directory and shared thro
 
 ## Validation
 
-The documented validation snapshot is **6 October 2026**:
+The documented validation snapshot is **21 October 2026**:
 
 - **93 JVM unit tests**, with no failures in the validated build.
 - Successful debug assembly and Android Lint with **zero errors**; non-blocking warnings remain.
 - Real-device checks of English/Arabic layouts, input guidance, About, and LinkedIn contact.
-- **13 calculator PDF fixtures** generated on Android and checked for equations, branding, values, and pagination.
+- **18 PDF fixtures** (13 calculators and 5 project/employee cases), checked for values, branding, and pagination.
+- **33 Android acceptance checks** in both Debug and Release, plus a signed Release upgrade preserving the test database. See [acceptance results](output/acceptance/ACCEPTANCE_20261021_AR.md).
 
 Tests cover calculations, supported geometry, numeric inputs, workflow dependencies, stage summaries, coefficient data, and verified stress lookup boundaries. They validate the implemented cases, not a complete piping or vessel design.
 

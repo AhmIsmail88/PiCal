@@ -1,0 +1,26 @@
+Pipe Bends
+Pressure Vessels
+Miter Bends
+INPUTS
+Design Code
+ASME B31.3-2018 — Process Piping
+Design equation and code reference
+ASME B31.3-2018, 304.2.3
+q = T - c; r2 = (D - T)/2; theta = angle/(2 joints)
+(4a) Pm = S E W q/r2 * q/[q + 0.643 tan(theta) sqrt(r2 q)]
+(4b) Pm = S E W q/r2 * (R1-r2)/(R1-0.5 r2)
+Multiple: min(4a,4b), theta <= 22.5 deg
+Single: (4a) if theta <= 22.5 deg; otherwise (4c)
+(4c): use 1.25 instead of 0.643 in (4a)
+(5) R1 >= A/tan(theta) + D/2 (empirical A, not allowance c)
+Pressure equations use MPa: input bar × 0.1 = MPa. D, R and wall dimensions are in mm; S is MPa. E/W/Y are unitless. Miter equations produce Pm in MPa; the screen converts it to bar.
+B31.3-2018 304.2.3: multiple miters use (4a)/(4b); a single joint uses (4a) up to 22.5° and (4c) above it. Verify radius (5) and wall extension M. B31.1-2022 uses the 10/100 psi paths and qualification under 104.7. θ is half the deflection per joint.
+PiCal
+CALCULATORS
+EN | AR
+Home
+Projects
+Add
+Calculators
+Reports
+By. Ahmed Ismail

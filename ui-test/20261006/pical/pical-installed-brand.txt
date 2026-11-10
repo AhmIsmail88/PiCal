@@ -1,0 +1,18 @@
+PiCal
+version 1.1
+Uninstall
+Force stop
+Notifications
+Permissions
+Data usage
+Storage
+Using 23.90 MB (internal storage)
+Memory
+No memory used in last 3 hours
+Power usage details
+Open by default
+No defaults set
+UNUSED APPS
+Manage unused apps
+Revoke permissions, delete temporary files, stop sending notifications, and archive the apps.
+App info

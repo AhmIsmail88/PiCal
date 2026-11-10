@@ -1,0 +1,42 @@
+PiCal — Site Progress Report
+PROJECT
+Acceptance Cooling W ater — veriﬁed
+N UMBER
+UAT-2026-001
+RESPON SIBLE EN GIN EER
+Test Engineer
+CON TRACTOR
+Test Contractor
+CLIEN T
+Fictional Client
+PERIOD
+Empty period
+DATE
+21/10/2026
+COMPLETED PIPE IN CHES
+0.0"
+COMPLETED JOIN TS
+0
+WORKFLOW STAGES
+4
+"Completed" = reached the ﬁnal W orkﬂow stage. Per-stage progress for every task is in the table below.
+Area: Pump Hall
+Fit-up
+0 joints  ·  0.0"
+W elding
+0 joints  ·  0.0"
+Inspection
+0 joints  ·  0.0"
+Handover
+0 joints  ·  0.0"
+Area: Utility Area
+Fit-up
+0 joints  ·  0.0"
+W elding
+0 joints  ·  0.0"
+Inspection
+0 joints  ·  0.0"
+Handover
+0 joints  ·  0.0"
+By. Ahmed Ismail
+1

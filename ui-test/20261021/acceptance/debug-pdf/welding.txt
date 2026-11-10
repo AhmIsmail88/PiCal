@@ -1,0 +1,25 @@
+PiCal — W eld Inches Report
+PROJECT
+Acceptance Cooling W ater — veriﬁed
+N UMBER
+UAT-2026-001
+RESPON SIBLE EN GIN EER
+Test Engineer
+PERIOD
+Acceptance period
+DATE
+21/10/2026
+SCOPE
+W elding entries only (Fit-up, Inspection, and other task types exclu…
+TOTAL WELD-IN CHES
+32.0"
+TOTAL WELD JOIN TS
+8
+WELDERS
+1
+Test W elder
+W elding
+8 joints  ·  32.0"
+Subtotal: 8 joints, 32.0" weld-inches
+By. Ahmed Ismail
+1

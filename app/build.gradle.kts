@@ -1,8 +1,18 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.devtools.ksp")
 }
+
+val releaseSigningFile = providers.environmentVariable("PICAL_SIGNING_PROPERTIES")
+    .map { rootProject.file(it) }.getOrElse(rootProject.file(".signing/keystore.properties"))
+val releaseSigningProperties = Properties().apply {
+    if (releaseSigningFile.isFile) releaseSigningFile.inputStream().use { load(it) }
+}
+val releaseSigningConfigured = listOf("storeFile", "storePassword", "keyAlias", "keyPassword")
+    .all { !releaseSigningProperties.getProperty(it).isNullOrBlank() }
 
 android {
     namespace = "com.ahmedismail.flowtrack"
@@ -12,14 +22,24 @@ android {
         applicationId = "com.ahmedismail.flowtrack"
         minSdk = 24
         targetSdk = 34
-        versionCode = 2
-        versionName = "1.1"
+        versionCode = 3
+        versionName = "1.2"
 
         vectorDrawables { useSupportLibrary = true }
     }
 
+    signingConfigs {
+        if (releaseSigningConfigured) create("release") {
+            storeFile = releaseSigningFile.parentFile.resolve(releaseSigningProperties.getProperty("storeFile"))
+            storePassword = releaseSigningProperties.getProperty("storePassword")
+            keyAlias = releaseSigningProperties.getProperty("keyAlias")
+            keyPassword = releaseSigningProperties.getProperty("keyPassword")
+            storeType = releaseSigningProperties.getProperty("storeType", "PKCS12")
+        }
+    }
     buildTypes {
         release {
+            if (releaseSigningConfigured) signingConfig = signingConfigs.getByName("release")
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
@@ -34,7 +54,7 @@ android {
     buildFeatures { compose = true }
     // Opt-in, device-only PDF QA entry point; ordinary builds exclude the harness.
     if (providers.gradleProperty("flowtrackReportPreview").orNull == "true") {
-        sourceSets.getByName("debug").java.srcDir("../tools/report-preview")
+        sourceSets.getByName("debug").java.srcDirs("../tools/report-preview", "../tools/report-fixtures")
     }
     // Both languages must remain available for the in-app language switch.
     bundle { language { enableSplit = false } }
@@ -43,6 +63,20 @@ android {
     packaging {
         resources { excludes += "/META-INF/{AL2.0,LGPL2.1}" }
     }
+}
+
+val checkReleaseSigning by tasks.registering {
+    doLast {
+        check(releaseSigningConfigured) {
+            "Release signing is required. Configure .signing/keystore.properties or PICAL_SIGNING_PROPERTIES; see docs/RELEASE.md."
+        }
+        check(releaseSigningFile.parentFile.resolve(releaseSigningProperties.getProperty("storeFile")).isFile) {
+            "Configured release keystore does not exist."
+        }
+    }
+}
+tasks.configureEach {
+    if (name in setOf("assembleRelease", "bundleRelease", "packageRelease", "signReleaseBundle")) dependsOn(checkReleaseSigning)
 }
 
 dependencies {

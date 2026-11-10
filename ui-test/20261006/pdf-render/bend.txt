@@ -1,0 +1,72 @@
+FLOWTRACK
+ENGINEERING DESIGN CHECK
+Pipe Bend Thickness Report
+ASME B31.3-2018 para. 304.2.1 | Pipe bend under internal pressure
+Project
+Q A — 
+عﻛﻮ
+لﻣﺜﺎ
+Prepared by
+Device preview
+Design reference
+B31.3-2018 Q A
+Report date
+2026-10-06 08:53
+01  BEND GEOMETRY
+Material / grade
+User coeﬃcients - example only
+Outside diameter D
+114.3 mm
+Bend radius to centreline R1
+171.45 mm  (1.5 D)
+Inspection / pipe reference
+Q A-UT
+02  DESIGN INPUTS
+Internal design gauge pressure P
+20 bar(g) = 2 MPa
+Allowable stress S
+100 MPa
+Quality factor E / weld factor W
+0.85 / 0.9
+Coeﬃcient Y
+0.4
+Corrosion / erosion allowance
+1.5 / 0.5 mm
+Mechanical removal allowance
+1 mm (before fabrication)
+03  CALCULATION TRACE
+t = P x D / [2 x ((S x E x W / I) + P x Y)], where I depends on the bend geometry: I_intrados = [4(R1/D) - 1] / [4(R1/D) - 2] and I_extrados
+= [4(R1/D) + 1] / [4(R1/D) + 2]. I_intrados is always above 1 and governs.
+Intrados factor I
+1.25
+Extrados factor I
+0.875
+Pressure thickness at intrados
+1.8435 mm
+Pressure thickness at extrados
+1.2955 mm
+Matching straight pipe, I = 1
+1.4787 mm
+Bend wall before fabrication
+4.8435 mm
+Required remaining wall at intrados
+3.8435 mm
+04  MEASURED INTRADOS WALL
+Minimum measured intrados wall
+4 mm
+Required remaining wall
+3.8435 mm
+By. Ahmed Ismail | User-supplied design data
+1
+FLOWTRACK
+ENGINEERING DESIGN CHECK
+Measured minus required
+0.1565 mm
+MEETS the internal-pressure wall requirement for these inputs.
+05  LIMITS AND REFERENCES
+Basis: ASME B31.3-2018, 304.2.1. S, E, W, Y and the allowances are user inputs and require veriﬁcation against the code and the
+project speciﬁcation. Bending thins the wall at the intrados; this report checks the required thickness at each point of the bend
+rather than computing the geometric thinning, for which the code gives no equation. Miter bends (304.2.3), external pressure,
+other sustained or occasional loads, fatigue, and remaining-life assessment are outside this report.
+By. Ahmed Ismail | User-supplied design data
+2

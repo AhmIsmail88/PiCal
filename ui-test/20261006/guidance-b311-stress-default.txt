@@ -1,0 +1,27 @@
+Pipe Thickness
+Pipe Weight
+Pipe Bends
+Pressure Vessels
+INPUTS
+Design Code
+ASME B31.1-2022 — Power Piping
+Design equation and code reference
+ASME B31.1-2022, 104.1.2(a), (7)
+tm = P Do / [2 (S E W + P y)] + A
+A = corrosion + erosion + mechanical
+Pressure equations use MPa: input bar × 0.1 = MPa. D, R and wall dimensions are in mm; S is MPa. E/W/Y are unitless. Miter equations produce Pm in MPa; the screen converts it to bar.
+B31.1-2022, 104.1.2(a), Eq. (7), verified against the supplied p.27: tm = P Do / [2(SEW + Py)] + A. Enter S before E/F; do not apply the quality factor twice to a combined SE/SF table value.
+Dimensions: ASME B36.10-2022 Table 2-1 (SI). Use custom entry for other dimensions; STD/XS and stainless S schedules are separate designations.
+Material
+ASTM A106 Gr.B (Carbon Steel, Seamless)
+Yield Strength (MPa): 240
+Material group (Table 104.1.2-1)
+FlowTrack
+CALCULATORS
+EN | AR
+Home
+Projects
+Add
+Calculators
+Reports
+By. Ahmed Ismail

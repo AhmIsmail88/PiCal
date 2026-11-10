@@ -1,0 +1,13 @@
+USB settings
+USB controlled by
+Connected device
+This device
+Use USB for
+Transferring files / Android Auto
+USB tethering
+MIDI
+Transferring images
+Charging phone only
+File transfer options
+Transcode exported video
+Convert HEVC videos to AVC format so you can play them on your computer and other devices.

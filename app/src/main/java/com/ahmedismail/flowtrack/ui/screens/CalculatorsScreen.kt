@@ -5,7 +5,10 @@ import androidx.compose.material.icons.automirrored.outlined.HelpOutline
 import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.horizontalScroll
+import androidx.activity.compose.BackHandler
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -89,13 +92,49 @@ private enum class CalculatorTab { THICKNESS, WEIGHT, BEND, VESSEL, MITER }
  */
 @Composable
 fun CalculatorsScreen(modifier: Modifier = Modifier) {
-    var tab by rememberSaveable { mutableStateOf(CalculatorTab.THICKNESS) }
+    var tab by rememberSaveable { mutableStateOf<CalculatorTab?>(null) }
 
     val calculatorState = rememberSaveableStateHolder()
+    BackHandler(enabled = tab != null) { tab = null }
     Column(modifier = modifier.fillMaxSize().padding(14.dp)) {
-        CalculatorTabRow(tab, onSelect = { tab = it })
+        val selected = tab
+        if (selected == null) {
+            Text(stringResource(R.string.calculator_choose), style = MaterialTheme.typography.titleLarge, color = Navy)
+            Text(stringResource(R.string.calculator_choose_hint), style = MaterialTheme.typography.bodyMedium, color = Ink2)
+            Spacer(Modifier.height(16.dp))
+            LazyVerticalGrid(
+                columns = GridCells.Adaptive(150.dp),
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                items(CalculatorTab.values().toList(), key = { it.name }) { item ->
+                    Card(onClick = { tab = item }, colors = CardDefaults.cardColors(containerColor = CardWhite)) {
+                        Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                            Text(when (item) {
+                                CalculatorTab.THICKNESS -> "⌀"
+                                CalculatorTab.WEIGHT -> "kg"
+                                CalculatorTab.BEND -> "∩"
+                                CalculatorTab.VESSEL -> "VIII"
+                                CalculatorTab.MITER -> "∠"
+                            }, style = MaterialTheme.typography.headlineMedium, color = Steel)
+                            Text(stringResource(calculatorTitle(item)), style = MaterialTheme.typography.titleMedium, color = Navy)
+                            Text(stringResource(when (item) {
+                                CalculatorTab.THICKNESS -> R.string.calculator_pipe_description
+                                CalculatorTab.WEIGHT -> R.string.calculator_weight_description
+                                CalculatorTab.BEND -> R.string.calculator_bend_description
+                                CalculatorTab.VESSEL -> R.string.calculator_vessel_description
+                                CalculatorTab.MITER -> R.string.calculator_miter_description
+                            }), style = MaterialTheme.typography.bodySmall, color = Ink2)
+                        }
+                    }
+                }
+            }
+            return@Column
+        }
+        TextButton(onClick = { tab = null }) { Text(stringResource(R.string.calculator_all)) }
+        Text(stringResource(calculatorTitle(selected)), style = MaterialTheme.typography.titleLarge, color = Navy)
         Spacer(Modifier.height(10.dp))
-        calculatorState.SaveableStateProvider(tab.name) { when (tab) {
+        calculatorState.SaveableStateProvider(selected.name) { when (selected) {
             CalculatorTab.THICKNESS -> PipeThicknessTab()
             CalculatorTab.WEIGHT -> PipeWeightTab()
             CalculatorTab.BEND -> PipeBendTab()
@@ -105,44 +144,12 @@ fun CalculatorsScreen(modifier: Modifier = Modifier) {
     }
 }
 
-@Composable
-private fun CalculatorTabRow(selected: CalculatorTab, onSelect: (CalculatorTab) -> Unit) {
-    // Four calculators no longer fit an evenly split row, so the tab strip scrolls
-    // horizontally (Compose mirrors the scroll direction in RTL) instead of
-    // squeezing the labels into unreadable chips.
-    val scrollState = rememberScrollState()
-    // Scroll the selected chip into view once the strip has been measured.
-    LaunchedEffect(selected, scrollState.maxValue) {
-        val last = CalculatorTab.values().lastIndex
-        if (last > 0 && scrollState.maxValue > 0) {
-            scrollState.animateScrollTo(scrollState.maxValue * selected.ordinal / last)
-        }
-    }
-    Row(
-        modifier = Modifier.fillMaxWidth().glassPanel(cornerRadius = 12.dp)
-            .horizontalScroll(scrollState).padding(4.dp),
-        horizontalArrangement = Arrangement.spacedBy(4.dp)
-    ) {
-        TabChip(stringResource(R.string.tab_pipe_thickness), selected == CalculatorTab.THICKNESS) { onSelect(CalculatorTab.THICKNESS) }
-        TabChip(stringResource(R.string.tab_pipe_weight), selected == CalculatorTab.WEIGHT) { onSelect(CalculatorTab.WEIGHT) }
-        TabChip(stringResource(R.string.tab_pipe_bend), selected == CalculatorTab.BEND) { onSelect(CalculatorTab.BEND) }
-        TabChip(stringResource(R.string.tab_pressure_vessel), selected == CalculatorTab.VESSEL) { onSelect(CalculatorTab.VESSEL) }
-        TabChip(stringResource(R.string.tab_miter_bend), selected == CalculatorTab.MITER) { onSelect(CalculatorTab.MITER) }
-    }
-}
-
-@Composable
-private fun TabChip(label: String, selected: Boolean, onClick: () -> Unit) {
-    Box(
-        modifier = Modifier
-            .clip(RoundedCornerShape(9.dp))
-            .background(if (selected) Steel else Color.Transparent)
-            .clickable(onClick = onClick)
-            .padding(horizontal = 14.dp, vertical = 9.dp),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(label, color = if (selected) CardWhite else Ink2, style = MaterialTheme.typography.bodyMedium, fontWeight = if (selected) FontWeight.SemiBold else FontWeight.Normal, maxLines = 1)
-    }
+private fun calculatorTitle(tab: CalculatorTab): Int = when (tab) {
+    CalculatorTab.THICKNESS -> R.string.tab_pipe_thickness
+    CalculatorTab.WEIGHT -> R.string.tab_pipe_weight
+    CalculatorTab.BEND -> R.string.tab_pipe_bend
+    CalculatorTab.VESSEL -> R.string.tab_pressure_vessel
+    CalculatorTab.MITER -> R.string.tab_miter_bend
 }
 
 // ---------------------------------------------------------------------
@@ -289,6 +296,19 @@ private fun PipeThicknessTab() {
         }
 
         CalculatorNumberField(stringResource(R.string.field_design_temperature), temperatureText) { temperatureText = it }
+        Surface(color = ChipBg, shape = RoundedCornerShape(12.dp)) {
+            Column(Modifier.fillMaxWidth().padding(12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                Text(stringResource(R.string.defaults_title), style = MaterialTheme.typography.titleSmall, color = Navy)
+                Text(stringResource(if (stressDefault != null) R.string.defaults_available else R.string.defaults_manual),
+                    style = MaterialTheme.typography.bodySmall, color = Ink)
+                Text(stringResource(R.string.defaults_project_inputs), style = MaterialTheme.typography.bodySmall, color = Ink2)
+                if (stressDefault != null) TextButton(onClick = {
+                    allowableStressText = DisplayFormat.number(stressDefault.stressMPa, 6)
+                    qualityFactorText = DisplayFormat.number(stressDefault.qualityFactorE, 2)
+                    yManuallyEdited = false
+                }) { Text(stringResource(R.string.defaults_restore)) }
+            }
+        }
         CalculatorNumberField(stringResource(R.string.field_allowable_stress), allowableStressText) { allowableStressText = it }
         StressSourceHint(code, selectedMaterialName, temperatureText, allowableStressText) { value -> allowableStressText = value }
 
@@ -1451,9 +1471,12 @@ private fun StressSourceHint(code: PipingCode, material: String, temperature: St
         Text(stringResource(R.string.stress_manual_source_note), style = MaterialTheme.typography.bodySmall, color = Ink2)
     } else {
         val referenceValue = DisplayFormat.number(suggestion.stressMPa, 6)
+        val matchesTable = value.toInputDoubleOrNull()?.let { kotlin.math.abs(it - suggestion.stressMPa) <= 1e-6 } == true
+        Text(stringResource(if (matchesTable) R.string.stress_matches_table else R.string.stress_manual_override),
+            style = MaterialTheme.typography.bodySmall, color = if (matchesTable) Steel else WarnBandText)
         Text(stringResource(R.string.stress_verified_source, referenceValue, suggestion.columnF.toInt(), suggestion.stressKsi.toString()),
             style = MaterialTheme.typography.bodySmall, color = Ink2)
-        if (value != referenceValue) TextButton(onClick = { onUse(referenceValue) }) {
+        if (!matchesTable) TextButton(onClick = { onUse(referenceValue) }) {
             Text(stringResource(R.string.use_verified_stress))
         }
     }

@@ -1,0 +1,22 @@
+Pipe Thickness
+Pipe Weight
+Pipe Bends
+Pressure Vessels
+Material group (Table 104.1.2-1)
+Ferritic steels
+Design Temperature (°C)
+450
+Allowable Stress, S (MPa)
+No verified automatic S is available for this code/material/temperature. Enter it from the code table using the ? guidance; do not use yield or tensile strength.
+Nominal Pipe Size (NPS)
+1/2"
+Internal Design Gage Pressure (bar)
+FlowTrack
+CALCULATORS
+EN | AR
+Home
+Projects
+Add
+Calculators
+Reports
+By. Ahmed Ismail

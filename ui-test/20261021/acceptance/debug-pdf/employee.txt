@@ -1,0 +1,41 @@
+PiCal — Employee Report
+N AME
+Test W elder
+ROLE
+W elder
+PROJECT
+Acceptance Cooling W ater — veriﬁed
+PERIOD
+Acceptance period
+DATE
+21/10/2026
+TOTAL JOIN TS
+30
+TOTAL PIPE IN CHES
+120.0"
+TOTAL HOURS
+8.0
+ATTENDANCE
+DAYS PRESEN T
+0
+DAYS LATE
+1
+DAYS ABSEN T
+1
+ATTEN DAN CE RATE
+50%
+WORK LOG
+21/10/2026
+Fit-up — Pump Hall
+4"  ·  12 joints  ·  2.0h
+21/10/2026
+W elding — Pump Hall
+101.6mm  ·  8 joints  ·  2.0h
+21/10/2026
+Inspection — Pump Hall
+4"  ·  6 joints  ·  2.0h
+21/10/2026
+Handover — Pump Hall
+4"  ·  4 joints  ·  2.0h
+By. Ahmed Ismail
+1

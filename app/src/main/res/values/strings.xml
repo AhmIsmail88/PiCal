@@ -462,6 +462,21 @@
     <string name="about_data" formatted="false">Projects and generated reports are stored on this device. PDF sharing starts from your selected sharing app. Keep copies of important reports before uninstalling the application.</string>
     <string name="about_contact_linkedin">Connect on LinkedIn</string>
     <string name="about_contact_unavailable">Install a browser or LinkedIn to open the contact link.</string>
+    <string name="calculator_choose" formatted="false">Choose a calculator</string>
+    <string name="calculator_choose_hint" formatted="false">Select the component. Inputs are retained when you return to this list.</string>
+    <string name="calculator_all" formatted="false">All calculators</string>
+    <string name="calculator_pipe_description" formatted="false">B31.3 / B31.1 • Required and measured finished wall</string>
+    <string name="calculator_weight_description" formatted="false">Pipe weight, length and water fill</string>
+    <string name="calculator_bend_description" formatted="false">B31.3 • Intrados and extrados wall</string>
+    <string name="calculator_vessel_description" formatted="false">VIII-1 • Shells, heads and MAWP</string>
+    <string name="calculator_miter_description" formatted="false">B31.3 / B31.1 • Geometry and scope checks</string>
+    <string name="defaults_title" formatted="false">Material defaults</string>
+    <string name="defaults_available" formatted="false">Verified S and E are available for this selection. Y follows the selected code and temperature.</string>
+    <string name="defaults_manual" formatted="false">S and E need manual entry for this selection. Automatic S currently covers B31.1 A106 seamless A/B/C from 20°C to 426.67°C.</string>
+    <string name="defaults_project_inputs" formatted="false">Enter W, manufacturing tolerance and design allowances from the applicable project and product requirements.</string>
+    <string name="defaults_restore" formatted="false">Restore verified S, E and automatic Y</string>
+    <string name="stress_matches_table" formatted="false">Current S matches the verified table value.</string>
+    <string name="stress_manual_override" formatted="false">Current S is manually entered; the table value below is a reference.</string>
 </resources>
 
 

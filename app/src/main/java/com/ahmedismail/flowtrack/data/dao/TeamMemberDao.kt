@@ -6,6 +6,9 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface TeamMemberDao {
+    @Query("SELECT * FROM team_members WHERE id = :id")
+    suspend fun getById(id: Long): TeamMember?
+
     @Query("SELECT * FROM team_members WHERE projectId = :projectId ORDER BY name")
     fun observeForProject(projectId: Long): Flow<List<TeamMember>>
 

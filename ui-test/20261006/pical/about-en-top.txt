@@ -1,0 +1,16 @@
+PiCal
+Piping & Mechanical Calculators
+Version 1.1 · Build 2
+By. Ahmed Ismail
+Engineering calculations and site progress
+Calculate straight-pipe wall, pipe mass, bends, miter bends and pressure-vessel components. Organize projects, record site progress and generate PDF reports. PiCal brings calculation inputs, equations and results together in one place.
+Calculation references
+PiCal
+About PiCal
+EN | AR
+Home
+Projects
+Add
+Calculators
+Reports
+By. Ahmed Ismail

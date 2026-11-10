@@ -1,0 +1,24 @@
+Pipe Thickness
+Pipe Weight
+Pipe Bends
+Pressure Vessels
+Material
+ASTM A106 Gr.B (Carbon Steel, Seamless)
+Yield Strength (MPa): 240
+Material group (Table 104.1.2-1)
+Ferritic steels
+Design Temperature (°C)
+20
+Allowable Stress, S (MPa)
+117.90035
+Verified starting value: 117.90035 MPa, B31.1-2022 Table A-1 pp.126–127, A106 seamless, note (2), 100°F column (17.1 ksi). Uses the next listed “not exceeding” column; no interpolation/extrapolation. You may override it after checking the applicable notes.
+Nominal Pipe Size (NPS)
+FlowTrack
+CALCULATORS
+EN | AR
+Home
+Projects
+Add
+Calculators
+Reports
+By. Ahmed Ismail

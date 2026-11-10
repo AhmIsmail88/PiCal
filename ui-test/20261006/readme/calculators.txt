@@ -1,0 +1,23 @@
+Pipe Thickness
+Pipe Weight
+Pipe Bends
+INPUTS
+Design Code
+ASME B31.3-2018 — Process Piping
+Design equation and code reference
+ASME B31.3-2018, 304.1.1 / 304.1.2, (2), (3a)
+t = P D / [2 (S E W + P Y)]
+tm = t + c; c = corrosion + erosion + mechanical
+Pressure equations use MPa: input bar × 0.1 = MPa. D, R and wall dimensions are in mm; S is MPa. E/W/Y are unitless. Miter equations produce Pm in MPa; the screen converts it to bar.
+ASME B31.3-2018 • Straight steel pipe, internal pressure only. This checks pressure thickness, not overall piping design or Chapter IX high-pressure service.
+Dimensions: ASME B36.10-2022 Table 2-1 (SI). Use custom entry for other dimensions; STD/XS and stainless S schedules are separate designations.
+Material
+PiCal
+CALCULATORS
+EN | AR
+Home
+Projects
+Add
+Calculators
+Reports
+By. Ahmed Ismail

@@ -1,0 +1,436 @@
+
+===== PAGE 1 =====
+not
+ be less than tm minus the additional
+thickness, A, provided for removal.
+W = weld strength reduction factor (see
+para. 102.4.7)
+x = 1 for seamless pipe or for seam-welded
+pipe operating below the creep range
+y = coefficient having values as given in
+Table 104.1.2-1
+(b) Thickness of gray and ductile iron fittings
+conveying liquids may be determined from ANSI/
+AWWA C110/A21.10 or ANSI/AWWA C153/A21.53.
+The thickness of ductile iron pipe may be determined
+by ANSI/AWWA C115/A21.15 or ANSI/AWWA C150/
+A21.50. These thicknesses include allowances for
+foundry tolerances and water hammer.
+(c) Whilethe thicknessdetermined from eq.(7) oreq.
+(8) is theoretically ample for both bursting pressure and
+material removed in threading, the following minimum
+requirementsaremandatorytofurnishaddedmechanical
+strength:
+(1) Wheresteelpipeisthreadedandusedforsteam
+serviceatpressureabove250psi(1750kPa)orforwater
+service above 100 psi (700 kPa) with water temperature
+above 220°F (105°C), the pipe shall be seamless, having
+theminimumultimatetensilestrengthof48,000psi(330
+MPa) and a weight at least equal to Schedule 80 of ASME
+B36.10M.
+(2) Wherethreadedbrassorcopperpipeisusedfor
+theservicesdescribedin(1),itshallcomplywithpressure
+andtemperatureclassificationspermittedforthesemate-
+rialsbyotherparagraphsofthisCodeandshallhaveawall
+thickness at least equal to that specified above for steel
+pipe of corresponding size.
+(3) Plain end nonferrous pipe or tube shall have
+minimum wall thicknesses as follows:
+(-a) For nominal sizes smaller than NPS3 ∕ 4(DN 
+20), the thickness shall not be less than that specified
+for Type K of ASTM B88.
+(-b) Fornominalsizes NPS3 ∕ 4(DN 20)andlarger,
+the wall thickness shall not be less than 0.049 in. (1.25
+mm). The wall thickness shall be further increased, as
+required, in accordance with para. 102.4.
+104.1.3 Straight Pipe Under External Pressure. For
+determining wall thickness and stiffening requirements
+forstraightpipeunderexternalpressure,theprocedures
+outlinedinASMEBPVC,SectionVIII,Division1,UG-28,UG-
+29, and UG-30 shall be followed.104.2
+ð 22ÞCurved and Mitered Segments of Pipe104.2.1
+Pipe Bends. Pipe bends shall be subject to the
+following limitations:
+(a) The minimum wall thickness shall meet the re-
+quirements of para. 102.4.5 and the fabrication require-
+ments of para. 129.
+(b) Limits on flattening and buckling at bends may be
+specifiedbydesign,dependingontheservice,thematerial,
+and the stress level involved. Where limits on flattening
+andbucklingarenotspecifiedbydesign,therequirements
+of para. 129.1 shall be met.
+104.2.2 Elbows. Elbows manufactured in accordance
+with the standards listed in Table 126.1-1 are suitable
+for use at the pressure–temperature ratings specified
+by such standards, subject to the requirements of para.
+106.Table
+104.1.2-1ð
+22ÞValues of yMaterial
+Temperature, °F (°C)
+900
+(482)
+and
+Below
+950
+(510)
+1,000
+(538)
+1,050
+(566)
+1,100
+(593)
+1,150
+(621)
+1,200
+(649)
+1,250
+(677)
+and
+Above
+Ferritic steels 0.4 0.5 0.7 0.7 0.7 0.7 0.7 0.7
+Austenitic steels 0.4 0.4 0.4 0.4 0.5 0.7 0.7 0.7
+Nickel alloy UNS No. N06690 0.4 0.4 0.4 0.4 0.5 0.7 0.7 …
+Nickel alloys UNS Nos. N06617,
+N08800, N08810, N08825
+0.4 0.4 0.4 0.4 0.4 0.4 0.5 0.7
+Cast iron 0.0 … … … … … … …
+Other metals [Note (1)] 0.4 0.4 0.4 0.4 0.4 0.4 0.4 0.4
+GENERAL NOTES:
+(a) The value of y may be interpolated between the 50°F (27.8°C) incremental values shown in the Table.
+(b) ForpipewithaDo / tm ratio lessthan6,thevalueofyforferriticandausteniticsteelsdesignedfortemperaturesof900°F(482°C)andbelow
+shall be taken as y = d/(d + Do ). 
+NOTE: (1) Metals listed in Mandatory Appendix A that are not covered by the categories of materials listed above.ASME
+B31.1-202228
+
+===== PAGE 2 =====
+104.2.3
+ Miters. Miter joints, and the terminology
+related thereto, are described in ASME B31J. A widely
+spaced miter with
+< t
+r9 degnshall
+beconsideredtobeequivalenttoagirthbutt-welded
+joint, and the rules of this paragraph do not apply. Miter
+joints,andfabricatedpipebendsconsistingofsegmentsof
+straight pipe welded together, with θ equal to or greater
+than this calculated value may be used within the limita-
+tions described below.
+(a) Pressure shall be limited to 10 psi (70 kPa) under
+the following conditions:
+(1) Theassemblyincludesamiterweldwithθ>22.5
+deg, or contains a segment that has a dimension
+<B t6 n(2)
+Thethicknessofeachsegmentofthemiterisnot
+lessthanthatdeterminedinaccordancewithpara.104.1.
+(3) The contained fluid is nonflammable, nontoxic,
+and incompressible, except for gaseous vents to atmo-
+sphere.
+(4) The number of full pressure cycles is less than
+7,000 during the expected lifetime of the piping system.
+(5) Full penetration welds are used in joining miter
+segments.
+(b) Pressureshallbelimitedto100psi(700kPa)under
+theconditionsdefinedin(a)(2)through(a)(5),inaddition
+to the following:
+(1) the angle θ does not exceed 22.5 deg
+(2) the assembly doesnot contain any segment that
+has a dimension
+<B t6 n(c)
+Miterstobeusedinotherservicesoratdesignpres-
+suresabove100psi(700kPa)shallmeettherequirements
+of para. 104.7.
+(1) Whenjustificationunderpara.104.7isbasedon
+comparable service conditions, such conditions must be
+establishedascomparablewithrespecttocyclicaswellas
+static loadings.
+(2) Whenjustificationunderpara.104.7isbasedon
+an analysis, that analysis and substantiating tests shall
+consider the discontinuity stresses that exist at the junc-
+ture between segments, both for static (including brittle
+fracture) and cyclic internal pressure.
+(3) Thewallthickness,ts , ofasegmentofamitershall
+notbelessthanspecifiedin(-a)or(-b),dependingonthe
+spacing.
+(-a) For closely spaced miter bends (see ASME
+B31J for definition)
+=t t r R
+r R
+2 /
+2(1 / )s m(-b)
+Forwidelyspacedmiters(seeASMEB31Jfor
+definition)
+= +t t r t(1 0.64 / tan )s m s(The
+above equation requires an iterative or quadratic
+solution for ts .) 104.3
+ð 22ÞIntersectionsand Attachments104.3.1
+Branch Connections
+(a) Thisparagraphgivesrulesgoverningthedesignof
+branchconnectionstosustaininternalandexternalpres-
+sure in cases where the axes of the branch and the run
+intersect, and the angle between the axes of the
+branchandoftherunisbetween45degand90deg,inclu-
+sive.
+Branchconnectionsinwhichthesmalleranglebetween
+the axes of the branch and the run is less than 45 deg or
+branchconnectionswheretheaxesofthebranchandthe
+rundonotintersectimposespecialdesignandfabrication
+problems.Therulesgivenhereinmaybeusedasaguide,
+but sufficient additional strength must be provided to
+ensure safe service. Such branch connections shall be
+designed to meet the requirements of para. 104.7.
+(b) Branch connections in piping may be made from
+materials listed in Mandatory Appendix A by the use of
+the following:
+(1) fittings,suchastees,laterals,andcrossesmadein
+accordance with the applicable standards listed in
+Table 126.1-1 where the attachment of the branch
+pipe to the fitting is by butt welding, socket welding,
+brazing, soldering, threading, or a flanged connection.
+(2) weld outlet fittings, such as cast or forged
+nozzles, couplings and adaptors, or similar items
+where the attachment of the branch pipe to the fitting
+is by butt welding, socket welding, threading, or a
+flangedconnection.Suchweldoutletfittingsareattached
+to the run by welding similar to that shown in
+Figure 127.4.8-5 or Figure 127.4.8-6, as applicable. The
+minimum thickness of the weld attaching a branch
+weld-on fitting to the run pipe shall be the greater of
+(-a) the nominal wall thickness of the attached
+branch pipe
+(-b) theweldthicknessrequiredtofillthejointto
+themanufacturer’sfittingweldline(ortheweldthickness
+requiredtofillthejointtotheedgeofthefirstbevelofthe
+branchweld-onfittingwhereaweldlineisnotprovided)
+MSSSP-97maybeusedfordesignandmanufacturing
+standards for integrally reinforced forged branch outlet
+fittings. Couplings are restricted to a maximum of NPS 3
+(DN 80).
+(3) extrudedoutletsatrightanglestotherunpipe,in
+accordance with(g),where theattachment of the branch
+pipe is by butt welding.ASME
+B31.1-202229
+
+===== PAGE 3 =====
+(4)
+ piping directly attached to the run pipe by
+welding in accordance with para. 127.4.8 or by socket
+welding or threading as stipulated below.
+(-a) socketweldedrightanglebranchconnections
+maybemadebyattachingthebranchpipedirectlytothe
+run pipe provided
+(-1) the nominal size of the branch does not
+exceed NPS 2 (DN 50) or one-fourth of the nominal
+size of the run, whichever is smaller.
+(-2) the depth of the socket measured at its
+minimum depth in the run pipe is at least equal to
+that shown in ASME B16.11. If the run pipe wall does
+not have sufficient thickness to provide the proper
+depth of socket, an alternate type of construction shall
+be used.
+(-3) the clearance between the bottom of the
+socketandtheendoftheinsertedbranchpipeisinaccor-
+dance with Figure 127.4.4-3.
+(-4) thesizeofthefilletweldisnotlessthan1.09
+times the nominal wall thickness of the branch pipe.
+(-b) threadedrightanglebranchconnectionsmay
+be made by attaching the branch pipe directly to the run
+provided
+(-1) the nominal size of the branch does not
+exceed NPS 2 (DN 50) or one-fourth of the nominal
+size of the run, whichever is smaller.
+(-2) theminimumthreadengagementissixfull
+threadsforNPS1 ∕ 2(DN 15)andNPS3 ∕ 4(DN 20)branches;
+seven for NPS 1 (DN 25), NPS 11 ∕ 4(DN 32), and NPS 11 ∕ 2(DN
+40)branches;andeightforNPS2(DN50)branches.If
+the run pipe wall does not have sufficient thickness to
+providetheproperdepthforthreadengagement,analter-
+native type of construction shall be used.
+(c) BranchConnectionsNotRequiringReinforcement.A
+pipe having a branch connection is weakened by the
+openingthatmustbemadeinit.Unlessthewallthickness
+of the branch and/or run pipe is sufficiently in excess of
+that required to sustain the pressure, it is necessary to
+provideadditionalmaterialtomeetthereinforcementre-
+quirements of (d) and (e). However, there are certain
+branch connections for which supporting calculations
+are not required. These are as follows:
+(1) branch connections made by the use of a fitting
+(tee, lateral, cross, or branch weld-on fitting), manufac-
+tured in accordance with a standard listed in
+Table 126.1-1, and used within the limits of pressure–
+temperature ratings specified in that standard.
+(2) branchconnectionsmadebyweldinga coupling
+orhalfcouplingdirectlytotherunpipeinaccordancewith
+Figure 127.4.8-6, provided the nominal diameter of the
+branch does not exceed NPS 2 (DN 50) or one-fourth
+the nominal diameter of the run, whichever is less. The
+minimum wall thickness of the coupling anywhere in
+the reinforcement zone (if threads are in the zone,
+wall thickness is measured from the root of the thread
+to the minimum O.D.) shall not be less than that of the
+unthreaded branch pipe. In no case shall the thickness
+of the coupling be less than that of ASME B16.11, Class
+3000.
+(3) integrally reinforced fittings welded directly to
+the run pipe when the reinforcements provided by the
+fitting and the deposited weld metal meet the require-
+ments of (d).
+(4) integrally reinforcedextrudedoutlets in the run
+pipe. The reinforcement requirements shall be in accor-
+dance with (g).
+(5) partial penetration welded branch connections
+NPS 2 (DN 50) and smaller, as shown in
+Figure 127.4.8-7, illustration (a), provided tw is not
+less than the nominal wall thickness of Schedule 160
+pipe of the branch size.
+(6) partial penetration welded instrument connec-
+tions NPS 2 (DN 50) and smaller, as shown in
+Figure 127.4.8-7, illustration (b), provided tw is not
+less than Pd /1.6 Sh , where P is the design pressure [psi
+(kPa)], d is the nominal diameter [in. (mm)] of the
+hole into which the instrumentation is inserted, and Sh is
+the allowable stress [psi (kPa)] of either the run
+pipe or branch at the design temperature, whichever is
+lower.Inaddition,forweldsmadetoinstrumentsinserted
+intotheflowstream,thedesignershallconsiderthefluid
+flowstatic,dynamic,andvibrationloadstowhichtheywill
+be subjected.
+(d) Branch Connections Subject to Internal Pressure
+Requiring Reinforcement
+(1) Reinforcement is required when it is not
+provided inherently in the components of the branch
+connection. This subparagraph gives rules covering the
+designofbranchconnectionstosustaininternalpressure
+in cases where the angle between the axes of the branch
+and of the run is between 45 deg and 90 deg.
+Subparagraph (e) gives rules governing the design of
+connections to sustain external pressure.
+(2) Figure104.3.1-1illustratesthenotationsusedin
+the pressure–temperature design conditions of branch
+connections. These notations are as follows:
+b = subscript referring to branch
+d1 = inside centerline longitudinal dimension of
+thefinishedbranchopeningintherunofthe
+pipe, in. (mm)
+x = [Dob − 2(Tb − A)]/sin α
+d2 = “half width” of reinforcing zone, in. (mm)
+x = thegreaterofd1 or (Tb − A)+(Th − A)+d1 /2 
+but in no case more than Doh , in. (mm)
+Dob = outside diameter of branch, in. (mm)
+Doh = outside diameter of header, in. (mm)
+h = subscript referring to run or header
+L4 = altitude of reinforcement zone outside of
+run, in. (mm)
+x = 2.5(Tb − A) + tr or 2.5(Th − A), whichever is
+smallerASME
+B31.1-202230
+
+===== PAGE 4 =====
+T
+b , Th = actual wall thickness (by measurement) or
+the minimum wall thickness permissible
+under the purchase specification of the
+branch or header pipe, in. (mm)
+tmb , tmh = requiredminimumwallthickness,in.(mm),
+ofthebranchorheaderpipeasdetermined
+byuseofeq.(7)oreq.(8)inpara.104.1.2(a)
+tr = thickness of attached reinforcing pad, in
+Example A, in. (mm); or height of the
+largest 60 deg right triangle supported by
+the run and branch outside diameter
+projected surfaces and lying completely
+within the area of integral reinforcement,
+in Example B, in. (mm)
+α = angle between axes of branch and run, deg
+(-a) If the run pipe contains a longitudinal seam
+that is not intersected by the branch, the stress value
+of seamless pipe of comparable grade may be used to
+determinethevalueoftmh for reinforcementcalculations
+only.Ifthebranchintersectsalongitudinalweldintherun,
+or if the branch contains a weld, the weld joint efficiency
+foreitherorbothshallenterthecalculations.Ifthebranch
+and run both contain longitudinal welds, care shall be
+taken to ensure that the two welds do not intersect
+each other.
+(-b) The required reinforcement area in square
+inches (square millimeters) for branch connections
+shall be the quantity
+= =A A t A d(2 sin ) ( ) (2 sin )mh7 6 1For
+rightangleconnections,therequiredreinforce-
+ment becomes
+= =A A t A d( )mh7 6 1The
+required reinforcement must be within the
+limits of the reinforcement zone as defined in (-d).
+(-c) The reinforcement required by (2) shall be
+that provided by any combination of areas A1 , A2 , A3 , 
+A4 , and A5 , as defined below and illustrated in Figure
+104.3.1-1 where
+A1 = area provided by excess pipe wall in the run
+x = (2d2 − d1 )( Th − tmh ) 
+A2 = area, in.2 (mm 2 ), providedby excess pipe wall in
+the branch for a distance, L4 , above the run
+x = 2L4 ( Tb − tmb )/sin α
+A3 = area provided by deposited weld metal beyond
+the outside diameter of the run and branch,
+and for fillet weld attachments of rings, pads,
+and saddles
+A4 = area provided by a reinforcing ring, pad, or inte-
+gralreinforcement.ThevalueofA4 may betaken
+inthesamemannerinwhichexcessheadermetal
+isconsidered,providedtheweldcompletelyfuses
+thebranchpipe,runpipe,andringorpad,orinte-
+gral reinforcement. For welding branch connec-
+tions refer to para. 127.4.8.
+A5 = areaprovidedbyasaddleonrightangleconnec-
+tions
+x = (O.D. of saddle − Dob ) tr A
+6 = pressure design area expected at the end of
+service life
+x = (tmh − A)d1 Portions
+of the reinforcement area may be
+composed of materials other than those of the run
+pipe, but if the allowable stress of these materials is
+less than that for the run pipe, the corresponding calcu-
+lated reinforcement area provided by this material shall
+be reduced in the ratio of the allowable stress being
+applied to the reinforcement area. No additional credit
+shall be taken for materials having higher allowable
+stress values than the run pipe.
+(-d) Reinforcement Zone. The reinforcement zone
+isaparallelogramwhosewidthshallextendadistance,d2 , 
+on each side of the centerline of the branch pipe, and
+whose altitude shall start at the inside surface of the
+run pipe and extend to a distance, L4 , from the outside
+surface of the run pipe.
+(-e) Reinforcement of Multiple Openings. It is
+preferred that multiple branch openings be spaced so
+that their reinforcement zones do not overlap. If closer
+spacing is necessary, the following requirement shall
+be met. The two or more openings shall be reinforced
+in accordance with (2), with a combined reinforcement
+that has a strength equal to the combined strength of
+thereinforcementthatwouldberequiredfortheseparate
+openings.Noportionofthecrosssectionshallbe consid-
+eredasapplyingtomorethanoneopening,orbeevaluated
+more than once in a combined area.
+When more than two adjacent openings are
+provided with a combined reinforcement, the
+minimum distance between centers of any two of
+these openings should preferably be at least 11 ∕ 2times 
+their average diameter, and the area of reinforcement
+between them shall be at least equal to 50% of the
+total required for these two openings.
+(-f) Rings, Pads, and Saddles. Reinforcement
+provided in the form of rings, pads, or saddles shall
+notbeappreciablynarroweratthesidethanatthecrotch.
+A vent hole shall be provided at the ring, pad, or
+saddle to provide venting during welding and heat treat-
+ment. Refer to para. 127.4.8(e).
+Rings,pads,orsaddlesmaybemadeinmorethan
+one piece, provided the joints between pieces have full
+thickness welds, and each piece has a vent hole.
+(-g) Other Designs. The adequacy of designs to
+which the reinforcement requirements of para. 104.3
+cannot be applied shall be proven by burst or proof
+tests on scale models or on full-size structures, or byASME
+B31.1-202231

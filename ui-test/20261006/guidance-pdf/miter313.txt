@@ -1,0 +1,41 @@
+FLOWTRACK ENGINEERING DESIGN CHECK
+Miter Bend Calculation Report
+ASME B31.3-2018 | Internal pressure
+DESIGN EQUATION
+ASME B31.3-2018, 304.2.3
+q = T - c; r2 = (D - T)/2; theta = angle/(2 joints)
+(4a) Pm = S E W q/r2 * q/[q + 0.643 tan(theta) sqrt(r2 q)]
+(4b) Pm = S E W q/r2 * (R1-r2)/(R1-0.5 r2)
+Multiple: min(4a,4b), theta <= 22.5 deg
+Single: (4a) if theta <= 22.5 deg; otherwise (4c)
+(4c): use 1.25 instead of 0.643 in (4a)
+(5) R1 >= A/tan(theta) + D/2 (empirical A, not allowance c)
+Pressure equations: P and S in MPa; dimensions in mm; input bar x 0.1 = MPa.
+Project QA miter
+Prepared by Device preview
+Design reference Illustrative coefficients only
+Report date 2026-10-06 10:34
+01 INPUTS
+Design gauge pressure 20 bar
+Miter cut angle theta 22.5 deg
+Material / product A106 Gr.B - user stress
+Design metal temperature 20 C
+S at design temperature 100 MPa; user supplied, A-1/A-1M
+E / W 1 / 1
+OD D / segment wall T 114.3 / 6.02 mm
+Total allowances c 1 mm
+Miter weld joint count 2
+Effective radius R1 180 mm
+02 RESULTS
+Governing equation Eq. 4a & 4b (multiple miter)
+Maximum pressure Pm 49.4608 bar
+Pressure margin Pm-P 29.4608 bar
+Required R1 / wall extension M 117.5053 / 52.1329 mm
+Minimum T meeting pressure 3.4978 mm; numerical solution
+MEETS the implemented internal-pressure equations.
+Provide the required extension M in the actual fabrication geometry; the app does not measure it. Overall design, material
+suitability, fabrication and other loads require independent verification.
+04 REFERENCES AND LIMITS
+Sources: B31.3-2018 304.2.3, supplied printed pp.22-23; B31.1-2022 104.2.3, supplied printed p.29. Inputs are user supplied. No
+external-pressure, fatigue, remaining-life or complete code qualification is performed.
+By. Ahmed Ismail | User-supplied design data 1

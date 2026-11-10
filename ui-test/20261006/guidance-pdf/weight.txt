@@ -1,0 +1,24 @@
+FlowTrack — Pipe Weight Report
+Bare-pipe mass (geometry, not a pressure-design rule)
+m/L = pi t (D - t) rho / 1,000,000 [kg/m]
+m = (m/L) L; ID = D - 2t
+m_water = pi ID^2 L / 4,000 [kg], rho_water = 1000 kg/m^3
+PROJECT QA weight
+ENGINEER Device preview
+DATE 06/10/2026
+INPUTS
+Material Carbon steel
+Nominal Pipe Size (NPS) 4 inch
+Outside Diameter (OD) 114.3 mm
+Wall Thickness (t) 6.02 mm
+Density 7850 kg/m³
+Pipe Length 6 m
+OUTPUTS
+UNIT WEIGHT TOTAL PIPE WEIGHT
+16.08 kg/m 96.45 kg
+WATER FILL WEIGHT TOTAL (INCL. WATER)
+49.28 kg 145.73 kg
+Nominal bare-pipe mass = pi * t * (D - t) * density / 1,000,000 (kg/m).
+For carbon steel at 7850 kg/m3, this agrees with the B36.10 mass coefficient.
+Water density, when selected: 1000 kg/m3. Excludes coatings, insulation and fittings.
+By. Ahmed Ismail 1

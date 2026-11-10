@@ -1,0 +1,23 @@
+Pipe Thickness
+Pipe Weight
+Pipe Bends
+Pressure Vessels
+Material group (Table 104.1.2-1)
+Ferritic steels
+Design Temperature (°C)
+400
+Allowable Stress, S (MPa)
+74.463379
+Verified starting value: 74.463379 MPa, B31.1-2022 Table A-1 pp.126–127, A106 seamless, note (2), 800°F column (10.8 ksi). Uses the next listed “not exceeding” column; no interpolation/extrapolation. You may override it after checking the applicable notes.
+Nominal Pipe Size (NPS)
+1/2"
+Internal Design Gage Pressure (bar)
+FlowTrack
+CALCULATORS
+EN | AR
+Home
+Projects
+Add
+Calculators
+Reports
+By. Ahmed Ismail

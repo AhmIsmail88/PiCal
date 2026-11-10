@@ -1,0 +1,38 @@
+PiCal — Pipe W eight Report
+Bare-pipe mass (geometry, not a pressure-design rule)
+m/L = pi t (D - t) rho / 1,000,000 [kg/m]
+m = (m/L) L; ID = D - 2t
+m_water = pi ID^2 L / 4,000 [kg], rho_water = 1000 kg/m^3
+PROJECT
+Q A weight
+EN GIN EER
+Device preview
+DATE
+21/10/2026
+INPUTS
+Material
+Carbon steel
+N ominal Pipe Size (N PS)
+4 inch
+Outside Diameter (OD)
+114.3 mm
+W all Thickness (t)
+6.02 mm
+Density
+7850 kg/m³
+Pipe Length
+6 m
+OUTPUTS
+UN IT W EIGHT
+16.08 kg/m
+TOTAL PIPE W EIGHT
+96.45 kg
+W ATER FILL W EIGHT
+49.28 kg
+TOTAL (IN CL. W ATER)
+145.73 kg
+N ominal bare-pipe mass = pi * t * (D - t) * density / 1,000,000 (kg/m).
+For carbon steel at 7850 kg/m3, this agrees with the B36.10 mass coeﬃcient.
+W ater density, when selected: 1000 kg/m3. Excludes coatings, insulation and ﬁttings.
+By. Ahmed Ismail
+1

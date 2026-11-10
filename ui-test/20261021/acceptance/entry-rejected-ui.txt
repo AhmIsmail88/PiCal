@@ -1,0 +1,23 @@
+Date
+21/10/2026
+Task
+Welding
+Area
+Pump Hall
+Pipe Diameter
+4
+Unit
+Inch
+Joint Quantity
+99
+Hours Worked (optional)
+396"
+PiCal
+NEW ENTRY
+EN | AR
+Home
+Projects
+Add
+Calculators
+Reports
+By. Ahmed Ismail

@@ -1,0 +1,34 @@
+PASS 33 acceptance checks
+project create/edit
+areas/team/workflow created
+downstream before upstream blocked
+fit-up accepted
+upstream overflow blocked
+mixed mm/inch same diameter accepted
+wrong area cannot consume other area scope
+inspection accepted
+handover accepted
+dependent edit blocked
+dependent deletion blocked
+upstream edit preserving downstream accepted
+incompatible reorder blocked
+unchanged reorder accepted
+terminal deletion accepted
+terminal restoration accepted
+invalid input rejected atomically
+attendance upsert unique per day
+attendance history
+cross-project area rejected
+cross-project performer rejected
+cross-project supervisor rejected on edit
+project cascade deletion isolated
+persisted entries count
+final stage is 4 joints / 16 diameter-inches
+completion ratio excludes duplicate stage counts
+welding totals are 8 joints / 32 diameter-inches
+empty reporting period has no records
+13 calculator PDF fixtures produced
+project, empty, welding and employee PDFs produced
+report sharing uses Android chooser
+report open uses a grantable content URI
+notification handles missing permission

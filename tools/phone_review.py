@@ -6,7 +6,12 @@ import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-ADB = r"F:\SDK\platform-tools\adb.exe"
+ADB = os.environ.get('ADB_PATH', str(Path(__file__).resolve().parents[1] / 'unused-adb'))
+if not Path(ADB).is_file():
+    local_properties = Path(__file__).resolve().parents[1] / 'local.properties'
+    sdk_line = next((line for line in local_properties.read_text().splitlines() if line.startswith('sdk.dir=')), '')
+    sdk_path = sdk_line.removeprefix('sdk.dir=').replace('\\:', ':').replace('\\\\', '\\')
+    ADB = str(Path(sdk_path) / 'platform-tools' / 'adb.exe')
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / os.environ.get('PICAL_REVIEW_DIR', 'ui-test/20261006')
 OUT.mkdir(parents=True, exist_ok=True)

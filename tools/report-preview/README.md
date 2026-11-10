@@ -1,7 +1,7 @@
 # Android PDF preview harness
 
 `ReportPreviewMain.kt` is a standalone QA entry point, excluded from every app source set.
-It generated the four PDF fixtures on the connected Android 16 phone using the production
+It generates thirteen PDF fixtures on the connected Android 16 phone using the production
 report generator without installing or updating the application.
 
 The shell `app_process` environment lacks Zygote font initialization on this device. The
@@ -11,7 +11,7 @@ flags those private APIs for application use).
 
 For a repeat, build a throwaway debug APK with
 `gradlew.bat :app:assembleDebug -PflowtrackReportPreview=true`.
-This opt-in property adds this tools directory only to the debug source set.
+This opt-in property adds this tools directory and `tools/report-fixtures` only to the debug source set. The shared `CalculatorReportFixtures` has no private font APIs and is used by the isolated acceptance instrumentation.
 Push that APK to a dedicated `/data/local/tmp` directory, mark it read-only and invoke:
 
 ```text

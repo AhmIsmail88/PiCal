@@ -15,6 +15,14 @@ class FlowTrackRepository(private val db: AppDatabase) {
 
     private val validator = WorkflowValidator(db.taskDao(), db.progressEntryDao())
 
+    /** Check ownership inside the same transaction as the entry write. */
+    private suspend fun validateEntryReferences(projectId: Long, areaId: Long, performerId: Long?, supervisorId: Long?) {
+        require(db.areaDao().getById(areaId)?.projectId == projectId) { "Area must belong to the entry project." }
+        for (memberId in listOfNotNull(performerId, supervisorId)) {
+            require(db.teamMemberDao().getById(memberId)?.projectId == projectId) { "Team member must belong to the entry project." }
+        }
+    }
+
     // Projects
     fun observeProjects(): Flow<List<Project>> = db.projectDao().observeAll()
     suspend fun createProject(project: Project): Long = db.projectDao().insert(project)
@@ -90,6 +98,7 @@ class FlowTrackRepository(private val db: AppDatabase) {
         require(diameter.isFinite() && diameter > 0 && jointQuantity > 0)
         require(hoursWorked == null || (hoursWorked.isFinite() && hoursWorked >= 0))
         require(task.projectId == projectId && db.taskDao().getById(task.id)?.projectId == projectId)
+        validateEntryReferences(projectId, areaId, performedById, supervisorId)
         val result = validator.validate(projectId, task, areaId, diameter, jointQuantity, unit)
         if (result is WorkflowValidator.Result.Rejected) {
             return@withTransaction SaveResult.Blocked(result.previousTaskName, result.previousStageJoints)
@@ -117,6 +126,8 @@ class FlowTrackRepository(private val db: AppDatabase) {
         require(entry.hoursWorked == null || (entry.hoursWorked.isFinite() && entry.hoursWorked >= 0))
         val existing = requireNotNull(db.progressEntryDao().getById(entry.id))
         require(existing.projectId == entry.projectId && existing.taskId == entry.taskId && existing.areaId == entry.areaId && task.id == entry.taskId)
+        require(db.taskDao().getById(task.id)?.projectId == entry.projectId)
+        validateEntryReferences(entry.projectId, entry.areaId, entry.performedById, entry.supervisorId)
         val result = validator.validate(
             entry.projectId, task, entry.areaId, entry.diameter, entry.jointQuantity, unit = entry.unit, excludeEntryId = entry.id
         )

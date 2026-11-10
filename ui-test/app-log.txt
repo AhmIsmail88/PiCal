@@ -1,0 +1,241 @@
+--------- beginning of (HKS)621D23E37105833B82FF1C35B99A184762C621BEEA85F098C3DB9E222068FB569505C890975B920275546AC18528D2EF695D7AF675B7F57C9BB6D3C194D272D8F24031FF6A68B197987C13DA39B68AC1369B3F634F748FC88160E27530A57776255034E32ADE8080F1C79A3A6093DDA00B635B1523299A6D87DAA2209B9A3E84985263A9C47F1B32D8ADF0DC2ED27AF545710A61A71FD5AD65F4C3547654A4404057DC44B113379943C2232B2F3968ABB9C2869FAC871D83FF7976A886E7ABEC5EC0AEDB60DBB51066977B2B5C1C7372E53C3E37A5F0387DF0DFDA1F4FC78BCE8AF8DD4C357D7A70CF02FF17BA1D07417E45D8EF50D0D2316610B09DAA47B09A(HKE)
+--------- beginning of system
+10-01 14:12:40.904 19332 19332 I ActivityThread: initHwArgs result ok for mw or virtual
+10-01 14:12:40.906 19332 19332 D ActivityThread: Attach thread to application
+10-01 14:12:40.988 19332 30948 I ActivityThread: Init compatible state: true
+10-01 14:12:41.460 19332 19332 I ActivityThread: finishPreloaded preloadStatus 0
+10-01 14:12:41.463 19332 19332 V ActivityThread: Handling launch of ActivityRecord{6770275 token=android.os.BinderProxy@dcc75f {com.ahmedismail.flowtrack/com.ahmedismail.flowtrack.MainActivity}}
+10-01 14:12:41.476 19332 31042 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+10-01 14:12:41.595 19332 19332 V ActivityThread: callActivityOnCreate
+10-01 14:12:41.657 19332 19332 I ActivityThread: add activity client record, r= ActivityRecord{6770275 token=android.os.BinderProxy@dcc75f {com.ahmedismail.flowtrack/com.ahmedismail.flowtrack.MainActivity}} token= android.os.BinderProxy@dcc75f
+10-01 14:12:41.730 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:12:41.744 19332 19332 I RtgSchedEvent: current pid:19332 AppType:-1
+10-01 14:12:41.897 19332 19332 V Configuration: Updating configuration, locales updated from [en_EG,ar_EG_#u-nu-arab] to [ar]
+10-01 14:12:41.974 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:12:42.225 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:12:42.249 19332 19332 I HwForceDarkManager: setAllowedHwForceDark:false package:com.ahmedismail.flowtrack mCurrProcessState:0 mIsPackageNameChange:false hwForceDarkState:0 isViewAllowedForceDark:true isLastHonorForceDark:false
+10-01 14:12:42.290 19332 19332 I RtgSchedEvent: current pid:19332 AppType:-1
+10-01 14:12:42.329 19332 19332 I VRI[MainActivity]: send MSG_WINDOW_FOCUS_CHANGED msg
+10-01 14:12:59.872 19332 31412 W HwApsManager: HwApsManagerService, registerCallback, start !
+10-01 14:13:03.777 19332 19332 D InsetsController: Setting requestedVisibleTypes to -1 (was -9)
+10-01 14:13:03.844 19332 19332 D RtgSched: resetRtgSchedHandle failed enable:0
+10-01 14:13:03.970 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:13:03.975 19332 19332 I VipSched: Product Name is MTN-NX1
+10-01 14:13:04.119 19332 19332 I RtgSchedEvent: current pid:19332 AppType:-1
+10-01 14:13:20.436 19332 19332 D InsetsController: Setting requestedVisibleTypes to -9 (was -1)
+10-01 14:13:20.448 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:14:20.755 19332 19332 V Configuration: Updating configuration, locales updated from [en_EG,ar_EG_#u-nu-arab] to [en]
+10-01 14:14:44.239 19332 19332 D InsetsController: Setting requestedVisibleTypes to -1 (was -9)
+10-01 14:14:44.262 19332 19332 D RtgSched: resetRtgSchedHandle failed enable:0
+10-01 14:14:44.316 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:14:44.526 19332 19332 I RtgSchedEvent: current pid:19332 AppType:-1
+10-01 14:14:44.632 19332 19332 D InsetsController: Setting requestedVisibleTypes to -9 (was -1)
+10-01 14:14:44.633 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:14:57.393 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:14:57.395 19332 19332 I HwForceDarkManager: setAllowedHwForceDark:false package:com.ahmedismail.flowtrack mCurrProcessState:0 mIsPackageNameChange:false hwForceDarkState:0 isViewAllowedForceDark:false isLastHonorForceDark:false
+10-01 14:14:57.425 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:14:57.438 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:14:57.439 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:14:57.439 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:14:57.443 19332 19332 I HwForceDarkManager: setAllowedHwForceDark:false package:com.ahmedismail.flowtrack mCurrProcessState:0 mIsPackageNameChange:false hwForceDarkState:0 isViewAllowedForceDark:true isLastHonorForceDark:false
+10-01 14:14:57.456 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:14:57.459 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:14:57.464 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:14:57.488 19332 19332 I VRI[MainActivity]: send MSG_WINDOW_FOCUS_CHANGED msg
+10-01 14:14:57.488 19332 19332 I VRI[Pop-Up Window]: send MSG_WINDOW_FOCUS_CHANGED msg
+10-01 14:14:57.493 19332 19332 I ViewRootImpl: focus window changed, set pointer icon to default
+10-01 14:14:58.852 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:15:16.759 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:15:16.824 19332 19332 I VRI[Pop-Up Window]: dispatchDetachedFromWindow in doDie
+10-01 14:15:16.868 19332 19332 I VRI[MainActivity]: send MSG_WINDOW_FOCUS_CHANGED msg
+10-01 14:15:16.894 19332 19332 D InsetsController: Setting requestedVisibleTypes to -1 (was -9)
+10-01 14:15:16.923 19332 19332 D RtgSched: resetRtgSchedHandle failed enable:0
+10-01 14:15:16.985 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+10-01 14:15:17.193 19332 19332 I RtgSchedEvent: current pid:19332 AppType:-1
+10-01 14:15:17.218 19332 19332 D InsetsController: Setting requestedVisibleTypes to -9 (was -1)
+10-01 14:15:17.228 19332 19332 D FullScreenUtils: isNeedToHideStatusBar: splitscreenstate=0
+--------- beginning of main
+10-01 14:15:21.589 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:21.605 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:21.622 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:21.639 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:21.655 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:21.672 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:22.061 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:22.562 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:23.063 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:23.564 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:24.048 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:24.550 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:25.052 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:25.551 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:26.052 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:26.553 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:27.055 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:27.556 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:28.057 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:28.558 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:29.060 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:29.561 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:30.062 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:30.563 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:31.048 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:31.547 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:32.050 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:32.552 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:33.052 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:33.555 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:34.054 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:34.557 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:35.057 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:35.559 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:36.059 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:36.561 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:37.063 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:37.564 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:38.048 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:38.549 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:39.050 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:39.552 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:40.053 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:40.554 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:41.055 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:41.556 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:42.057 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:42.559 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:43.060 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:43.561 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:44.062 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:44.245 19332 19332 D Choreographer: still have 1 traversal callbacks
+10-01 14:15:44.565 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:45.048 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:45.549 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:46.050 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:46.552 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:47.053 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:47.555 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:48.055 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:48.556 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:49.058 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:49.559 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:50.060 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:50.561 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:51.062 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:51.561 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:52.048 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:52.549 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:53.051 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:53.552 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:54.053 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:54.554 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:55.055 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:55.557 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:56.057 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:56.559 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:57.060 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:57.561 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:58.063 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:58.564 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:59.048 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:15:59.549 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:00.051 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:00.550 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:01.052 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:01.555 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:02.056 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:02.557 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:03.057 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:03.559 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:04.060 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:04.562 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:05.063 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:05.564 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:06.047 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:06.550 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:07.053 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:07.552 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:08.053 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:08.554 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:09.056 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:09.557 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:10.058 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:10.559 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:11.061 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:11.561 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:12.063 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:12.547 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:13.048 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:13.550 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:14.052 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:14.552 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:15.053 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:15.555 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:16.055 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:16.557 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:17.059 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:17.560 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:18.061 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:18.562 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:19.063 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:19.548 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:20.049 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:20.550 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:21.049 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:21.552 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:22.053 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:22.555 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:23.056 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:23.557 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:24.058 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:24.559 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:25.061 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:25.539 19332 19332 I HiTouch_PressGestureDetector: checkDoublePointerLimit: false
+10-01 14:16:25.734 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:25.845 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:25.860 19332 19332 I HwViewRootImpl: removeInvalidNode jank list is null
+10-01 14:16:25.863 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:25.876 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:25.893 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:25.910 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:25.926 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:25.943 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:25.960 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:25.976 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:25.994 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.010 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.027 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.043 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.061 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.078 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.096 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.112 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.129 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.145 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.162 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.178 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.195 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.212 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.228 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.245 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.262 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.278 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.294 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.311 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.328 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.344 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.361 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.378 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.395 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.413 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.428 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.446 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.461 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.478 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.530 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.539 19332 19332 I ImeTracker: com.ahmedismail.flowtrack:1cb634f5: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false
+10-01 14:16:26.539 19332 19332 I ImeTracker: com.ahmedismail.flowtrack:1cb634f5: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-01 14:16:26.539 19332 19332 D InputMethodManager: restartInput()
+10-01 14:16:26.539 19332 19332 W InputMethodManager: startInputReason = 4
+10-01 14:16:26.543 19332 19332 V InputMethodManager: Starting input: Bind result=InputBindResult{result=SUCCESS_WITH_IME_SESSION method=com.android.internal.inputmethod.IInputMethodSession$Stub$Proxy@2ddf913 id=com.touchtype.swiftkey/com.touchtype.KeyboardService sequence=11331 result=0 isInputMethodSuppressingSpellChecker=true}
+10-01 14:16:26.545 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true
+10-01 14:16:26.562 19332 19332 I HwForceDarkManager: isAppInDarkMode isResUiModeYes: true

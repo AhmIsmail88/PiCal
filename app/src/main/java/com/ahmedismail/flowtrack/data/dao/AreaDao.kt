@@ -6,6 +6,9 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface AreaDao {
+    @Query("SELECT * FROM areas WHERE id = :id")
+    suspend fun getById(id: Long): Area?
+
     @Query("SELECT * FROM areas WHERE projectId = :projectId ORDER BY id")
     fun observeForProject(projectId: Long): Flow<List<Area>>
 

@@ -1,0 +1,10 @@
+persisted entries count
+final stage is 4 joints / 16 diameter-inches
+completion ratio excludes duplicate stage counts
+welding totals are 8 joints / 32 diameter-inches
+empty reporting period has no records
+13 calculator PDF fixtures produced
+project, empty, welding and employee PDFs produced
+report sharing uses Android chooser
+report open uses a grantable content URI
+notification handles missing permission

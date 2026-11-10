@@ -1,0 +1,32 @@
+Acceptance Cooling Water — verified
+Workflow
+Areas
+Team
+Attendance
+Date
+21/10/2026
+Test Inspector  ·  Inspector
+Present
+Late
+Absent
+Test Supervisor  ·  Supervisor
+Present
+Late
+Absent
+Test Welder  ·  Welder
+Present
+Late
+Absent
+In
+09:00
+Out
+16:00
+PiCal
+Manage project
+EN | AR
+Home
+Projects
+Add
+Calculators
+Reports
+By. Ahmed Ismail

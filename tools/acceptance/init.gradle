@@ -1,0 +1,15 @@
+// Opt-in isolated acceptance application; never use this init script for distribution.
+gradle.beforeProject { p ->
+    if (p.name == 'app') p.plugins.withId('com.android.application') {
+        def android = p.extensions.getByName('android')
+        ['debug', 'release'].each { type ->
+            android.buildTypes.getByName(type).applicationIdSuffix = type == 'release' ? '.acceptance.release' : '.acceptance'
+            android.sourceSets.getByName(type).java.srcDir(new File(p.rootDir, 'tools/acceptance/src'))
+            android.sourceSets.getByName(type).java.srcDir(new File(p.rootDir, 'tools/report-fixtures'))
+            android.sourceSets.getByName(type).manifest.srcFile(new File(p.rootDir, 'tools/acceptance/AndroidManifest.xml'))
+        }
+        p.extensions.getByName('androidComponents').finalizeDsl { dsl ->
+            if (p.hasProperty('acceptanceVersionCode')) dsl.defaultConfig.versionCode = p.property('acceptanceVersionCode').toInteger()
+        }
+    }
+}

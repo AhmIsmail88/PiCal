@@ -1,0 +1,3 @@
+Allowable Stress, S (MPa)
+S is entered in MPa before applying E/F. Use B31.1-2022 Mandatory Appendix A, Table A-1, the exact material/product row and design temperature column. The table can publish a combined SE/SF value: do not multiply an already reduced value by E twice. Automatic values are limited to verified A106 seamless rows (E=1), pp.126–127, 20°C through the supplied 800°F column. Other forms/temperatures remain manual. The app chooses the next printed “not exceeding” column and shows it; read note (2) and material limits before use. Example: 17.1 ksi = 117.90035 MPa.
+Understood
